@@ -2,8 +2,7 @@ name: Deploy Hugo site to Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -21,7 +20,7 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - name: Setup Hugo
-        uses: install-hugo/setup-hugo@v2
+        uses: peaceiris/actions-hugo@v3 # 換成這個最穩定的版本
         with:
           hugo-version: 'latest'
           extended: true
