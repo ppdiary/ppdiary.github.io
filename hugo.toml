@@ -1,0 +1,28 @@
+baseURL = 'https://你的帳號.github.io/'
+languageCode = 'zh-tw'
+title = '我的個人網站'
+theme = "PaperMod"
+
+# 必須要有這個結構，才能修復 rss.xml 的報錯
+[author]
+    name = "你的名字"
+
+# PaperMod 特有的參數設定
+[params]
+    env = "production"
+    title = "我的個人網站"
+    description = "這是我的第一個 Hugo 網站"
+    author = "你的名字"
+    defaultTheme = "auto"
+    showCodeCopyButtons = true
+
+    # 這裡可以暫時關閉 RSS，避免它一直報錯
+    [params.homeInfoParams]
+        Title = "嗨！歡迎來到我的部落格"
+        Content = "這是使用 Hugo 與 PaperMod 建立的網站。"
+
+# 強制 Hugo 使用新版的作者資訊格式
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+    series = "series"
