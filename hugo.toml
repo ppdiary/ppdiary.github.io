@@ -1,18 +1,18 @@
-baseURL = 'https://你的帳號.github.io/'
+baseURL = 'https://ppdiary.github.io/blog/'
 languageCode = 'zh-tw'
-title = '我的個人網站'
+title = '小紫鋼琴日記'
 theme = "PaperMod"
 
 # 必須要有這個結構，才能修復 rss.xml 的報錯
 [author]
-    name = "你的名字"
+    name = "Purple"
 
 # PaperMod 特有的參數設定
 [params]
     env = "production"
-    title = "我的個人網站"
+    title = "小紫鋼琴日記"
     description = "這是我的第一個 Hugo 網站"
-    author = "你的名字"
+    author = "Purple"
     defaultTheme = "auto"
     showCodeCopyButtons = true
 
