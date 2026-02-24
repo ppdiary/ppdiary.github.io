@@ -2,8 +2,8 @@
 title: "我的第一篇文章"
 date: 2026-02-24T23:30:00+08:00
 draft: false
-tags: ["生活", "Hugo"]
-description: "這是我的第一個使用 PaperMod 建立的部落格！"
+tags: ["生活", "Hugo", "測試"]
+description: ""
 ---
 
 ### 歡迎來到我的新站點

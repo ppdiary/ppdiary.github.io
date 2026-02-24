@@ -12,17 +12,39 @@ theme = "PaperMod"
     env = "production"
     title = "小紫鋼琴日記"
     description = "這是我的第一個 Hugo 網站"
-    author = "Purple"
+    author = "author"
     defaultTheme = "auto"
     showCodeCopyButtons = true
+   
+
+    listLayoutPages = true
+    hideSummary = true      # 隱藏預覽文字
+    showFullTextContent = false
+
+    
 
     # 這裡可以暫時關閉 RSS，避免它一直報錯
     [params.homeInfoParams]
-        Title = "嗨！歡迎來到我的部落格"
-        Content = "這是使用 Hugo 與 PaperMod 建立的網站。"
+        Title = "Hello 你好 :)"
+        Content = "新居落成，家徒四壁。"
 
 # 強制 Hugo 使用新版的作者資訊格式
 [taxonomies]
     category = "categories"
     tag = "tags"
     series = "series"
+
+[[menu.main]]
+    name = "近況"
+    url = "/now/"
+    weight = 10
+
+ [[menu.main]]
+    name = "文章"
+    url = "/posts/"
+    weight = 20
+
+[[menu.main]]
+    name = "標籤"
+    url = "/tags/"
+    weight = 30

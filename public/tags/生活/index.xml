@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>生活 on 我的個人網站</title>
-    <link>http://localhost:1313/tags/%E7%94%9F%E6%B4%BB/</link>
-    <description>Recent content in 生活 on 我的個人網站</description>
+    <title>生活 on 小紫鋼琴日記</title>
+    <link>http://localhost:1313/blog/tags/%E7%94%9F%E6%B4%BB/</link>
+    <description>Recent content in 生活 on 小紫鋼琴日記</description>
     <generator>Hugo -- 0.156.0</generator>
     <language>zh-tw</language>
     <lastBuildDate>Tue, 24 Feb 2026 23:30:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我的第一篇文章</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>http://localhost:1313/blog/posts/my-first-post/</link>
       <pubDate>Tue, 24 Feb 2026 23:30:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>這是我的第一個使用 PaperMod 建立的部落格！</description>
+      <guid>http://localhost:1313/blog/posts/my-first-post/</guid>
+      <description>&lt;h3 id=&#34;歡迎來到我的新站點&#34;&gt;歡迎來到我的新站點&lt;/h3&gt;
+&lt;p&gt;這是我的第一篇測試文章。我成功解決了 Hugo 的報錯，現在網站已經可以正常運作了！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;為什麼選擇 PaperMod？&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;簡潔有力&lt;/li&gt;
+&lt;li&gt;支援深色模式&lt;/li&gt;
+&lt;li&gt;速度超快&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
