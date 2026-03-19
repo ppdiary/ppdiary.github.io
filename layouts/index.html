@@ -1,0 +1,57 @@
+{{ define "main" }}
+{{ .Content }}
+
+
+<div style="
+    text-align: center; 
+    margin-top: 9rem;   /* 大幅增加上方留白，讓區塊往下移 */
+    margin-bottom: 2rem; /* 縮減下方留白，避免推擠頁尾 */
+    padding: 0; 
+    line-height: 1.8;
+">
+    <div style="
+        font-size: 1.5rem;
+        font-weight: 300;
+        letter-spacing: 4px;
+        color: #444;
+        margin-bottom: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    ">
+        <span style="color: #999; font-size: 1.2rem;">♪</span> 
+        <span>PURPLE PIANO DIARY</span>
+    </div>
+
+    <div style="
+        font-size: 0.85rem; 
+        color: #777; 
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    ">
+        {{ $pages := where .Site.RegularPages "Section" "posts" }}
+        {{ $totalCharacters := 0 }}
+        {{ range $pages }}
+            {{ $totalCharacters = add $totalCharacters (.RawContent | countrunes) }}
+        {{ end }}
+        
+        <span>已發布 <strong>{{ len $pages }}</strong> 篇</span>
+        <span style="color: #eee; font-weight: 100;">|</span>
+        <span>共 <strong>{{ $totalCharacters }}</strong> 字元</span>
+    </div>
+
+    <div style="
+        font-size: 0.75rem; 
+        color: #ccc; 
+        margin-top: 1.5rem; 
+        letter-spacing: 0.5px;
+    ">
+        Last updated : {{ range first 1 .Site.RegularPages.ByLastmod.Reverse }}{{ .Lastmod.Format "2006.01.02" }}{{ end }}
+    </div>
+</div>
+
+{{ end }}

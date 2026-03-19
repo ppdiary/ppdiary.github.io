@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bear on 小紫鋼琴日記</title>
+    <link>http://localhost:1313/blog/tags/bear/</link>
+    <description>Recent content in Bear on 小紫鋼琴日記</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Thu, 05 Mar 2026 01:46:10 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/tags/bear/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>網站更新日誌 #1</title>
+      <link>http://localhost:1313/blog/posts/4/</link>
+      <pubDate>Thu, 05 Mar 2026 01:46:10 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/4/</guid>
+      <description>&lt;p&gt;今天我花了不少時間調整部落格的細節。&lt;/p&gt;&#xA;&lt;h3 id=&#34;now頁面&#34;&gt;NOW頁面&lt;/h3&gt;&#xA;&lt;p&gt;首先是處理 Now 頁面的標題。我發現雖然在檔案開頭設定了標題，但網頁上卻沒顯示出來，後來發現是因為 Hugo 的內容頁需要手動在模板或內文裡加入標題。為了解決這個問題，我調整了 baseof.html 和 single.html，讓所有頁面都能自動抓取標題，並確保每個分頁的標題高度都完全一致。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

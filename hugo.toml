@@ -1,50 +1,41 @@
 baseURL = 'https://ppdiary.github.io/blog/'
+#canonifyURLs = true
+#relativeURLs = true
 languageCode = 'zh-tw'
 title = '小紫鋼琴日記'
-theme = "PaperMod"
+theme = "hugo-bearblog"
 
-# 必須要有這個結構，才能修復 rss.xml 的報錯
-[author]
-    name = "Purple"
+# 加入這行來精確計算中文字數
+hasCJKLanguage = true
 
-# PaperMod 特有的參數設定
+staticDir = ['static']
+
 [params]
-    env = "production"
-    title = "小紫鋼琴日記"
-    description = "這是我的第一個 Hugo 網站"
-    author = "author"
-    defaultTheme = "auto"
-    showCodeCopyButtons = true
-   
+    description = "小紫的鋼琴學習與生活隨筆"
+    dateFormat = "2006.01.02" 
+    # Bear Blog 很簡單，通常不太需要複雜的 params
 
-    listLayoutPages = true
-    hideSummary = true      # 隱藏預覽文字
-    showFullTextContent = false
-
-    
-
-    # 這裡可以暫時關閉 RSS，避免它一直報錯
-    [params.homeInfoParams]
-        Title = "Hello 你好 :)"
-        Content = "新居落成，家徒四壁。"
-
-# 強制 Hugo 使用新版的作者資訊格式
-[taxonomies]
-    category = "categories"
-    tag = "tags"
-    series = "series"
+[[menu.main]]
+    name = "首頁"
+    url = "/"
+    weight = 1
 
 [[menu.main]]
     name = "近況"
-    url = "/now/"
-    weight = 10
+    url = "/now"
+    weight = 2
 
- [[menu.main]]
+[[menu.main]]
     name = "文章"
-    url = "/posts/"
-    weight = 20
+    url = "/posts"
+    weight = 3
 
 [[menu.main]]
     name = "標籤"
-    url = "/tags/"
-    weight = 30
+    url = "/tags"
+    weight = 4
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # 允許在 Markdown 中使用原始 HTML

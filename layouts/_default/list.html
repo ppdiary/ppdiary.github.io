@@ -1,0 +1,23 @@
+{{ define "main" }}
+<main>
+    <h1>
+        {{ .Title }}
+        {{ if eq .Kind "term" }}
+            <a href="{{ "posts" | relURL }}" style="font-size: 0.5em; font-weight: normal; margin-left: 10px; color: #888; text-decoration: none;">
+                (Remove filter ✕)
+            </a>
+        {{ end }}
+    </h1>
+    
+    <ul style="list-style: none; padding: 0;">
+        {{ range .Pages }}
+        <li style="margin-bottom: 10px; display: flex; align-items: baseline;">
+            <span style="flex: 0 0 120px; color: #888; font-family: monospace;">
+                {{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}
+            </span>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</main>
+{{ end }}

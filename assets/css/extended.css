@@ -1,0 +1,5 @@
+img {
+    max-width: 100%; /* 確保圖片不超過文字寬度 */
+    height: auto;    /* 保持比例 */
+    border-radius: 8px; /* 順便加個圓角，看起來更精緻 */
+}

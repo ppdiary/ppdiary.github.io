@@ -1,0 +1,20 @@
+/* 讓 body 變成一個垂直的伸縮盒子 */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 最小高度為視窗的 100% */
+    margin: 0;
+}
+
+/* 讓主內容區填滿剩餘空間，把 footer 擠下去 */
+main {
+    flex: 1;
+}
+
+/* 移除原本主題可能有的置中限制，如果你需要的話 */
+header, main, footer {
+    width: 100%;
+    max-width: 800px; /* 或者你喜歡的寬度 */
+    margin: 0 auto;
+    padding: 0 20px;
+}

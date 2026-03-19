@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CSS on 小紫鋼琴日記</title>
+    <link>http://localhost:1313/blog/tags/css/</link>
+    <description>Recent content in CSS on 小紫鋼琴日記</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 11 Mar 2026 01:20:14 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>網站更新日誌 #2</title>
+      <link>http://localhost:1313/blog/posts/6/</link>
+      <pubDate>Wed, 11 Mar 2026 01:20:14 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/6/</guid>
+      <description>&lt;h2 id=&#34;可喜可賀首頁有內容了&#34;&gt;可喜可賀！首頁有內容了！&lt;/h2&gt;&#xA;&lt;p&gt;▾ 首頁原本長這樣，空空如也。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/blog/images/index_v1.png&#34; alt=&#34;圖片描述&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;一度想拿掉，但不知道怎麼移除；&lt;br&gt;&#xA;留著，又不知道要放什麼內容。&lt;/p&gt;&#xA;&lt;p&gt;經過 Gemini 的指導，終於弄成令人滿意的模樣了！&lt;/p&gt;&#xA;&lt;p&gt;▾先看看成果。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/blog/images/test.png&#34; alt=&#34;圖片描述&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>寫網站大抄</title>
+      <link>http://localhost:1313/blog/posts/5/</link>
+      <pubDate>Fri, 06 Mar 2026 00:19:09 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/5/</guid>
+      <description>&lt;h2 id=&#34;markdown-非段落換行&#34;&gt;Markdown 非段落換行&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;文末加 兩個半形空格&lt;/li&gt;&#xA;&lt;li&gt;文末加 反斜線 \&lt;/li&gt;&#xA;&lt;li&gt;文末加 &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;空格現身小白點&#34;&gt;空格現身小白點&lt;/h2&gt;&#xA;&lt;p&gt;如何清楚知道有沒有成功加空格？&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;開啟 Command Palette&lt;/p&gt;&#xA;&lt;p&gt;路徑：功能列 View &amp;gt; Command Palette&lt;br&gt;&#xA;快捷鍵： Ctrl + Shift + P (Mac: Cmd + Shift + P)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

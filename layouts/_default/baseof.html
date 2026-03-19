@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+    
+    {{ $style := resources.Get "css/style.css" }}
+    {{ if $style }}
+        <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ end }}
+
+    <style>
+        /* 2. 佈局重整：確保底部推擠與水平置中 */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f2f7 !important;
+            color: #444 !important;           
+            /* 找回 Bear Blog 的預設字體感 */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+        }
+        
+/* 1. 基礎文字顏色 (不包含連結 a) */
+body, h1, h2, h3, p, li {
+    color: #333333 !important;
+}
+
+/* 1. 設定標題本體：h2, h3, h4 共用 */
+h2, h3, h4 {
+  position: relative;
+  display: inline-block; /* 必須是 inline-block 效果才出得來 */
+  z-index: 1;
+  color: #333333;           /* 文字顏色 */
+  font-weight: 600;
+  margin: 10px 0;        /* 增加上下間距防止重疊 */
+  padding: 0 8px;        /* 左右留一點螢光筆的餘裕 */
+  text-align: left;      /* 螢光筆風格通常左對齊較好看 */
+
+/* 1. 這是預留給螢光筆的空間（把文字往右推） */
+  padding-left: 12px; 
+  padding-right: 12px;
+  
+  /* 2. 用負邊距把整個標題往左拉回去，抵銷掉 padding */
+  margin-left: -12px;
+
+}
+
+/* 2. 製作手繪螢光筆跡：對 h2, h3, h4 都生效 */
+h2::before, h3::before, h4::before {
+  content: "";
+  position: absolute;
+  left: 0.1; /* 這裡設為 0，筆跡就會從負邊距拉回來的最左邊開始畫 */
+  bottom: 2.7px;           /* 底線高度：數字越大越往上畫 */
+  width: 90%;
+  height: 40%;           /* 粗度 */
+  background-color: rgba(230, 225, 240, 0.95); /* 螢光黃 */
+  
+  /* 手繪感核心 */
+  border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
+  transform: rotate(-0.2deg);
+  filter: blur(1px);     /* 只模糊底色，不影響文字 */
+  
+  z-index: -1;           /* 確保在文字後方 */
+}
+
+/* h2 保持黃色，把 h3 改成粉紅色 */
+#h3::before {
+  background-color: rgba(255, 182, 193, 0.7); /* 粉紅色 */
+}
+
+/* 把 h4 改成粉藍色 */
+#h4::before {
+  background-color: rgba(173, 216, 230, 0.7); /* 粉藍色 */
+}
+
+/* 2. 一般連結 (例如文章標題、導覽列) */
+/* 我們不對 a 下 !important，讓它保持彈性 */
+a {
+    color: #8b7faf;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+/* 一般連結的懸停：變黑 + 底線 */
+a:hover {
+    color: #8b7faf;
+    text-decoration: underline;
+}
+
+/* 3. 【關鍵】專屬導覽列的連結 (右上角的首頁、文章、標籤) */
+nav a {
+    color: #444444 !important;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #8b7faf !important;
+    text-decoration: none !important; /* 導覽列通常不加底線比較好看 */
+}
+
+/* 4. 【重點】專屬小標籤的按鈕樣式 */
+/* 這裡我們直接針對「有背景色」的標籤進行獨立設定 */
+/* 假設你的標籤 HTML 裡有 style="background-color:..." */
+[style*="background-color"] {
+    color: white !important; /* 強制文字維持白色 */
+    padding: 2px 8px;
+    border-radius: 3px;
+    text-decoration: none !important;
+}
+
+[style*="background-color"]:hover {
+    filter: brightness(0.8); /* 懸停時自動變暗一點點，不用改顏色代碼 */
+    color: white !important;  /* 確保懸停時文字「絕對」不會變黑 */
+}
+
+        /* 為了讓視覺更統一，可以把底部的線條也稍微改淡一點 */
+        hr {
+        border: 0;
+        border-top: 1px solid #e0ddd5 !important;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 3. 寬度彈性化：放寬 max-width 到 850px，讓視野更舒服 */
+        .container {
+           width: 100%;             /* 寬度改為 100% */
+           max-width: 850px; 
+           margin: 0 auto;
+           padding: 0 25px;         /* 關鍵：左右各留 25px 的安全距離 */
+           box-sizing: border-box;  /* 確保 padding 不會把容器撐破 */
+        }
+
+        header, footer {
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        main {
+            width: 100%;
+            flex: 1 0 auto;
+            padding: 20px 0 60px 0;
+        }
+
+        /* 4. 導覽列優化：字體加粗與間距調整 */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 0 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav .links a {
+            margin-left: 25px;
+        }
+
+        /* 5. 確保 Markdown 內容繼承主題字體與顏色 */
+        .content {
+            color: #111;
+        }
+
+        /* 專門針對發文時間的樣式 */
+        .post-date {
+        /* 1. 字體：這裡推薦用 Georgia (經典優雅) 或 Helvetica (乾淨現代) */
+        font-family: Courier, monospace !important; 
+    
+        /* 2. 顏色：#999 是淺灰色，#777 會深一點點 */
+        color: #777 !important; 
+    
+        /* 3. 大小與間距 */
+        font-size: 0.8rem !important;
+        margin-bottom: 30px !important; /* 讓它跟下面的內文保持一點呼吸空間 */
+        letter-spacing: 0.05em;         /* 讓數字之間稍微拉開，看起來更有質感 */
+        display: block;
+        }
+
+    /* --- 頂部導覽列優化：呼應首頁極簡風格 --- */
+
+/* 1. 左上角標題：增加音符與質感 */
+nav a[href="{{ "" | relURL }}"] b {
+    font-weight: 300 !important;   /* 去除厚重感，改為優雅細體 */
+    letter-spacing: 3px !important; /* 增加空氣感 */
+    color: #444 !important;
+    font-size: 1.1rem;
+}
+
+/* 3. 右上角按鈕：改為小寫、淡灰色與拉開字距 */
+nav .links a {
+    font-size: 0.8rem !important;
+    letter-spacing: 1.5px !important;
+    color: #aaa !important;        /* 改為淡淡的灰色 */
+    text-transform: lowercase;    /* 統一小寫風格 */
+    font-weight: 400 !important;
+    margin-left: 20px !important;
+    transition: color 0.3s ease;
+}
+
+/* 按鈕懸停效果 */
+nav .links a:hover {
+    color: #8b7faf !important;    /* 懸停時變回你設定的紫色 */
+    text-decoration: none !important;
+}
+        .post-title{
+        margin-bottom: 5px
+        }
+
+        /* 萬能日期對齊法：一次搞定內頁與列表 */
+time, 
+.post-date, 
+.post-list-date,
+li span:first-child { 
+    font-family: Courier, monospace !important; /* 1. 換字體 */
+    color: #777 !important;               /* 2. 換顏色 (淺灰) */
+    font-size: 0.85rem !important;           /* 3. 縮小字體 */
+    letter-spacing: 0.05em !important;      /* 4. 字距拉開更有質感 */
+}
+
+    /* 全站圖片統一縮小與優化 */
+    img {
+        display: block;
+        margin: 40px 0;      /* 增加上下間距到 40px，讓圖片像是一個獨立的段落 */
+        max-width: 65%;      /* 再稍微縮小一點，增加右側留白 */
+        height: auto;
+        border: 1px solid #eee; /* 加一個極淡的邊框，定義出圖片邊界 */
+        padding: 5px;        /* 邊框與圖片間的小間隙，很有相片感 */
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* 淡淡的陰影增加質感 */
+    }
+    </style>
+
+    
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="{{ "" | relURL }}" style="font-size: 1.2rem;"><b>{{ .Site.Title }}</b></a>
+                <div class="links">
+                    {{ range .Site.Menus.main }}
+                    <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+                    {{ end }}
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container content">
+            {{ block "main" . }}{{ end }}
+        </div>
+    </main>
+
+    <footer>
+        <div class="container" style="text-align: center; color: #888; font-size: 0.9em; padding: 40px 0;">
+            <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 20px;">
+            Made with <a href="https://gohugo.io" style="color: #888;">Hugo</a> ʕ•ᴥ•ʔ <a href="https://github.com/janraasch/hugo-bearblog" style="color: #888;">Bear</a>
+        </div>
+    </footer>
+</body>
+</html>
