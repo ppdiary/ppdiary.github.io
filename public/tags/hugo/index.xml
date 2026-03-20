@@ -27,14 +27,14 @@
       <link>http://localhost:1313/blog/posts/3/</link>
       <pubDate>Mon, 02 Mar 2026 18:04:03 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/3/</guid>
-      <description>&lt;h3 id=&#34;建檔與寫文章&#34;&gt;建檔與寫文章&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;開啟 VS code&lt;/li&gt;&#xA;&lt;li&gt;Ctrl + ` 叫出終端機&lt;/li&gt;&#xA;&lt;li&gt;在終端機輸入 &lt;code&gt;hugo new posts/檔名.md&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;在自己的電腦內預覽&#34;&gt;在自己的電腦內預覽&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;在終端機輸入 &lt;code&gt;hugo server -D&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;開啟連結 http://localhost:1313&lt;/li&gt;&#xA;&lt;li&gt;修改 或 按下 Ctrl + S 存檔&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;公開發布到網路上&#34;&gt;公開發布到網路上&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;文章標頭 draft: true 改為 draft: false&lt;/li&gt;&#xA;&lt;li&gt;執行三個指令：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;git add .&lt;/li&gt;&#xA;&lt;li&gt;git commit -m &amp;ldquo;這裡可以寫本次更新的說明&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;git push origin main&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;hugo-的核心運作邏輯&#34;&gt;Hugo 的核心運作邏輯：&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;指令建檔 (hugo new)&lt;/li&gt;&#xA;&lt;li&gt;Markdown 寫作 (在 content 裡打字)&lt;/li&gt;&#xA;&lt;li&gt;即時預覽 (hugo server)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;記給自己看的，這樣之後就能照著做了。&lt;/p&gt;&#xA;&lt;h3 id=&#34;一建檔--寫文章&#34;&gt;一、建檔 &amp;amp; 寫文章&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;開啟 VS code&lt;/li&gt;&#xA;&lt;li&gt;Ctrl + ` 叫出終端機&lt;/li&gt;&#xA;&lt;li&gt;在終端機輸入 &lt;code&gt;hugo new posts/檔名.md&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;二預覽確認畫面&#34;&gt;二、預覽確認畫面&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;在終端機輸入 &lt;code&gt;hugo server -D&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;開啟連結 http://localhost:1313&lt;/li&gt;&#xA;&lt;li&gt;修改 或 按下 Ctrl + S 存檔&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;三公開發布到網路&#34;&gt;三、公開發布到網路&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;文章標頭 draft: true 改為 draft: false&lt;/li&gt;&#xA;&lt;li&gt;執行三個指令：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;git add .&lt;/li&gt;&#xA;&lt;li&gt;git commit -m &amp;ldquo;一段描述，寫更新說明或碎碎念都可以&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;git push origin main&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>我的第一篇文章</title>
       <link>http://localhost:1313/blog/posts/1/</link>
       <pubDate>Tue, 24 Feb 2026 23:30:00 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/1/</guid>
-      <description>&lt;h2 id=&#34;歡迎來到我的新站點&#34;&gt;歡迎來到我的新站點&lt;/h2&gt;&#xA;&lt;p&gt;這是我的第一篇測試文章。我成功解決了 Ho 的報錯，現在網站已經可以正常運作了！&lt;/p&gt;&#xA;&lt;h2 id=&#34;為什麼選擇-papermod&#34;&gt;為什麼選擇 PaperMod？&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;簡潔有力&lt;/li&gt;&#xA;&lt;li&gt;支援深色模式&lt;/li&gt;&#xA;&lt;li&gt;速度超快&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;h2 id=&#34;歡迎來到我的新站點&#34;&gt;歡迎來到我的新站點&lt;/h2&gt;&#xA;&lt;p&gt;這是我的第一篇測試文章。&lt;br&gt;&#xA;我成功解決了 Hugo 的報錯，現在網站已經可以正常運作了！&lt;/p&gt;&#xA;&lt;h2 id=&#34;為什麼選擇-papermod&#34;&gt;為什麼選擇 PaperMod？&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;簡潔有力&lt;/li&gt;&#xA;&lt;li&gt;支援深色模式&lt;/li&gt;&#xA;&lt;li&gt;速度超快&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

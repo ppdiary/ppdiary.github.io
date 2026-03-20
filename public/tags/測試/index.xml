@@ -6,21 +6,28 @@
     <description>Recent content in 測試 on 小紫鋼琴日記</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 05 Mar 2026 01:46:10 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 14:08:30 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/tags/%E6%B8%AC%E8%A9%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>網站更新日誌 #3</title>
+      <link>http://localhost:1313/blog/posts/7/</link>
+      <pubDate>Thu, 19 Mar 2026 14:08:30 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/7/</guid>
+      <description>&lt;h2 id=&#34;purple-circles&#34;&gt;Purple Circles&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;就像是新生兒，每一天都在變化。  //&lt;br&gt;&#xA;沒辦法一次到位，但可以一次又一次靠近理想。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;一-今天改哪裡&#34;&gt;一、 今天改哪裡&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;文章加密：還在研究，目前沒成功 (✗)&lt;/li&gt;&#xA;&lt;li&gt;文章摘要預覽：解決了！首頁現在看起來順眼多了 (✓)&lt;/li&gt;&#xA;&lt;li&gt;內文列點樣式：改成了我喜歡的紫色圓圈跟方塊 (✓)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;二-文章加密功能進化史&#34;&gt;二、 文章加密功能進化史&lt;/h3&gt;&#xA;&lt;p&gt;因為有些半成品只想留給自己看，所以本來打算幫文章加個密碼鎖，像懷念的無名小站有的那個功能！詢問了 Gemini ，結果他提供的方法看起來都好難，算了沒關係，這題先跳過，等哪天我又強烈渴望這個功能的時候再說。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>網站更新日誌 #1</title>
       <link>http://localhost:1313/blog/posts/4/</link>
       <pubDate>Thu, 05 Mar 2026 01:46:10 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/4/</guid>
-      <description>&lt;p&gt;今天我花了不少時間調整部落格的細節。&lt;/p&gt;&#xA;&lt;h3 id=&#34;now頁面&#34;&gt;NOW頁面&lt;/h3&gt;&#xA;&lt;p&gt;首先是處理 Now 頁面的標題。我發現雖然在檔案開頭設定了標題，但網頁上卻沒顯示出來，後來發現是因為 Hugo 的內容頁需要手動在模板或內文裡加入標題。為了解決這個問題，我調整了 baseof.html 和 single.html，讓所有頁面都能自動抓取標題，並確保每個分頁的標題高度都完全一致。&lt;/p&gt;</description>
+      <description>&lt;p&gt;今天我花了不少時間調整部落格的細節。&lt;/p&gt;&#xA;&lt;h3 id=&#34;一now-頁面&#34;&gt;一、NOW 頁面&lt;/h3&gt;&#xA;&lt;p&gt;首先是處理 Now 頁面的標題。我發現雖然在檔案開頭設定了標題，但網頁上卻沒顯示出來，後來發現是因為 Hugo 的內容頁需要手動在模板或內文裡加入標題。為了解決這個問題，我調整了 baseof.html 和 single.html，讓所有頁面都能自動抓取標題，並確保每個分頁的標題高度都完全一致。&lt;/p&gt;</description>
     </item>
     <item>
       <title>發文 SOP</title>
       <link>http://localhost:1313/blog/posts/3/</link>
       <pubDate>Mon, 02 Mar 2026 18:04:03 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/3/</guid>
-      <description>&lt;h3 id=&#34;建檔與寫文章&#34;&gt;建檔與寫文章&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;開啟 VS code&lt;/li&gt;&#xA;&lt;li&gt;Ctrl + ` 叫出終端機&lt;/li&gt;&#xA;&lt;li&gt;在終端機輸入 &lt;code&gt;hugo new posts/檔名.md&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;在自己的電腦內預覽&#34;&gt;在自己的電腦內預覽&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;在終端機輸入 &lt;code&gt;hugo server -D&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;開啟連結 http://localhost:1313&lt;/li&gt;&#xA;&lt;li&gt;修改 或 按下 Ctrl + S 存檔&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;公開發布到網路上&#34;&gt;公開發布到網路上&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;文章標頭 draft: true 改為 draft: false&lt;/li&gt;&#xA;&lt;li&gt;執行三個指令：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;git add .&lt;/li&gt;&#xA;&lt;li&gt;git commit -m &amp;ldquo;這裡可以寫本次更新的說明&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;git push origin main&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;hugo-的核心運作邏輯&#34;&gt;Hugo 的核心運作邏輯：&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;指令建檔 (hugo new)&lt;/li&gt;&#xA;&lt;li&gt;Markdown 寫作 (在 content 裡打字)&lt;/li&gt;&#xA;&lt;li&gt;即時預覽 (hugo server)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;記給自己看的，這樣之後就能照著做了。&lt;/p&gt;&#xA;&lt;h3 id=&#34;一建檔--寫文章&#34;&gt;一、建檔 &amp;amp; 寫文章&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;開啟 VS code&lt;/li&gt;&#xA;&lt;li&gt;Ctrl + ` 叫出終端機&lt;/li&gt;&#xA;&lt;li&gt;在終端機輸入 &lt;code&gt;hugo new posts/檔名.md&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;二預覽確認畫面&#34;&gt;二、預覽確認畫面&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;在終端機輸入 &lt;code&gt;hugo server -D&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;開啟連結 http://localhost:1313&lt;/li&gt;&#xA;&lt;li&gt;修改 或 按下 Ctrl + S 存檔&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;三公開發布到網路&#34;&gt;三、公開發布到網路&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;文章標頭 draft: true 改為 draft: false&lt;/li&gt;&#xA;&lt;li&gt;執行三個指令：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;git add .&lt;/li&gt;&#xA;&lt;li&gt;git commit -m &amp;ldquo;一段描述，寫更新說明或碎碎念都可以&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;git push origin main&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>My Second Post</title>
@@ -34,7 +41,7 @@
       <link>http://localhost:1313/blog/posts/1/</link>
       <pubDate>Tue, 24 Feb 2026 23:30:00 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/1/</guid>
-      <description>&lt;h2 id=&#34;歡迎來到我的新站點&#34;&gt;歡迎來到我的新站點&lt;/h2&gt;&#xA;&lt;p&gt;這是我的第一篇測試文章。我成功解決了 Ho 的報錯，現在網站已經可以正常運作了！&lt;/p&gt;&#xA;&lt;h2 id=&#34;為什麼選擇-papermod&#34;&gt;為什麼選擇 PaperMod？&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;簡潔有力&lt;/li&gt;&#xA;&lt;li&gt;支援深色模式&lt;/li&gt;&#xA;&lt;li&gt;速度超快&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;h2 id=&#34;歡迎來到我的新站點&#34;&gt;歡迎來到我的新站點&lt;/h2&gt;&#xA;&lt;p&gt;這是我的第一篇測試文章。&lt;br&gt;&#xA;我成功解決了 Hugo 的報錯，現在網站已經可以正常運作了！&lt;/p&gt;&#xA;&lt;h2 id=&#34;為什麼選擇-papermod&#34;&gt;為什麼選擇 PaperMod？&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;簡潔有力&lt;/li&gt;&#xA;&lt;li&gt;支援深色模式&lt;/li&gt;&#xA;&lt;li&gt;速度超快&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

@@ -23,7 +23,7 @@
         
  
 body, h1, h2, h3, p, li {
-    color: #333333 !important;
+    color: #24222b !important;
 }
 
  
@@ -31,7 +31,7 @@ h2, h3, h4 {
   position: relative;
   display: inline-block;  
   z-index: 1;
-  color: #333333;            
+  color: #24222b;            
   font-weight: 600;
   margin: 10px 0;         
   padding: 0 8px;         
@@ -236,6 +236,74 @@ li span:first-child {
         padding: 5px;         
         box-shadow: 0 2px 6px rgba(0,0,0,0.1);  
     }
+
+    
+ 
+article {
+    counter-reset: piano-counter !important;
+}
+
+ 
+ 
+article h1, article h2, article h3, article h4 {
+    counter-reset: piano-counter 0 !important;
+}
+
+ 
+article ul {
+    list-style: none !important;
+    padding-left: 2.2rem !important;
+    margin: 1.2em 0 !important;
+}
+
+article ul li {
+    position: relative !important;
+    margin-bottom: 0.6rem !important;
+}
+
+article ul li::before {
+    content: "" !important;
+    position: absolute;
+    left: -1.1rem;    
+    top: 0.75em;
+    width: 6px;
+    height: 6px;
+    background-color: #9B8BB4 !important;
+    border-radius: 1.5px;
+    opacity: 0.7;
+}
+
+ 
+article ol {
+    list-style: none !important;
+     
+    padding-left: 2.2rem !important;
+    margin: 1.2em 0 !important;
+}
+
+article ol li {
+    position: relative !important;
+     
+    counter-increment: piano-counter !important; 
+    margin-bottom: 0.8rem !important;
+}
+
+article ol li::before {
+    content: counter(piano-counter) !important;
+    position: absolute;
+    left: -2rem;    
+    top: 0.2em;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #9B8BB4 !important;
+    color: #ffffff !important;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
     </style>
 
     
@@ -269,7 +337,7 @@ li span:first-child {
     <div class="tag-cloud">
         
             <a href="http://localhost:1313/blog/tags/bear/" class="tag-button">
-                Bear <span>(1)</span>
+                Bear <span>(2)</span>
             </a>
         
             <a href="http://localhost:1313/blog/tags/css/" class="tag-button">
@@ -277,7 +345,7 @@ li span:first-child {
             </a>
         
             <a href="http://localhost:1313/blog/tags/gemini/" class="tag-button">
-                Gemini <span>(2)</span>
+                Gemini <span>(3)</span>
             </a>
         
             <a href="http://localhost:1313/blog/tags/hugo/" class="tag-button">
@@ -293,7 +361,7 @@ li span:first-child {
             </a>
         
             <a href="http://localhost:1313/blog/tags/%E6%B8%AC%E8%A9%A6/" class="tag-button">
-                測試 <span>(4)</span>
+                測試 <span>(5)</span>
             </a>
         
             <a href="http://localhost:1313/blog/tags/%E7%94%9F%E6%B4%BB/" class="tag-button">

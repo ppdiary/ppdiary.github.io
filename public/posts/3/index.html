@@ -23,7 +23,7 @@
         
  
 body, h1, h2, h3, p, li {
-    color: #333333 !important;
+    color: #24222b !important;
 }
 
  
@@ -31,7 +31,7 @@ h2, h3, h4 {
   position: relative;
   display: inline-block;  
   z-index: 1;
-  color: #333333;            
+  color: #24222b;            
   font-weight: 600;
   margin: 10px 0;         
   padding: 0 8px;         
@@ -236,6 +236,74 @@ li span:first-child {
         padding: 5px;         
         box-shadow: 0 2px 6px rgba(0,0,0,0.1);  
     }
+
+    
+ 
+article {
+    counter-reset: piano-counter !important;
+}
+
+ 
+ 
+article h1, article h2, article h3, article h4 {
+    counter-reset: piano-counter 0 !important;
+}
+
+ 
+article ul {
+    list-style: none !important;
+    padding-left: 2.2rem !important;
+    margin: 1.2em 0 !important;
+}
+
+article ul li {
+    position: relative !important;
+    margin-bottom: 0.6rem !important;
+}
+
+article ul li::before {
+    content: "" !important;
+    position: absolute;
+    left: -1.1rem;    
+    top: 0.75em;
+    width: 6px;
+    height: 6px;
+    background-color: #9B8BB4 !important;
+    border-radius: 1.5px;
+    opacity: 0.7;
+}
+
+ 
+article ol {
+    list-style: none !important;
+     
+    padding-left: 2.2rem !important;
+    margin: 1.2em 0 !important;
+}
+
+article ol li {
+    position: relative !important;
+     
+    counter-increment: piano-counter !important; 
+    margin-bottom: 0.8rem !important;
+}
+
+article ol li::before {
+    content: counter(piano-counter) !important;
+    position: absolute;
+    left: -2rem;    
+    top: 0.2em;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #9B8BB4 !important;
+    color: #ffffff !important;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
     </style>
 
     
@@ -276,36 +344,30 @@ li span:first-child {
   </header>
 
   <div class="post-content">
-    <h3 id="建檔與寫文章">建檔與寫文章</h3>
+    <p>記給自己看的，這樣之後就能照著做了。</p>
+<h3 id="一建檔--寫文章">一、建檔 &amp; 寫文章</h3>
 <ol>
 <li>開啟 VS code</li>
 <li>Ctrl + ` 叫出終端機</li>
 <li>在終端機輸入 <code>hugo new posts/檔名.md</code></li>
 </ol>
 <hr>
-<h3 id="在自己的電腦內預覽">在自己的電腦內預覽</h3>
+<h3 id="二預覽確認畫面">二、預覽確認畫面</h3>
 <ol>
 <li>在終端機輸入 <code>hugo server -D</code></li>
 <li>開啟連結 http://localhost:1313</li>
 <li>修改 或 按下 Ctrl + S 存檔</li>
 </ol>
 <hr>
-<h3 id="公開發布到網路上">公開發布到網路上</h3>
+<h3 id="三公開發布到網路">三、公開發布到網路</h3>
 <ol>
 <li>文章標頭 draft: true 改為 draft: false</li>
 <li>執行三個指令：</li>
 </ol>
 <ul>
 <li>git add .</li>
-<li>git commit -m &ldquo;這裡可以寫本次更新的說明&rdquo;</li>
+<li>git commit -m &ldquo;一段描述，寫更新說明或碎碎念都可以&rdquo;</li>
 <li>git push origin main</li>
-</ul>
-<hr>
-<h3 id="hugo-的核心運作邏輯">Hugo 的核心運作邏輯：</h3>
-<ul>
-<li>指令建檔 (hugo new)</li>
-<li>Markdown 寫作 (在 content 裡打字)</li>
-<li>即時預覽 (hugo server)</li>
 </ul>
 
   </div>

@@ -13,7 +13,7 @@
       <link>http://localhost:1313/blog/posts/1/</link>
       <pubDate>Tue, 24 Feb 2026 23:30:00 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/1/</guid>
-      <description>&lt;h2 id=&#34;歡迎來到我的新站點&#34;&gt;歡迎來到我的新站點&lt;/h2&gt;&#xA;&lt;p&gt;這是我的第一篇測試文章。我成功解決了 Ho 的報錯，現在網站已經可以正常運作了！&lt;/p&gt;&#xA;&lt;h2 id=&#34;為什麼選擇-papermod&#34;&gt;為什麼選擇 PaperMod？&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;簡潔有力&lt;/li&gt;&#xA;&lt;li&gt;支援深色模式&lt;/li&gt;&#xA;&lt;li&gt;速度超快&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;h2 id=&#34;歡迎來到我的新站點&#34;&gt;歡迎來到我的新站點&lt;/h2&gt;&#xA;&lt;p&gt;這是我的第一篇測試文章。&lt;br&gt;&#xA;我成功解決了 Hugo 的報錯，現在網站已經可以正常運作了！&lt;/p&gt;&#xA;&lt;h2 id=&#34;為什麼選擇-papermod&#34;&gt;為什麼選擇 PaperMod？&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;簡潔有力&lt;/li&gt;&#xA;&lt;li&gt;支援深色模式&lt;/li&gt;&#xA;&lt;li&gt;速度超快&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,21 +1,85 @@
 {{ define "main" }}
+<style>
+    .post-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .post-item {
+        margin-bottom: 0;         /* 移除下方外距 */
+        padding: 4px 0;           /* 縮小上下內距，讓未展開時更緊湊 */
+        border-bottom: 1px solid rgba(155, 139, 180, 0.05);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .post-header {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .post-link {
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+    /* 隱藏的摘要區域 */
+    .post-summary {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        margin-left: 110px;       /* 保持對齊標題 */
+        transition: all 0.3s ease; /* 稍微加快速度，感覺更靈敏 */
+        color: #999;
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    /* 當滑鼠移入時的「彩蛋」狀態 */
+    .post-item:hover {
+        background-color: rgba(155, 139, 180, 0.03);
+        padding-bottom: 12px;     /* 展開時才增加底部空間 */
+    }
+
+    .post-item:hover .post-link {
+        color: #9B8BB4;
+    }
+
+    .post-item:hover .post-summary {
+        max-height: 60px;         /* 限制展開高度，避免推得太遠 */
+        opacity: 1;
+        margin-top: 4px;          /* 摘要與標題的緊湊間距 */
+    }
+
+    .summary-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;    /* 依然維持兩行 */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+</style>
+
 <main>
-    <h1>
-        {{ .Title }}
-        {{ if eq .Kind "term" }}
-            <a href="{{ "posts" | relURL }}" style="font-size: 0.5em; font-weight: normal; margin-left: 10px; color: #888; text-decoration: none;">
-                (Remove filter ✕)
-            </a>
-        {{ end }}
-    </h1>
-    
-    <ul style="list-style: none; padding: 0;">
+    <h1>{{ .Title }}</h1>
+
+    <ul class="post-list">
         {{ range .Pages }}
-        <li style="margin-bottom: 10px; display: flex; align-items: baseline;">
-            <span style="flex: 0 0 120px; color: #888; font-family: monospace;">
-                {{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}
-            </span>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    {{ .Date.Format "2006-01-02" }}
+                </span>
+                <a href="{{ .Permalink }}" class="post-link">
+                    {{ .Title }}
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    {{ .Summary | plainify }}
+                </div>
+            </div>
         </li>
         {{ end }}
     </ul>

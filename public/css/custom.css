@@ -1,0 +1,52 @@
+/* 讓 body 變成一個垂直的伸縮盒子 */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 最小高度為視窗的 100% */
+    margin: 0;
+}
+
+/* 讓主內容區填滿剩餘空間，把 footer 擠下去 */
+main {
+    flex: 1;
+}
+
+/* 移除原本主題可能有的置中限制，如果你需要的話 */
+header, main, footer {
+    width: 100%;
+    max-width: 800px; /* 或者你喜歡的寬度 */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 1. 強制關閉所有列表的預設樣式 */
+ul {
+    list-style: none !important;
+    padding-left: 1.5rem !important;
+}
+
+/* 2. 幫每一行 li 建立定位基準點 */
+ul li {
+    position: relative !important;
+    margin-bottom: 0.6rem; /* 稍微增加行距，比較好讀 */
+    line-height: 1.6;
+    list-style: none !important; /* 二重保險 */
+}
+
+/* 3. 重新製作紫色小方塊 */
+ul li::before {
+    content: "" !important;
+    position: absolute;
+    
+    /* 調整位置：這兩行控制方塊在文字左邊的精確位置 */
+    left: -1.2rem;    
+    top: 0.6em;       
+
+    /* 方塊外觀 */
+    width: 6px;
+    height: 6px;
+    background-color: #9B8BB4 !important; /* 你的灰霧薰衣草色 */
+    border-radius: 1.5px;
+    opacity: 0.8;
+    display: inline-block !important;
+}

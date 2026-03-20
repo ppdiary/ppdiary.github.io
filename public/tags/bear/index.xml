@@ -6,14 +6,21 @@
     <description>Recent content in Bear on 小紫鋼琴日記</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 05 Mar 2026 01:46:10 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 14:08:30 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/tags/bear/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>網站更新日誌 #3</title>
+      <link>http://localhost:1313/blog/posts/7/</link>
+      <pubDate>Thu, 19 Mar 2026 14:08:30 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/7/</guid>
+      <description>&lt;h2 id=&#34;purple-circles&#34;&gt;Purple Circles&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;就像是新生兒，每一天都在變化。  //&lt;br&gt;&#xA;沒辦法一次到位，但可以一次又一次靠近理想。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;一-今天改哪裡&#34;&gt;一、 今天改哪裡&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;文章加密：還在研究，目前沒成功 (✗)&lt;/li&gt;&#xA;&lt;li&gt;文章摘要預覽：解決了！首頁現在看起來順眼多了 (✓)&lt;/li&gt;&#xA;&lt;li&gt;內文列點樣式：改成了我喜歡的紫色圓圈跟方塊 (✓)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;二-文章加密功能進化史&#34;&gt;二、 文章加密功能進化史&lt;/h3&gt;&#xA;&lt;p&gt;因為有些半成品只想留給自己看，所以本來打算幫文章加個密碼鎖，像懷念的無名小站有的那個功能！詢問了 Gemini ，結果他提供的方法看起來都好難，算了沒關係，這題先跳過，等哪天我又強烈渴望這個功能的時候再說。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>網站更新日誌 #1</title>
       <link>http://localhost:1313/blog/posts/4/</link>
       <pubDate>Thu, 05 Mar 2026 01:46:10 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/4/</guid>
-      <description>&lt;p&gt;今天我花了不少時間調整部落格的細節。&lt;/p&gt;&#xA;&lt;h3 id=&#34;now頁面&#34;&gt;NOW頁面&lt;/h3&gt;&#xA;&lt;p&gt;首先是處理 Now 頁面的標題。我發現雖然在檔案開頭設定了標題，但網頁上卻沒顯示出來，後來發現是因為 Hugo 的內容頁需要手動在模板或內文裡加入標題。為了解決這個問題，我調整了 baseof.html 和 single.html，讓所有頁面都能自動抓取標題，並確保每個分頁的標題高度都完全一致。&lt;/p&gt;</description>
+      <description>&lt;p&gt;今天我花了不少時間調整部落格的細節。&lt;/p&gt;&#xA;&lt;h3 id=&#34;一now-頁面&#34;&gt;一、NOW 頁面&lt;/h3&gt;&#xA;&lt;p&gt;首先是處理 Now 頁面的標題。我發現雖然在檔案開頭設定了標題，但網頁上卻沒顯示出來，後來發現是因為 Hugo 的內容頁需要手動在模板或內文裡加入標題。為了解決這個問題，我調整了 baseof.html 和 single.html，讓所有頁面都能自動抓取標題，並確保每個分頁的標題高度都完全一致。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -25,7 +25,7 @@
         
 /* 1. 基礎文字顏色 (不包含連結 a) */
 body, h1, h2, h3, p, li {
-    color: #333333 !important;
+    color: #24222b !important;
 }
 
 /* 1. 設定標題本體：h2, h3, h4 共用 */
@@ -33,7 +33,7 @@ h2, h3, h4 {
   position: relative;
   display: inline-block; /* 必須是 inline-block 效果才出得來 */
   z-index: 1;
-  color: #333333;           /* 文字顏色 */
+  color: #24222b;           /* 文字顏色 */
   font-weight: 600;
   margin: 10px 0;        /* 增加上下間距防止重疊 */
   padding: 0 8px;        /* 左右留一點螢光筆的餘裕 */
@@ -238,6 +238,74 @@ li span:first-child {
         padding: 5px;        /* 邊框與圖片間的小間隙，很有相片感 */
         box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* 淡淡的陰影增加質感 */
     }
+
+    
+/* --- 1. 初始化文章總計數器 --- */
+article {
+    counter-reset: piano-counter !important;
+}
+
+/* --- 2. 核心修正：將標題設為「計數器邊界」 --- */
+/* 只要出現標題，就強制結束舊的計數器，開啟一個同名的全新計數器 */
+article h1, article h2, article h3, article h4 {
+    counter-reset: piano-counter 0 !important;
+}
+
+/* --- 3. 無序列表 (UL)：紫色小方塊 --- */
+article ul {
+    list-style: none !important;
+    padding-left: 2.2rem !important;
+    margin: 1.2em 0 !important;
+}
+
+article ul li {
+    position: relative !important;
+    margin-bottom: 0.6rem !important;
+}
+
+article ul li::before {
+    content: "" !important;
+    position: absolute;
+    left: -1.1rem;    
+    top: 0.75em;
+    width: 6px;
+    height: 6px;
+    background-color: #9B8BB4 !important;
+    border-radius: 1.5px;
+    opacity: 0.7;
+}
+
+/* --- 4. 有序列表 (OL)：紫色圓圈數字 --- */
+article ol {
+    list-style: none !important;
+    /* 這裡絕對不能寫 counter-reset，否則會變成 1. 1. 1. */
+    padding-left: 2.2rem !important;
+    margin: 1.2em 0 !important;
+}
+
+article ol li {
+    position: relative !important;
+    /* 核心：在 li 層級累加數字 */
+    counter-increment: piano-counter !important; 
+    margin-bottom: 0.8rem !important;
+}
+
+article ol li::before {
+    content: counter(piano-counter) !important;
+    position: absolute;
+    left: -2rem;    
+    top: 0.2em;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #9B8BB4 !important;
+    color: #ffffff !important;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
     </style>
 
     

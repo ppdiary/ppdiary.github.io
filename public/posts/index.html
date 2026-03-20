@@ -23,7 +23,7 @@
         
  
 body, h1, h2, h3, p, li {
-    color: #333333 !important;
+    color: #24222b !important;
 }
 
  
@@ -31,7 +31,7 @@ h2, h3, h4 {
   position: relative;
   display: inline-block;  
   z-index: 1;
-  color: #333333;            
+  color: #24222b;            
   font-weight: 600;
   margin: 10px 0;         
   padding: 0 8px;         
@@ -236,6 +236,74 @@ li span:first-child {
         padding: 5px;         
         box-shadow: 0 2px 6px rgba(0,0,0,0.1);  
     }
+
+    
+ 
+article {
+    counter-reset: piano-counter !important;
+}
+
+ 
+ 
+article h1, article h2, article h3, article h4 {
+    counter-reset: piano-counter 0 !important;
+}
+
+ 
+article ul {
+    list-style: none !important;
+    padding-left: 2.2rem !important;
+    margin: 1.2em 0 !important;
+}
+
+article ul li {
+    position: relative !important;
+    margin-bottom: 0.6rem !important;
+}
+
+article ul li::before {
+    content: "" !important;
+    position: absolute;
+    left: -1.1rem;    
+    top: 0.75em;
+    width: 6px;
+    height: 6px;
+    background-color: #9B8BB4 !important;
+    border-radius: 1.5px;
+    opacity: 0.7;
+}
+
+ 
+article ol {
+    list-style: none !important;
+     
+    padding-left: 2.2rem !important;
+    margin: 1.2em 0 !important;
+}
+
+article ol li {
+    position: relative !important;
+     
+    counter-increment: piano-counter !important; 
+    margin-bottom: 0.8rem !important;
+}
+
+article ol li::before {
+    content: counter(piano-counter) !important;
+    position: absolute;
+    left: -2rem;    
+    top: 0.2em;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #9B8BB4 !important;
+    color: #ffffff !important;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
     </style>
 
     
@@ -264,54 +332,207 @@ li span:first-child {
     <main>
         <div class="container content">
             
+<style>
+    .post-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .post-item {
+        margin-bottom: 0;          
+        padding: 4px 0;            
+        border-bottom: 1px solid rgba(155, 139, 180, 0.05);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .post-header {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .post-link {
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+     
+    .post-summary {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        margin-left: 110px;        
+        transition: all 0.3s ease;  
+        color: #999;
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+     
+    .post-item:hover {
+        background-color: rgba(155, 139, 180, 0.03);
+        padding-bottom: 12px;      
+    }
+
+    .post-item:hover .post-link {
+        color: #9B8BB4;
+    }
+
+    .post-item:hover .post-summary {
+        max-height: 60px;          
+        opacity: 1;
+        margin-top: 4px;           
+    }
+
+    .summary-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;     
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+</style>
+
 <main>
-    <h1>
-        Posts
+    <h1>Posts</h1>
+
+    <ul class="post-list">
         
-    </h1>
-    
-    <ul style="list-style: none; padding: 0;">
-        
-        <li style="margin-bottom: 10px; display: flex; align-items: baseline;">
-            <span style="flex: 0 0 120px; color: #888; font-family: monospace;">
-                2026.03.11
-            </span>
-            <a href="http://localhost:1313/blog/posts/6/">網站更新日誌 #2</a>
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    2026-03-19
+                </span>
+                <a href="http://localhost:1313/blog/posts/7/" class="post-link">
+                    網站更新日誌 #3
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    Purple Circles 就像是新生兒，每一天都在變化。 //
+沒辦法一次到位，但可以一次又一次靠近理想。
+一、 今天改哪裡 文章加密：還在研究，目前沒成功 (✗) 文章摘要預覽：解決了！首頁現在看起來順眼多了 (✓) 內文列點樣式：改成了我喜歡的紫色圓圈跟方塊 (✓) 二、 文章加密功能進化史 因為有些半成品只想留給自己看，所以本來打算幫文章加個密碼鎖，像懷念的無名小站有的那個功能！詢問了 Gemini ，結果他提供的方法看起來都好難，算了沒關係，這題先跳過，等哪天我又強烈渴望這個功能的時候再說。
+
+                </div>
+            </div>
         </li>
         
-        <li style="margin-bottom: 10px; display: flex; align-items: baseline;">
-            <span style="flex: 0 0 120px; color: #888; font-family: monospace;">
-                2026.03.06
-            </span>
-            <a href="http://localhost:1313/blog/posts/5/">寫網站大抄</a>
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    2026-03-11
+                </span>
+                <a href="http://localhost:1313/blog/posts/6/" class="post-link">
+                    網站更新日誌 #2
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    可喜可賀！首頁有內容了！ ▾ 首頁原本長這樣，空空如也。
+一度想拿掉，但不知道怎麼移除；
+留著，又不知道要放什麼內容。
+經過 Gemini 的指導，終於弄成令人滿意的模樣了！
+▾先看看成果。
+
+                </div>
+            </div>
         </li>
         
-        <li style="margin-bottom: 10px; display: flex; align-items: baseline;">
-            <span style="flex: 0 0 120px; color: #888; font-family: monospace;">
-                2026.03.05
-            </span>
-            <a href="http://localhost:1313/blog/posts/4/">網站更新日誌 #1</a>
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    2026-03-06
+                </span>
+                <a href="http://localhost:1313/blog/posts/5/" class="post-link">
+                    寫網站大抄
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    Markdown 非段落換行 文末加 兩個半形空格 文末加 反斜線 \ 文末加 &lt;br&gt; 空格現身小白點 如何清楚知道有沒有成功加空格？
+開啟 Command Palette
+路徑：功能列 View &gt; Command Palette
+快捷鍵： Ctrl + Shift + P (Mac: Cmd + Shift + P)
+
+                </div>
+            </div>
         </li>
         
-        <li style="margin-bottom: 10px; display: flex; align-items: baseline;">
-            <span style="flex: 0 0 120px; color: #888; font-family: monospace;">
-                2026.03.02
-            </span>
-            <a href="http://localhost:1313/blog/posts/3/">發文 SOP</a>
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    2026-03-05
+                </span>
+                <a href="http://localhost:1313/blog/posts/4/" class="post-link">
+                    網站更新日誌 #1
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    今天我花了不少時間調整部落格的細節。
+一、NOW 頁面 首先是處理 Now 頁面的標題。我發現雖然在檔案開頭設定了標題，但網頁上卻沒顯示出來，後來發現是因為 Hugo 的內容頁需要手動在模板或內文裡加入標題。為了解決這個問題，我調整了 baseof.html 和 single.html，讓所有頁面都能自動抓取標題，並確保每個分頁的標題高度都完全一致。
+
+                </div>
+            </div>
         </li>
         
-        <li style="margin-bottom: 10px; display: flex; align-items: baseline;">
-            <span style="flex: 0 0 120px; color: #888; font-family: monospace;">
-                2026.02.25
-            </span>
-            <a href="http://localhost:1313/blog/posts/2/">My Second Post</a>
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    2026-03-02
+                </span>
+                <a href="http://localhost:1313/blog/posts/3/" class="post-link">
+                    發文 SOP
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    記給自己看的，這樣之後就能照著做了。
+一、建檔 &amp; 寫文章 開啟 VS code Ctrl + ` 叫出終端機 在終端機輸入 hugo new posts/檔名.md 二、預覽確認畫面 在終端機輸入 hugo server -D 開啟連結 http://localhost:1313 修改 或 按下 Ctrl + S 存檔 三、公開發布到網路 文章標頭 draft: true 改為 draft: false 執行三個指令： git add . git commit -m &ldquo;一段描述，寫更新說明或碎碎念都可以&rdquo; git push origin main 
+                </div>
+            </div>
         </li>
         
-        <li style="margin-bottom: 10px; display: flex; align-items: baseline;">
-            <span style="flex: 0 0 120px; color: #888; font-family: monospace;">
-                2026.02.24
-            </span>
-            <a href="http://localhost:1313/blog/posts/1/">我的第一篇文章</a>
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    2026-02-25
+                </span>
+                <a href="http://localhost:1313/blog/posts/2/" class="post-link">
+                    My Second Post
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    好累喔要去睡覺了 還沒想到要說啥
+掰掰 晚安 GN zZzZ 
+                </div>
+            </div>
+        </li>
+        
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    2026-02-24
+                </span>
+                <a href="http://localhost:1313/blog/posts/1/" class="post-link">
+                    我的第一篇文章
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    歡迎來到我的新站點 這是我的第一篇測試文章。
+我成功解決了 Hugo 的報錯，現在網站已經可以正常運作了！
+為什麼選擇 PaperMod？ 簡潔有力 支援深色模式 速度超快 
+                </div>
+            </div>
         </li>
         
     </ul>

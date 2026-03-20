@@ -22,5 +22,12 @@
       <guid>http://localhost:1313/blog/posts/5/</guid>
       <description>&lt;h2 id=&#34;markdown-非段落換行&#34;&gt;Markdown 非段落換行&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;文末加 兩個半形空格&lt;/li&gt;&#xA;&lt;li&gt;文末加 反斜線 \&lt;/li&gt;&#xA;&lt;li&gt;文末加 &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;空格現身小白點&#34;&gt;空格現身小白點&lt;/h2&gt;&#xA;&lt;p&gt;如何清楚知道有沒有成功加空格？&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;開啟 Command Palette&lt;/p&gt;&#xA;&lt;p&gt;路徑：功能列 View &amp;gt; Command Palette&lt;br&gt;&#xA;快捷鍵： Ctrl + Shift + P (Mac: Cmd + Shift + P)&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>網站更新日誌 #1</title>
+      <link>http://localhost:1313/blog/posts/4/</link>
+      <pubDate>Thu, 05 Mar 2026 01:46:10 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/4/</guid>
+      <description>&lt;p&gt;今天我花了不少時間調整部落格的細節。&lt;/p&gt;&#xA;&lt;h3 id=&#34;一now-頁面&#34;&gt;一、NOW 頁面&lt;/h3&gt;&#xA;&lt;p&gt;首先是處理 Now 頁面的標題。我發現雖然在檔案開頭設定了標題，但網頁上卻沒顯示出來，後來發現是因為 Hugo 的內容頁需要手動在模板或內文裡加入標題。為了解決這個問題，我調整了 baseof.html 和 single.html，讓所有頁面都能自動抓取標題，並確保每個分頁的標題高度都完全一致。&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
