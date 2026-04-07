@@ -54,7 +54,7 @@
 
     .summary-text {
         display: -webkit-box;
-        -webkit-line-clamp: 2;    /* 依然維持兩行 */
+        -webkit-line-clamp: 1;    /* 依然維持兩行 */
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
@@ -77,7 +77,12 @@
             
             <div class="post-summary">
                 <div class="summary-text">
-                    {{ .Summary | plainify }}
+                    {{/* 優先抓手動寫的 description，沒有的話才抓 Summary，並統一限制在 60 個字 */}}
+        {{ with .Description }}
+            {{ . | plainify | truncate 50 "..." }}
+        {{ else }}
+            {{ .Summary | plainify | truncate 50 "..." }}
+        {{ end }}
                 </div>
             </div>
         </li>

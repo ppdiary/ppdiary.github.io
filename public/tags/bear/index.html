@@ -26,6 +26,11 @@ body, h1, h2, h3, p, li {
     color: #24222b !important;
 }
 
+p {
+    white-space: pre-line;
+    margin-bottom: 1.4rem;    
+}
+
  
 h2, h3, h4 {
   position: relative;
@@ -304,6 +309,8 @@ article ol li::before {
     justify-content: center;
     border-radius: 50%;
 }
+
+
     </style>
 
     
@@ -387,7 +394,7 @@ article ol li::before {
 
     .summary-text {
         display: -webkit-box;
-        -webkit-line-clamp: 2;     
+        -webkit-line-clamp: 1;     
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
@@ -397,45 +404,6 @@ article ol li::before {
     <h1>Bear</h1>
 
     <ul class="post-list">
-        
-        <li class="post-item">
-            <div class="post-header">
-                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
-                    2026-03-19
-                </span>
-                <a href="http://localhost:1313/blog/posts/7/" class="post-link">
-                    網站更新日誌 #3
-                </a>
-            </div>
-            
-            <div class="post-summary">
-                <div class="summary-text">
-                    Purple Circles 就像是新生兒，每一天都在變化。 //
-沒辦法一次到位，但可以一次又一次靠近理想。
-一、 今天改哪裡 文章加密：還在研究，目前沒成功 (✗) 文章摘要預覽：解決了！首頁現在看起來順眼多了 (✓) 內文列點樣式：改成了我喜歡的紫色圓圈跟方塊 (✓) 二、 文章加密功能進化史 因為有些半成品只想留給自己看，所以本來打算幫文章加個密碼鎖，像懷念的無名小站有的那個功能！詢問了 Gemini ，結果他提供的方法看起來都好難，算了沒關係，這題先跳過，等哪天我又強烈渴望這個功能的時候再說。
-
-                </div>
-            </div>
-        </li>
-        
-        <li class="post-item">
-            <div class="post-header">
-                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
-                    2026-03-05
-                </span>
-                <a href="http://localhost:1313/blog/posts/4/" class="post-link">
-                    網站更新日誌 #1
-                </a>
-            </div>
-            
-            <div class="post-summary">
-                <div class="summary-text">
-                    今天我花了不少時間調整部落格的細節。
-一、NOW 頁面 首先是處理 Now 頁面的標題。我發現雖然在檔案開頭設定了標題，但網頁上卻沒顯示出來，後來發現是因為 Hugo 的內容頁需要手動在模板或內文裡加入標題。為了解決這個問題，我調整了 baseof.html 和 single.html，讓所有頁面都能自動抓取標題，並確保每個分頁的標題高度都完全一致。
-
-                </div>
-            </div>
-        </li>
         
     </ul>
 </main>

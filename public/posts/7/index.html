@@ -3,309 +3,12 @@
 <head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>網站更新日誌 #3 - 小紫鋼琴日記</title>
+    <title>網站更新日誌 #3 - 奏予之境</title>
     
     
     
-
-    <style>
-         
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            background-color: #f3f2f7 !important;
-            color: #444 !important;           
-             
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-        }
-        
- 
-body, h1, h2, h3, p, li {
-    color: #24222b !important;
-}
-
- 
-h2, h3, h4 {
-  position: relative;
-  display: inline-block;  
-  z-index: 1;
-  color: #24222b;            
-  font-weight: 600;
-  margin: 10px 0;         
-  padding: 0 8px;         
-  text-align: left;       
-
- 
-  padding-left: 12px; 
-  padding-right: 12px;
-  
-   
-  margin-left: -12px;
-
-}
-
- 
-h2::before, h3::before, h4::before {
-  content: "";
-  position: absolute;
-  left: 0.1;  
-  bottom: 2.7px;            
-  width: 90%;
-  height: 40%;            
-  background-color: rgba(230, 225, 240, 0.95);  
-  
-   
-  border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
-  transform: rotate(-0.2deg);
-  filter: blur(1px);      
-  
-  z-index: -1;            
-}
-
- 
-#h3::before {
-  background-color: rgba(255, 182, 193, 0.7);  
-}
-
- 
-#h4::before {
-  background-color: rgba(173, 216, 230, 0.7);  
-}
-
- 
- 
-a {
-    color: #8b7faf;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.2s;
-}
-
- 
-a:hover {
-    color: #8b7faf;
-    text-decoration: underline;
-}
-
- 
-nav a {
-    color: #444444 !important;
-    font-weight: 500;
-}
-
-nav a:hover {
-    color: #8b7faf !important;
-    text-decoration: none !important;  
-}
-
- 
- 
- 
-[style*="background-color"] {
-    color: white !important;  
-    padding: 2px 8px;
-    border-radius: 3px;
-    text-decoration: none !important;
-}
-
-[style*="background-color"]:hover {
-    filter: brightness(0.8);  
-    color: white !important;   
-}
-
-         
-        hr {
-        border: 0;
-        border-top: 1px solid #e0ddd5 !important;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-         
-        .container {
-           width: 100%;              
-           max-width: 850px; 
-           margin: 0 auto;
-           padding: 0 25px;          
-           box-sizing: border-box;   
-        }
-
-        header, footer {
-            width: 100%;
-            flex-shrink: 0;
-        }
-
-        main {
-            width: 100%;
-            flex: 1 0 auto;
-            padding: 20px 0 60px 0;
-        }
-
-         
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 40px 0 20px 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-        }
-
-        nav .links a {
-            margin-left: 25px;
-        }
-
-         
-        .content {
-            color: #111;
-        }
-
-         
-        .post-date {
-         
-        font-family: Courier, monospace !important; 
     
-         
-        color: #777 !important; 
-    
-         
-        font-size: 0.8rem !important;
-        margin-bottom: 30px !important;  
-        letter-spacing: 0.05em;          
-        display: block;
-        }
-
-     
-
- 
-nav a[href="\2f blog\2f "] b {
-    font-weight: 300 !important;    
-    letter-spacing: 3px !important;  
-    color: #444 !important;
-    font-size: 1.1rem;
-}
-
- 
-nav .links a {
-    font-size: 0.8rem !important;
-    letter-spacing: 1.5px !important;
-    color: #aaa !important;         
-    text-transform: lowercase;     
-    font-weight: 400 !important;
-    margin-left: 20px !important;
-    transition: color 0.3s ease;
-}
-
- 
-nav .links a:hover {
-    color: #8b7faf !important;     
-    text-decoration: none !important;
-}
-        .post-title{
-        margin-bottom: 5px
-        }
-
-         
-time, 
-.post-date, 
-.post-list-date,
-li span:first-child { 
-    font-family: Courier, monospace !important;  
-    color: #777 !important;                
-    font-size: 0.85rem !important;            
-    letter-spacing: 0.05em !important;       
-}
-
-     
-    img {
-        display: block;
-        margin: 40px 0;       
-        max-width: 65%;       
-        height: auto;
-        border: 1px solid #eee;  
-        padding: 5px;         
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);  
-    }
-
-    
- 
-article {
-    counter-reset: piano-counter !important;
-}
-
- 
- 
-article h1, article h2, article h3, article h4 {
-    counter-reset: piano-counter 0 !important;
-}
-
- 
-article ul {
-    list-style: none !important;
-    padding-left: 2.2rem !important;
-    margin: 1.2em 0 !important;
-}
-
-article ul li {
-    position: relative !important;
-    margin-bottom: 0.6rem !important;
-}
-
-article ul li::before {
-    content: "" !important;
-    position: absolute;
-    left: -1.1rem;    
-    top: 0.75em;
-    width: 6px;
-    height: 6px;
-    background-color: #9B8BB4 !important;
-    border-radius: 1.5px;
-    opacity: 0.7;
-}
-
- 
-article ol {
-    list-style: none !important;
-     
-    padding-left: 2.2rem !important;
-    margin: 1.2em 0 !important;
-}
-
-article ol li {
-    position: relative !important;
-     
-    counter-increment: piano-counter !important; 
-    margin-bottom: 0.8rem !important;
-}
-
-article ol li::before {
-    content: counter(piano-counter) !important;
-    position: absolute;
-    left: -2rem;    
-    top: 0.2em;
-    width: 1.2rem;
-    height: 1.2rem;
-    background-color: #9B8BB4 !important;
-    color: #ffffff !important;
-    font-size: 0.75rem;
-    font-weight: bold;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-    </style>
-
+        <link rel="stylesheet" href="http://localhost:1313/blog/style.min.d3fe4423c0cbd9e7ce2b66928259640b6a52746b8671b9e033ad7619627c34d5.css" integrity="sha256-0/5EI8DL2efOK2aSgllkC2pSdGuGcbngM612GWJ8NNU=">
     
 </head>
 
@@ -313,7 +16,7 @@ article ol li::before {
     <header>
         <div class="container">
             <nav>
-                <a href="/blog/" style="font-size: 1.2rem;"><b>小紫鋼琴日記</b></a>
+                <a href="/blog/" style="font-size: 1.2rem;"><b>奏予之境</b></a>
                 <div class="links">
                     
                     <a href="/blog/">首頁</a>
@@ -332,7 +35,7 @@ article ol li::before {
     <main>
         <div class="container content">
             
-<article>
+<article class="post-box">
   <header>
     <h1 class="post-title">網站更新日誌 #3</h1>
     
@@ -344,49 +47,44 @@ article ol li::before {
   </header>
 
   <div class="post-content">
-    <h2 id="purple-circles">Purple Circles</h2>
-<blockquote>
-<p>就像是新生兒，每一天都在變化。  //<br>
-沒辦法一次到位，但可以一次又一次靠近理想。</p>
+    <blockquote>
+<p>就像是新生兒，每一天都在變化</p>
 </blockquote>
-<h3 id="一-今天改哪裡">一、 今天改哪裡</h3>
+<h2 id="今天改哪裡">今天改哪裡</h2>
 <ul>
 <li>文章加密：還在研究，目前沒成功 (✗)</li>
-<li>文章摘要預覽：解決了！首頁現在看起來順眼多了 (✓)</li>
-<li>內文列點樣式：改成了我喜歡的紫色圓圈跟方塊 (✓)</li>
+<li>文章摘要預覽：解決了！現在看起來順眼多了 (✓)</li>
+<li>內文列點樣式：改成了我喜歡的紫色圓圈跟方塊 (✓)
+　</li>
 </ul>
-<h3 id="二-文章加密功能進化史">二、 文章加密功能進化史</h3>
-<p>因為有些半成品只想留給自己看，所以本來打算幫文章加個密碼鎖，像懷念的無名小站有的那個功能！詢問了 Gemini ，結果他提供的方法看起來都好難，算了沒關係，這題先跳過，等哪天我又強烈渴望這個功能的時候再說。</p>
-<h3 id="三-摘要預覽功能進化史">三、 摘要預覽功能進化史</h3>
-<p>我的標題一直都很隨興，如果要一個一個點開來也是蠻困擾的，就想說，那做個簡單的摘要預覽吧！</p>
-<p>因為想保留列表的簡潔性，在達成最終版本前，我和 G 討論過三種方案：</p>
+<h2 id="１-文章加密功能">１. 文章加密功能</h2>
+<p>有些半成品只適合留給自己看，所以想幫文章加個密碼鎖，像懷念的無名小站有的那個功能。
+我問了 Gemini ，結果他提供的方法看起來都好難，算了算了，這題先跳過，等哪天我又強烈渴望這功能再說。</p>
+<h2 id="２-摘要預覽功能">２. 摘要預覽功能</h2>
+<p>我下標題都很隨興，如果要一個一個點開來才知道內容在寫什麼，也蠻困擾的，就想說，那做個簡單的摘要預覽吧！因為想保留列表的簡潔性，修修改改，經歷多個版本：</p>
 <ol>
-<li>懸浮對話框：滑鼠移到標題，旁邊跳出一個紫色小框。</li>
+<li>
+<p>懸浮對話框：滑鼠移到標題，旁邊跳出一個紫色小框。
+缺點：位置不固定，標題長短會影響框的位置，視覺上有點亂。</p>
+</li>
+<li>
+<p>右側固定預覽區：在畫面最右邊留一個框，內容在那裡切換。
+缺點：眼睛要左右來回掃描，看了很累。</p>
+</li>
+<li>
+<p>原地展開（最終方案）：就像抽屜，滑鼠移上去，標題下方自動長出兩行摘要。
+優點：視線不需移動，版面在平時保持極度整齊。</p>
+</li>
 </ol>
-<ul>
-<li>缺點：位置不固定，標題長短會影響框的位置，視覺上有點亂。</li>
-</ul>
-<ol start="2">
-<li>右側固定預覽區：在畫面最右邊留一個框，內容在那裡切換。</li>
-</ol>
-<ul>
-<li>缺點：眼睛要左右來回掃描，看久了脖子很累。</li>
-</ul>
-<ol start="3">
-<li>原地優雅展開（最終方案）：就像抽屜一樣，滑鼠移上去，標題下方自動長出兩行摘要。</li>
-</ol>
-<ul>
-<li>優點：視線不需要移動，版面在平時保持極度整齊。</li>
-</ul>
-<h3 id="四-個人化列點樣式進化史">四、 個人化列點樣式進化史</h3>
-<p>這是我今天最崩潰也最有成就感的地方。我把預設的黑點點換成「紫色小方塊」，把數字換成「紫色小圓圈」。
-但我發現圓圈比較胖、方塊比較瘦，兩邊的文字竟然沒有對齊！為了讓那幾排字能排成一條直線，我手動調整了好幾次距離。雖然中間一度發生「數字跳號（1 變成 4）」的靈異事件，但看到最後文字排得整整齊齊，心情真的超舒爽。</p>
-<h3 id="五-心得">五、 心得</h3>
-<blockquote>
-<p><strong>☾ 算了，留點 Bug 其實也滿帥的 ☽</strong></p>
-</blockquote>
+<h2 id="３-個人化列點樣式">３. 個人化列點樣式</h2>
+<p>這是今天最崩潰也最有成就感的更新。
+我把預設的黑點點換成「紫色小方塊」，也把數字換成「紫色小圓圈」。</p>
+<p>但圓圈比較胖、方塊比較瘦，兩邊的文字竟然沒對齊！為了讓那幾排字能排成一條直線，我手動調整了好幾次。中間還一度發生數字跳號（1 變成 4）事件，但看到最後文字排得整整齊齊，心情超舒爽。</p>
+<hr>
+<h2 id="留點-bug-給明天的我">留點 Bug 給明天的我</h2>
 <p>本來想把所有問題一次殺光，但搞到最後發現，那個偶爾會跳號的 1. 4. 5. 其實也滿有個性（其實是累了）。
 今天最大的體會就是：改網站這種事，急不來。有時候卡住就先關掉視窗，去彈個琴或滑個手機，留一點「未完成」給明天，這種節奏好像比較適合身為斜槓接案者的我。</p>
+<h5 id="以上發言由-gemini-贊助輸出">以上發言由 Gemini 贊助輸出</h5>
 
   </div>
 
@@ -395,9 +93,11 @@ article ol li::before {
   <footer style="margin-top: 50px;">
     <div class="post-tags">
       
-      <a href="/blog/tags/bear">#Bear</a>
+      <a href="/blog/tags/gemini">#Gemini</a>
       
       <a href="/blog/tags/%E6%B8%AC%E8%A9%A6">#測試</a>
+      
+      <a href="/blog/tags/%E7%B6%B2%E7%AB%99%E6%9B%B4%E6%96%B0%E6%97%A5%E8%AA%8C">#網站更新日誌</a>
       
     </div>
   </footer>

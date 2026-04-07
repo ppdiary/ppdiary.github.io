@@ -2,7 +2,7 @@ baseURL = 'https://ppdiary.github.io/blog/'
 #canonifyURLs = true
 #relativeURLs = true
 languageCode = 'zh-tw'
-title = '小紫鋼琴日記'
+title = '奏予之境'
 theme = "hugo-bearblog"
 
 # 加入這行來精確計算中文字數
@@ -11,7 +11,7 @@ hasCJKLanguage = true
 staticDir = ['static']
 
 [params]
-    description = "小紫的鋼琴學習與生活隨筆"
+    description = "わかる人には、わかる場所"
     dateFormat = "2006.01.02" 
     # Bear Blog 很簡單，通常不太需要複雜的 params
 
@@ -38,4 +38,10 @@ staticDir = ['static']
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
+      hardErrors = false  # 語法有小錯也沒關係，網站照樣跑
       unsafe = true  # 允許在 Markdown 中使用原始 HTML
+      hardLineBreak = true  # 按一下 Enter 就換行
+
+  [markup.highlight]
+    style = "catppuccin-frappe"       # "dracula" (深色), "GitHub" (淺色)
+    noClasses = true       # 讓 Hugo 自動把顏色注入到 HTML

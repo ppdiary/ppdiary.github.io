@@ -3,309 +3,12 @@
 <head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>網站更新日誌 #2 - 小紫鋼琴日記</title>
+    <title>網站更新日誌 #2 - 奏予之境</title>
     
     
     
-
-    <style>
-         
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            background-color: #f3f2f7 !important;
-            color: #444 !important;           
-             
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-        }
-        
- 
-body, h1, h2, h3, p, li {
-    color: #24222b !important;
-}
-
- 
-h2, h3, h4 {
-  position: relative;
-  display: inline-block;  
-  z-index: 1;
-  color: #24222b;            
-  font-weight: 600;
-  margin: 10px 0;         
-  padding: 0 8px;         
-  text-align: left;       
-
- 
-  padding-left: 12px; 
-  padding-right: 12px;
-  
-   
-  margin-left: -12px;
-
-}
-
- 
-h2::before, h3::before, h4::before {
-  content: "";
-  position: absolute;
-  left: 0.1;  
-  bottom: 2.7px;            
-  width: 90%;
-  height: 40%;            
-  background-color: rgba(230, 225, 240, 0.95);  
-  
-   
-  border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
-  transform: rotate(-0.2deg);
-  filter: blur(1px);      
-  
-  z-index: -1;            
-}
-
- 
-#h3::before {
-  background-color: rgba(255, 182, 193, 0.7);  
-}
-
- 
-#h4::before {
-  background-color: rgba(173, 216, 230, 0.7);  
-}
-
- 
- 
-a {
-    color: #8b7faf;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.2s;
-}
-
- 
-a:hover {
-    color: #8b7faf;
-    text-decoration: underline;
-}
-
- 
-nav a {
-    color: #444444 !important;
-    font-weight: 500;
-}
-
-nav a:hover {
-    color: #8b7faf !important;
-    text-decoration: none !important;  
-}
-
- 
- 
- 
-[style*="background-color"] {
-    color: white !important;  
-    padding: 2px 8px;
-    border-radius: 3px;
-    text-decoration: none !important;
-}
-
-[style*="background-color"]:hover {
-    filter: brightness(0.8);  
-    color: white !important;   
-}
-
-         
-        hr {
-        border: 0;
-        border-top: 1px solid #e0ddd5 !important;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-         
-        .container {
-           width: 100%;              
-           max-width: 850px; 
-           margin: 0 auto;
-           padding: 0 25px;          
-           box-sizing: border-box;   
-        }
-
-        header, footer {
-            width: 100%;
-            flex-shrink: 0;
-        }
-
-        main {
-            width: 100%;
-            flex: 1 0 auto;
-            padding: 20px 0 60px 0;
-        }
-
-         
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 40px 0 20px 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-        }
-
-        nav .links a {
-            margin-left: 25px;
-        }
-
-         
-        .content {
-            color: #111;
-        }
-
-         
-        .post-date {
-         
-        font-family: Courier, monospace !important; 
     
-         
-        color: #777 !important; 
-    
-         
-        font-size: 0.8rem !important;
-        margin-bottom: 30px !important;  
-        letter-spacing: 0.05em;          
-        display: block;
-        }
-
-     
-
- 
-nav a[href="\2f blog\2f "] b {
-    font-weight: 300 !important;    
-    letter-spacing: 3px !important;  
-    color: #444 !important;
-    font-size: 1.1rem;
-}
-
- 
-nav .links a {
-    font-size: 0.8rem !important;
-    letter-spacing: 1.5px !important;
-    color: #aaa !important;         
-    text-transform: lowercase;     
-    font-weight: 400 !important;
-    margin-left: 20px !important;
-    transition: color 0.3s ease;
-}
-
- 
-nav .links a:hover {
-    color: #8b7faf !important;     
-    text-decoration: none !important;
-}
-        .post-title{
-        margin-bottom: 5px
-        }
-
-         
-time, 
-.post-date, 
-.post-list-date,
-li span:first-child { 
-    font-family: Courier, monospace !important;  
-    color: #777 !important;                
-    font-size: 0.85rem !important;            
-    letter-spacing: 0.05em !important;       
-}
-
-     
-    img {
-        display: block;
-        margin: 40px 0;       
-        max-width: 65%;       
-        height: auto;
-        border: 1px solid #eee;  
-        padding: 5px;         
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);  
-    }
-
-    
- 
-article {
-    counter-reset: piano-counter !important;
-}
-
- 
- 
-article h1, article h2, article h3, article h4 {
-    counter-reset: piano-counter 0 !important;
-}
-
- 
-article ul {
-    list-style: none !important;
-    padding-left: 2.2rem !important;
-    margin: 1.2em 0 !important;
-}
-
-article ul li {
-    position: relative !important;
-    margin-bottom: 0.6rem !important;
-}
-
-article ul li::before {
-    content: "" !important;
-    position: absolute;
-    left: -1.1rem;    
-    top: 0.75em;
-    width: 6px;
-    height: 6px;
-    background-color: #9B8BB4 !important;
-    border-radius: 1.5px;
-    opacity: 0.7;
-}
-
- 
-article ol {
-    list-style: none !important;
-     
-    padding-left: 2.2rem !important;
-    margin: 1.2em 0 !important;
-}
-
-article ol li {
-    position: relative !important;
-     
-    counter-increment: piano-counter !important; 
-    margin-bottom: 0.8rem !important;
-}
-
-article ol li::before {
-    content: counter(piano-counter) !important;
-    position: absolute;
-    left: -2rem;    
-    top: 0.2em;
-    width: 1.2rem;
-    height: 1.2rem;
-    background-color: #9B8BB4 !important;
-    color: #ffffff !important;
-    font-size: 0.75rem;
-    font-weight: bold;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-    </style>
-
+        <link rel="stylesheet" href="http://localhost:1313/blog/style.min.d3fe4423c0cbd9e7ce2b66928259640b6a52746b8671b9e033ad7619627c34d5.css" integrity="sha256-0/5EI8DL2efOK2aSgllkC2pSdGuGcbngM612GWJ8NNU=">
     
 </head>
 
@@ -313,7 +16,7 @@ article ol li::before {
     <header>
         <div class="container">
             <nav>
-                <a href="/blog/" style="font-size: 1.2rem;"><b>小紫鋼琴日記</b></a>
+                <a href="/blog/" style="font-size: 1.2rem;"><b>奏予之境</b></a>
                 <div class="links">
                     
                     <a href="/blog/">首頁</a>
@@ -332,7 +35,7 @@ article ol li::before {
     <main>
         <div class="container content">
             
-<article>
+<article class="post-box">
   <header>
     <h1 class="post-title">網站更新日誌 #2</h1>
     
@@ -345,27 +48,29 @@ article ol li::before {
 
   <div class="post-content">
     <h2 id="可喜可賀首頁有內容了">可喜可賀！首頁有內容了！</h2>
-<p>▾ 首頁原本長這樣，空空如也。</p>
-<p><img src="/blog/images/index_v1.png" alt="圖片描述"></p>
-<p>一度想拿掉，但不知道怎麼移除；<br>
-留著，又不知道要放什麼內容。</p>
-<p>經過 Gemini 的指導，終於弄成令人滿意的模樣了！</p>
-<p>▾先看看成果。</p>
-<p><img src="/blog/images/test.png" alt="圖片描述"></p>
+<p>首頁原本長這樣，空空如也。
+<img src="/blog/images/index_v1.png" alt="圖片描述"></p>
+<p>一度想拿掉首頁，但不知道怎麼移除；
+留著，又不知道要放什麼內容。
+經過 Gemini 指導，終於弄成令人滿意的模樣了！</p>
+<hr>
+<p>先看看成果。
+<img src="/blog/images/test.png" alt="圖片描述"></p>
 <h2 id="因為我想加一些統計數據">因為我想加一些統計數據</h2>
-<p>一開始是在 <a href="https://blog.lamb.tw/archives/">羊大的部落格</a> 發現了酷東西</p>
-<p>「本站有 7 篇文章  |   共計 25191 字元
-本站訪客數  552 | 文章瀏覽量  1552」</p>
-<p>好想要！</p>
-<p>就問 Gemini 怎麼做出來</p>
-<p>但只有這一行統計數據又很空虛</p>
-<p>所以加上了英文標題以及最後更新日期</p>
+<p>一開始是在 <a href="https://blog.lamb.tw/archives/">羊大的部落格</a> 發現了酷東西：</p>
+<blockquote>
+<p>本站有 7 篇文章  |   共計 25191 字元
+本站訪客數  552 | 文章瀏覽量  1552</p>
+</blockquote>
+<p>好想要！！！
+就問 Gemini 怎麼做出來？
+成功了！
+但只有這一行統計數據又很空虛，
+所以加上英文標題和網站最後更新日期。</p>
 <h2 id="讓-header-也變漂亮吧">讓 Header 也變漂亮吧</h2>
-<p>把首頁做得水噹噹之後
-發現標題+導覽列變得好突兀
-也</p>
-<p>看起來超有質感的！！好喜歡！</p>
-<h3 id="以上是今日更新">以上是今日更新。</h3>
+<p>把首頁做得水噹噹之後，
+發現原本的標題+導覽列變得好突兀，就一起美化了。
+現在看起來超有質感！！好喜歡！</p>
 
   </div>
 
@@ -379,6 +84,8 @@ article ol li::before {
       <a href="/blog/tags/hugo">#Hugo</a>
       
       <a href="/blog/tags/gemini">#Gemini</a>
+      
+      <a href="/blog/tags/%E7%B6%B2%E7%AB%99%E6%9B%B4%E6%96%B0%E6%97%A5%E8%AA%8C">#網站更新日誌</a>
       
     </div>
   </footer>

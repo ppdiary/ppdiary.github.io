@@ -1,47 +1,138 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>小紫鋼琴日記</title>
+    <title>奏予之境</title>
     <link>http://localhost:1313/blog/</link>
-    <description>Recent content on 小紫鋼琴日記</description>
+    <description>Recent content on 奏予之境</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 19 Mar 2026 14:08:30 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 01:59:42 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>回歸單純</title>
+      <link>http://localhost:1313/blog/posts/19/</link>
+      <pubDate>Tue, 07 Apr 2026 01:59:42 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/19/</guid>
+      <description>&lt;p&gt;獲得了一點小成功，就想追求更好。&#xA;然後更好還要再更好，永無止盡的追求。&lt;/p&gt;&#xA;&lt;p&gt;就像我打文章總是很痛苦一樣，&#xA;不自覺開啟寫作模式之後，&#xA;忍不住無限刪改、忍不住問 AI 我寫得別人能不能看懂。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ハ長調</title>
+      <link>http://localhost:1313/blog/posts/18/</link>
+      <pubDate>Mon, 06 Apr 2026 13:06:55 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/18/</guid>
+      <description>&lt;p&gt;我在看日本 YouTube 樂理影片時，&#xA;發現他們的 C 大調有個特別的名稱，&#xA;叫做「ハ長調」。&lt;/p&gt;&#xA;&lt;p&gt;📓 ハ長調　はちょうちょう　hachōchō&lt;/p&gt;&#xA;&lt;p&gt;第一次看到時很驚訝，&#xA;居然不是國際通用的音名系統 C、D、E、F、G、A、B。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>為什麼切換頁面時，Header 會位移？</title>
+      <link>http://localhost:1313/blog/posts/17/</link>
+      <pubDate>Mon, 06 Apr 2026 00:21:58 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/17/</guid>
+      <description>&lt;p&gt;切換不同分頁時，Header 標題會小跑版，有時往左跑一點、有時又往右跑回來。&lt;/p&gt;&#xA;&lt;h2 id=&#34;原來是捲軸在搞鬼&#34;&gt;原來是捲軸在搞鬼&lt;/h2&gt;&#xA;&lt;p&gt;後來我才明白，當頁面內容很長、需要向下滾動時，右側會出現一條大約 15px 寬的捲軸（Scrollbar），擠壓了中央空間。而內容少少的頁面不需要捲軸，中央自然不會被擠壓，這就是標題位置不一致的原因。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>網站更新日誌 #4</title>
+      <link>http://localhost:1313/blog/posts/16/</link>
+      <pubDate>Sun, 05 Apr 2026 01:16:35 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/16/</guid>
+      <description>&lt;p&gt;這次處理的，主要是後台，使用者（也就是你們）看不見的部分，但對我未來會有幫助。&lt;/p&gt;&#xA;&lt;h2 id=&#34;今日更新&#34;&gt;今日更新&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;整合 style.css (✗✓)&lt;/li&gt;&#xA;&lt;li&gt;優化系統，加入 fingerprint (✓)&lt;/li&gt;&#xA;&lt;li&gt;優化系統，加入 minify (✓)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;整合-stylecss&#34;&gt;整合 style.css&lt;/h2&gt;&#xA;&lt;p&gt;早期我還懵懵懂懂的時候，就聽話照做放在 baseof.html 裡面，後來我發現越來越來，總算是領悟到「噢!原來這一串都是在改樣式呀」，然後我再一看&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>如果我有一間琴房</title>
+      <link>http://localhost:1313/blog/posts/15/</link>
+      <pubDate>Sat, 04 Apr 2026 23:24:24 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/15/</guid>
+      <description>&lt;p&gt;那裡會有良好的採光，或許是大面積的落地玻璃窗，&#xA;當然，也會配備遮廉，讓我能選擇不被看見。&lt;/p&gt;&#xA;&lt;p&gt;那裡會有一個專屬空間，擺放紫色小鋼琴，&#xA;或許是在入口處、或許是坐著彈琴時對面的位置，&#xA;放前者，就能在進出門時都彈一下，&#xA;放後者，讓我彈琴時看到心情很好。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>時間是推手，也是敵人</title>
+      <link>http://localhost:1313/blog/posts/14/</link>
+      <pubDate>Fri, 03 Apr 2026 23:39:41 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/14/</guid>
+      <description>&lt;p&gt;截稿日迫在眉睫，就會逼自己產出作品。&lt;/p&gt;&#xA;&lt;p&gt;但如果沒有截稿日，&#xA;只有和自己的約定，&#xA;那就沒完成的那一日。&lt;/p&gt;&#xA;&lt;p&gt;不想因為期限而隨便，&#xA;就像不想為了限時特賣而衝動購物、&#xA;不想為了「這是最後一件」而被業務說服。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>縮小術</title>
+      <link>http://localhost:1313/blog/posts/13/</link>
+      <pubDate>Thu, 02 Apr 2026 16:59:46 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/13/</guid>
+      <description>&lt;p&gt;把標準縮小&#xA;把步驟縮小&#xA;把期待縮小&#xA;把時程縮小&lt;/p&gt;&#xA;&lt;p&gt;我發現這招對我這種人很管用&lt;/p&gt;&#xA;&lt;p&gt;但現在縮得太小&#xA;導致這篇文發想不出細節來了 慘阿&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>四月</title>
+      <link>http://localhost:1313/blog/posts/12/</link>
+      <pubDate>Wed, 01 Apr 2026 17:31:08 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/12/</guid>
+      <description>&lt;p&gt;盆栽裡的紫色小花&#xA;車道旁的桃色櫻花&#xA;樹梢上成團的粉紅花&#xA;一朵接著一朵，都盛開了&lt;/p&gt;&#xA;&lt;p&gt;新芽&#xA;　春天&#xA;　　甦醒&lt;/p&gt;&#xA;&lt;p&gt;　　　新學期&#xA;　第二季&#xA;展開&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;那首很想在四月練成的曲子，&#xA;二月底向老師提出時，&#xA;老師面有難色。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>架了一個沒人知道的網站</title>
+      <link>http://localhost:1313/blog/posts/11/</link>
+      <pubDate>Thu, 26 Mar 2026 01:54:40 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/11/</guid>
+      <description>&lt;p&gt;生活化作文字，&#xA;從無名小站&#xA;到 BBS&#xA;再到 FB 網誌，&#xA;留下一些現已找不到的痕跡。&lt;/p&gt;&#xA;&lt;p&gt;然後呢？&lt;/p&gt;&#xA;&lt;p&gt;然後是 IG，有時我把限動當部落格在發，&#xA;接著踩進方格子，那裡沒什麼人挺好的，&#xA;後來，又出現叫做 Threads 的秘密洞穴。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>練習軌跡</title>
+      <link>http://localhost:1313/blog/piano/</link>
+      <pubDate>Tue, 24 Mar 2026 20:12:00 +0800</pubDate>
+      <guid>http://localhost:1313/blog/piano/</guid>
+      <description>&lt;h3 id=&#34;-本週練琴進度-weekly-progress&#34;&gt;🎹 本週練琴進度 (Weekly Progress)&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;統計專案&lt;/strong&gt;：快樂練琴時光&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;本週區間&lt;/strong&gt;：2026-03-23 (週一) ~ 2026-03-24&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;本週已累積&lt;/strong&gt;：&lt;code&gt;19.2&lt;/code&gt; 小時&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;最後更新&lt;/strong&gt;：2026-03-24 20:12&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;💡 統計範圍會於每週一自動重置。每一份努力，時間都會幫妳記住。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hello, Python</title>
+      <link>http://localhost:1313/blog/posts/10/</link>
+      <pubDate>Tue, 24 Mar 2026 01:36:36 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/10/</guid>
+      <description>&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;http://localhost:1313/blog/images/test.png&#34; alt=&#34;Before 截圖&#34;&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;http://localhost:1313/blog/images/test.png&#34; alt=&#34;After 截圖&#34;&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;Before: 原本的樣式&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;After: 優化後的成果&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;我都用 Toggl 記錄練琴時數，&#xA;今天終於實現透過 API 自動化抓資料的願望！！&lt;/p&gt;&#xA;&lt;p&gt;這也是我第一次接觸 Python，&#xA;從把它安裝至電腦開始。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>第二遍主歌</title>
+      <link>http://localhost:1313/blog/posts/9/</link>
+      <pubDate>Mon, 23 Mar 2026 01:07:55 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/9/</guid>
+      <description>&lt;p&gt;最近練的曲子&#xA;是 A B C D B&amp;rsquo; C&amp;rsquo; D E F G 的結構&lt;/p&gt;&#xA;&lt;p&gt;今天練到第二遍主歌 (B&amp;rsquo;) 了！&lt;/p&gt;&#xA;&lt;p&gt;大致相同，但有一些差異&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>兩首歌</title>
+      <link>http://localhost:1313/blog/posts/8/</link>
+      <pubDate>Sat, 21 Mar 2026 23:58:17 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/8/</guid>
+      <description>&lt;p&gt;今天不太想練琴欸&#xA;但還是有練哈農和曲子&lt;/p&gt;&#xA;&lt;p&gt;其他時間，拿來摸索流行歌&#xA;選了 戀人未滿 和 說愛你 這兩首歌&lt;/p&gt;&#xA;&lt;p&gt;從副歌開始研究 ʘ̅͜ʘ̅&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;戀人未滿 D 大調，&#xA;左手伴奏低音設計成順階，&#xA;換和弦不是每兩個正拍一次，&#xA;所以還不太適應。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>網站更新日誌 #3</title>
       <link>http://localhost:1313/blog/posts/7/</link>
       <pubDate>Thu, 19 Mar 2026 14:08:30 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/7/</guid>
-      <description>&lt;h2 id=&#34;purple-circles&#34;&gt;Purple Circles&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;就像是新生兒，每一天都在變化。  //&lt;br&gt;&#xA;沒辦法一次到位，但可以一次又一次靠近理想。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;一-今天改哪裡&#34;&gt;一、 今天改哪裡&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;文章加密：還在研究，目前沒成功 (✗)&lt;/li&gt;&#xA;&lt;li&gt;文章摘要預覽：解決了！首頁現在看起來順眼多了 (✓)&lt;/li&gt;&#xA;&lt;li&gt;內文列點樣式：改成了我喜歡的紫色圓圈跟方塊 (✓)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;二-文章加密功能進化史&#34;&gt;二、 文章加密功能進化史&lt;/h3&gt;&#xA;&lt;p&gt;因為有些半成品只想留給自己看，所以本來打算幫文章加個密碼鎖，像懷念的無名小站有的那個功能！詢問了 Gemini ，結果他提供的方法看起來都好難，算了沒關係，這題先跳過，等哪天我又強烈渴望這個功能的時候再說。&lt;/p&gt;</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;就像是新生兒，每一天都在變化&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;今天改哪裡&#34;&gt;今天改哪裡&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;文章加密：還在研究，目前沒成功 (✗)&lt;/li&gt;&#xA;&lt;li&gt;文章摘要預覽：解決了！現在看起來順眼多了 (✓)&lt;/li&gt;&#xA;&lt;li&gt;內文列點樣式：改成了我喜歡的紫色圓圈跟方塊 (✓)&#xA;　&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;１-文章加密功能&#34;&gt;１. 文章加密功能&lt;/h2&gt;&#xA;&lt;p&gt;有些半成品只適合留給自己看，所以想幫文章加個密碼鎖，像懷念的無名小站有的那個功能。&#xA;我問了 Gemini ，結果他提供的方法看起來都好難，算了算了，這題先跳過，等哪天我又強烈渴望這功能再說。&lt;/p&gt;</description>
     </item>
     <item>
       <title>網站更新日誌 #2</title>
       <link>http://localhost:1313/blog/posts/6/</link>
       <pubDate>Wed, 11 Mar 2026 01:20:14 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/6/</guid>
-      <description>&lt;h2 id=&#34;可喜可賀首頁有內容了&#34;&gt;可喜可賀！首頁有內容了！&lt;/h2&gt;&#xA;&lt;p&gt;▾ 首頁原本長這樣，空空如也。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/blog/images/index_v1.png&#34; alt=&#34;圖片描述&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;一度想拿掉，但不知道怎麼移除；&lt;br&gt;&#xA;留著，又不知道要放什麼內容。&lt;/p&gt;&#xA;&lt;p&gt;經過 Gemini 的指導，終於弄成令人滿意的模樣了！&lt;/p&gt;&#xA;&lt;p&gt;▾先看看成果。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/blog/images/test.png&#34; alt=&#34;圖片描述&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;可喜可賀首頁有內容了&#34;&gt;可喜可賀！首頁有內容了！&lt;/h2&gt;&#xA;&lt;p&gt;首頁原本長這樣，空空如也。&#xA;&lt;img src=&#34;http://localhost:1313/blog/images/index_v1.png&#34; alt=&#34;圖片描述&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;一度想拿掉首頁，但不知道怎麼移除；&#xA;留著，又不知道要放什麼內容。&#xA;經過 Gemini 指導，終於弄成令人滿意的模樣了！&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;先看看成果。&#xA;&lt;img src=&#34;http://localhost:1313/blog/images/test.png&#34; alt=&#34;圖片描述&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;因為我想加一些統計數據&#34;&gt;因為我想加一些統計數據&lt;/h2&gt;&#xA;&lt;p&gt;一開始是在 &lt;a href=&#34;https://blog.lamb.tw/archives/&#34;&gt;羊大的部落格&lt;/a&gt; 發現了酷東西：&lt;/p&gt;</description>
     </item>
     <item>
-      <title>寫網站大抄</title>
+      <title>架站大抄</title>
       <link>http://localhost:1313/blog/posts/5/</link>
       <pubDate>Fri, 06 Mar 2026 00:19:09 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/5/</guid>
-      <description>&lt;h2 id=&#34;markdown-非段落換行&#34;&gt;Markdown 非段落換行&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;文末加 兩個半形空格&lt;/li&gt;&#xA;&lt;li&gt;文末加 反斜線 \&lt;/li&gt;&#xA;&lt;li&gt;文末加 &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;空格現身小白點&#34;&gt;空格現身小白點&lt;/h2&gt;&#xA;&lt;p&gt;如何清楚知道有沒有成功加空格？&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;開啟 Command Palette&lt;/p&gt;&#xA;&lt;p&gt;路徑：功能列 View &amp;gt; Command Palette&lt;br&gt;&#xA;快捷鍵： Ctrl + Shift + P (Mac: Cmd + Shift + P)&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;markdown-非段落換行&#34;&gt;Markdown 非段落換行&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;文末加 兩個半形空格&lt;/li&gt;&#xA;&lt;li&gt;文末加 反斜線 \&lt;/li&gt;&#xA;&lt;li&gt;文末加 &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;空格現身小白點&#34;&gt;空格現身小白點&lt;/h2&gt;&#xA;&lt;p&gt;如何清楚知道有沒有成功加空格？&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;開啟 Command Palette&lt;/strong&gt;&#xA;路徑：功能列 View &amp;gt; Command Palette&#xA;快捷鍵： Ctrl + Shift + P (Mac: Cmd + Shift + P)&lt;/p&gt;</description>
     </item>
     <item>
       <title>網站更新日誌 #1</title>
       <link>http://localhost:1313/blog/posts/4/</link>
       <pubDate>Thu, 05 Mar 2026 01:46:10 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/4/</guid>
-      <description>&lt;p&gt;今天我花了不少時間調整部落格的細節。&lt;/p&gt;&#xA;&lt;h3 id=&#34;一now-頁面&#34;&gt;一、NOW 頁面&lt;/h3&gt;&#xA;&lt;p&gt;首先是處理 Now 頁面的標題。我發現雖然在檔案開頭設定了標題，但網頁上卻沒顯示出來，後來發現是因為 Hugo 的內容頁需要手動在模板或內文裡加入標題。為了解決這個問題，我調整了 baseof.html 和 single.html，讓所有頁面都能自動抓取標題，並確保每個分頁的標題高度都完全一致。&lt;/p&gt;</description>
+      <description>&lt;p&gt;今天我花了不少時間調整部落格的細節。&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;http://localhost:1313/blog/images/test.png&#34; alt=&#34;說明&#34;&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;圖說文字&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;一now-頁面&#34;&gt;一、NOW 頁面&lt;/h3&gt;&#xA;&lt;p&gt;首先是處理 Now 頁面的標題。我發現雖然在檔案開頭設定了標題，但網頁上卻沒顯示出來，後來發現是因為 Hugo 的內容頁需要手動在模板或內文裡加入標題。為了解決這個問題，我調整了 baseof.html 和 single.html，讓所有頁面都能自動抓取標題，並確保每個分頁的標題高度都完全一致。&lt;/p&gt;</description>
     </item>
     <item>
       <title>發文 SOP</title>
       <link>http://localhost:1313/blog/posts/3/</link>
       <pubDate>Mon, 02 Mar 2026 18:04:03 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/3/</guid>
-      <description>&lt;p&gt;記給自己看的，這樣之後就能照著做了。&lt;/p&gt;&#xA;&lt;h3 id=&#34;一建檔--寫文章&#34;&gt;一、建檔 &amp;amp; 寫文章&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;開啟 VS code&lt;/li&gt;&#xA;&lt;li&gt;Ctrl + ` 叫出終端機&lt;/li&gt;&#xA;&lt;li&gt;在終端機輸入 &lt;code&gt;hugo new posts/檔名.md&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;二預覽確認畫面&#34;&gt;二、預覽確認畫面&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;在終端機輸入 &lt;code&gt;hugo server -D&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;開啟連結 http://localhost:1313&lt;/li&gt;&#xA;&lt;li&gt;修改 或 按下 Ctrl + S 存檔&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;三公開發布到網路&#34;&gt;三、公開發布到網路&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;文章標頭 draft: true 改為 draft: false&lt;/li&gt;&#xA;&lt;li&gt;執行三個指令：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;git add .&lt;/li&gt;&#xA;&lt;li&gt;git commit -m &amp;ldquo;一段描述，寫更新說明或碎碎念都可以&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;git push origin main&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;記給自己看的，這樣之後就能照著做了。&lt;/p&gt;&#xA;&lt;h2 id=&#34;一建檔--寫文章&#34;&gt;一、建檔 &amp;amp; 寫文章&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;開啟 VS code&lt;/li&gt;&#xA;&lt;li&gt;Ctrl + ` 叫出終端機&lt;/li&gt;&#xA;&lt;li&gt;在終端機輸入 &lt;code&gt;hugo new posts/檔名.md&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;二預覽確認畫面&#34;&gt;二、預覽確認畫面&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;在終端機輸入 &lt;code&gt;hugo server -D&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;開啟連結 http://localhost:1313&lt;/li&gt;&#xA;&lt;li&gt;修改 或 按下 Ctrl + S 存檔&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;三公開發布到網路&#34;&gt;三、公開發布到網路&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;文章標頭 draft: true 改為 draft: false&lt;/li&gt;&#xA;&lt;li&gt;執行三個指令：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;git add .&lt;/li&gt;&#xA;&lt;li&gt;git commit -m &amp;ldquo;一段描述，寫更新說明或碎碎念都可以&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;git push origin main&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>My Second Post</title>
@@ -55,14 +146,14 @@
       <link>http://localhost:1313/blog/posts/1/</link>
       <pubDate>Tue, 24 Feb 2026 23:30:00 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/1/</guid>
-      <description>&lt;h2 id=&#34;歡迎來到我的新站點&#34;&gt;歡迎來到我的新站點&lt;/h2&gt;&#xA;&lt;p&gt;這是我的第一篇測試文章。&lt;br&gt;&#xA;我成功解決了 Hugo 的報錯，現在網站已經可以正常運作了！&lt;/p&gt;&#xA;&lt;h2 id=&#34;為什麼選擇-papermod&#34;&gt;為什麼選擇 PaperMod？&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;簡潔有力&lt;/li&gt;&#xA;&lt;li&gt;支援深色模式&lt;/li&gt;&#xA;&lt;li&gt;速度超快&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;h2 id=&#34;歡迎來到我的洞穴&#34;&gt;歡迎來到我的洞穴&lt;/h2&gt;&#xA;&lt;p&gt;這是第一篇測試文章。&lt;br&gt;&#xA;我成功解決了 Hugo 的報錯，現在網站已經可以正常運作了！&lt;/p&gt;&#xA;&lt;h2 id=&#34;為什麼選擇-papermod&#34;&gt;為什麼選擇 PaperMod？&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;簡潔有力&lt;/li&gt;&#xA;&lt;li&gt;支援深色模式&lt;/li&gt;&#xA;&lt;li&gt;速度超快&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Now</title>
       <link>http://localhost:1313/blog/now/</link>
       <pubDate>Tue, 24 Feb 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/now/</guid>
-      <description>&lt;p&gt;為什麼想打造 Now 頁面呢？&lt;/p&gt;&#xA;&lt;p&gt;是受到 &lt;a href=&#34;https://sive.rs/now&#34;&gt;Derek Sivers&lt;/a&gt; 的啟發。&lt;br&gt;&#xA;可以想像成 IG 的限動，但保存時間比較長一些，就那麼一些。&lt;/p&gt;&#xA;&lt;h2 id=&#34;我在哪裡&#34;&gt;我在哪裡&lt;/h2&gt;&#xA;&lt;p&gt;住在 Taichung, Taiwan&lt;/p&gt;&#xA;&lt;h2 id=&#34;我在做什麼&#34;&gt;我在做什麼&lt;/h2&gt;&#xA;&lt;p&gt;喜歡彈鋼琴，每天都在練琴，最近在練的新曲子是日本動畫主題曲。&lt;br&gt;&#xA;然後，我終於搞定了個人網站 🎉🎉&lt;/p&gt;</description>
+      <description>&lt;style&gt;&#xA;/* 讓這一頁的白底方塊消失，回歸極簡透明感 */&#xA;.post-content {&#xA;    background: transparent !important;&#xA;    margin: 40px auto !important;        /* 上下留白，左右置中 */&#xA;    padding: 0px !important; &#xA;    box-shadow: none !important;&#xA;    border: none !important;&#xA;    max-width: 900px !important; /* 稍微寬一點點，增加呼吸感 */&#xA;}&#xA;&lt;/style&gt;&#xA;&lt;p&gt;為什麼打造 Now 頁面？&#xA;是受到 &lt;a href=&#34;https://sive.rs/now&#34;&gt;Derek Sivers&lt;/a&gt; 的啟發，藉此讓好久不見的友人們知道我最近在忙什麼。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

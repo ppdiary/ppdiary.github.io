@@ -3,309 +3,12 @@
 <head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Posts - 小紫鋼琴日記</title>
+    <title>Posts - 奏予之境</title>
     
     
     
-
-    <style>
-         
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            background-color: #f3f2f7 !important;
-            color: #444 !important;           
-             
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-        }
-        
- 
-body, h1, h2, h3, p, li {
-    color: #24222b !important;
-}
-
- 
-h2, h3, h4 {
-  position: relative;
-  display: inline-block;  
-  z-index: 1;
-  color: #24222b;            
-  font-weight: 600;
-  margin: 10px 0;         
-  padding: 0 8px;         
-  text-align: left;       
-
- 
-  padding-left: 12px; 
-  padding-right: 12px;
-  
-   
-  margin-left: -12px;
-
-}
-
- 
-h2::before, h3::before, h4::before {
-  content: "";
-  position: absolute;
-  left: 0.1;  
-  bottom: 2.7px;            
-  width: 90%;
-  height: 40%;            
-  background-color: rgba(230, 225, 240, 0.95);  
-  
-   
-  border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
-  transform: rotate(-0.2deg);
-  filter: blur(1px);      
-  
-  z-index: -1;            
-}
-
- 
-#h3::before {
-  background-color: rgba(255, 182, 193, 0.7);  
-}
-
- 
-#h4::before {
-  background-color: rgba(173, 216, 230, 0.7);  
-}
-
- 
- 
-a {
-    color: #8b7faf;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.2s;
-}
-
- 
-a:hover {
-    color: #8b7faf;
-    text-decoration: underline;
-}
-
- 
-nav a {
-    color: #444444 !important;
-    font-weight: 500;
-}
-
-nav a:hover {
-    color: #8b7faf !important;
-    text-decoration: none !important;  
-}
-
- 
- 
- 
-[style*="background-color"] {
-    color: white !important;  
-    padding: 2px 8px;
-    border-radius: 3px;
-    text-decoration: none !important;
-}
-
-[style*="background-color"]:hover {
-    filter: brightness(0.8);  
-    color: white !important;   
-}
-
-         
-        hr {
-        border: 0;
-        border-top: 1px solid #e0ddd5 !important;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-         
-        .container {
-           width: 100%;              
-           max-width: 850px; 
-           margin: 0 auto;
-           padding: 0 25px;          
-           box-sizing: border-box;   
-        }
-
-        header, footer {
-            width: 100%;
-            flex-shrink: 0;
-        }
-
-        main {
-            width: 100%;
-            flex: 1 0 auto;
-            padding: 20px 0 60px 0;
-        }
-
-         
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 40px 0 20px 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-        }
-
-        nav .links a {
-            margin-left: 25px;
-        }
-
-         
-        .content {
-            color: #111;
-        }
-
-         
-        .post-date {
-         
-        font-family: Courier, monospace !important; 
     
-         
-        color: #777 !important; 
-    
-         
-        font-size: 0.8rem !important;
-        margin-bottom: 30px !important;  
-        letter-spacing: 0.05em;          
-        display: block;
-        }
-
-     
-
- 
-nav a[href="\2f blog\2f "] b {
-    font-weight: 300 !important;    
-    letter-spacing: 3px !important;  
-    color: #444 !important;
-    font-size: 1.1rem;
-}
-
- 
-nav .links a {
-    font-size: 0.8rem !important;
-    letter-spacing: 1.5px !important;
-    color: #aaa !important;         
-    text-transform: lowercase;     
-    font-weight: 400 !important;
-    margin-left: 20px !important;
-    transition: color 0.3s ease;
-}
-
- 
-nav .links a:hover {
-    color: #8b7faf !important;     
-    text-decoration: none !important;
-}
-        .post-title{
-        margin-bottom: 5px
-        }
-
-         
-time, 
-.post-date, 
-.post-list-date,
-li span:first-child { 
-    font-family: Courier, monospace !important;  
-    color: #777 !important;                
-    font-size: 0.85rem !important;            
-    letter-spacing: 0.05em !important;       
-}
-
-     
-    img {
-        display: block;
-        margin: 40px 0;       
-        max-width: 65%;       
-        height: auto;
-        border: 1px solid #eee;  
-        padding: 5px;         
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);  
-    }
-
-    
- 
-article {
-    counter-reset: piano-counter !important;
-}
-
- 
- 
-article h1, article h2, article h3, article h4 {
-    counter-reset: piano-counter 0 !important;
-}
-
- 
-article ul {
-    list-style: none !important;
-    padding-left: 2.2rem !important;
-    margin: 1.2em 0 !important;
-}
-
-article ul li {
-    position: relative !important;
-    margin-bottom: 0.6rem !important;
-}
-
-article ul li::before {
-    content: "" !important;
-    position: absolute;
-    left: -1.1rem;    
-    top: 0.75em;
-    width: 6px;
-    height: 6px;
-    background-color: #9B8BB4 !important;
-    border-radius: 1.5px;
-    opacity: 0.7;
-}
-
- 
-article ol {
-    list-style: none !important;
-     
-    padding-left: 2.2rem !important;
-    margin: 1.2em 0 !important;
-}
-
-article ol li {
-    position: relative !important;
-     
-    counter-increment: piano-counter !important; 
-    margin-bottom: 0.8rem !important;
-}
-
-article ol li::before {
-    content: counter(piano-counter) !important;
-    position: absolute;
-    left: -2rem;    
-    top: 0.2em;
-    width: 1.2rem;
-    height: 1.2rem;
-    background-color: #9B8BB4 !important;
-    color: #ffffff !important;
-    font-size: 0.75rem;
-    font-weight: bold;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-    </style>
-
+        <link rel="stylesheet" href="http://localhost:1313/blog/style.min.d3fe4423c0cbd9e7ce2b66928259640b6a52746b8671b9e033ad7619627c34d5.css" integrity="sha256-0/5EI8DL2efOK2aSgllkC2pSdGuGcbngM612GWJ8NNU=">
     
 </head>
 
@@ -313,7 +16,7 @@ article ol li::before {
     <header>
         <div class="container">
             <nav>
-                <a href="/blog/" style="font-size: 1.2rem;"><b>小紫鋼琴日記</b></a>
+                <a href="/blog/" style="font-size: 1.2rem;"><b>奏予之境</b></a>
                 <div class="links">
                     
                     <a href="/blog/">首頁</a>
@@ -387,7 +90,7 @@ article ol li::before {
 
     .summary-text {
         display: -webkit-box;
-        -webkit-line-clamp: 2;     
+        -webkit-line-clamp: 1;     
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
@@ -401,6 +104,253 @@ article ol li::before {
         <li class="post-item">
             <div class="post-header">
                 <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    2026-04-07
+                </span>
+                <a href="http://localhost:1313/blog/posts/19/" class="post-link">
+                    回歸單純
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    
+        
+            獲得了一點小成功，就想追求更好。 然後更好還要再更好，永無止盡的追求。
+就像我打文章總是很痛苦一樣，...
+        
+                </div>
+            </div>
+        </li>
+        
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    2026-04-06
+                </span>
+                <a href="http://localhost:1313/blog/posts/18/" class="post-link">
+                    ハ長調
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    
+        
+            我在看日本 YouTube 樂理影片時， 發現他們的 C 大調有個特別的名稱， 叫做「ハ長調」。
+📓...
+        
+                </div>
+            </div>
+        </li>
+        
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    2026-04-06
+                </span>
+                <a href="http://localhost:1313/blog/posts/17/" class="post-link">
+                    為什麼切換頁面時，Header 會位移？
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    
+        
+            原來是 Scrollbar 在搞鬼
+        
+                </div>
+            </div>
+        </li>
+        
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    2026-04-05
+                </span>
+                <a href="http://localhost:1313/blog/posts/16/" class="post-link">
+                    網站更新日誌 #4
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    
+        
+            這次處理的，主要是後台，使用者（也就是你們）看不見的部分，但對我未來會有幫助。
+今日更新 整合...
+        
+                </div>
+            </div>
+        </li>
+        
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    2026-04-04
+                </span>
+                <a href="http://localhost:1313/blog/posts/15/" class="post-link">
+                    如果我有一間琴房
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    
+        
+            那裡會有良好的採光，或許是大面積的落地玻璃窗， 當然，也會配備遮廉，讓我能選擇不被看見。
+那裡會有一...
+        
+                </div>
+            </div>
+        </li>
+        
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    2026-04-03
+                </span>
+                <a href="http://localhost:1313/blog/posts/14/" class="post-link">
+                    時間是推手，也是敵人
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    
+        
+            截稿日迫在眉睫，就會逼自己產出作品。
+但如果沒有截稿日， 只有和自己的約定， 那就沒完成的那一日。...
+        
+                </div>
+            </div>
+        </li>
+        
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    2026-04-02
+                </span>
+                <a href="http://localhost:1313/blog/posts/13/" class="post-link">
+                    縮小術
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    
+        
+            P人的生存之道。
+        
+                </div>
+            </div>
+        </li>
+        
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    2026-04-01
+                </span>
+                <a href="http://localhost:1313/blog/posts/12/" class="post-link">
+                    四月
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    
+        
+            は君の嘘
+        
+                </div>
+            </div>
+        </li>
+        
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    2026-03-26
+                </span>
+                <a href="http://localhost:1313/blog/posts/11/" class="post-link">
+                    架了一個沒人知道的網站
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    
+        
+            無人知曉的網站，目前只有我知道。--2026.3.26 AM01:56
+        
+                </div>
+            </div>
+        </li>
+        
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    2026-03-24
+                </span>
+                <a href="http://localhost:1313/blog/posts/10/" class="post-link">
+                    Hello, Python
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    
+        
+             Before: 原本的樣式 After: 優化後的成果 我都用 Toggl 記錄練琴時數， 今天終...
+        
+                </div>
+            </div>
+        </li>
+        
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    2026-03-23
+                </span>
+                <a href="http://localhost:1313/blog/posts/9/" class="post-link">
+                    第二遍主歌
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    
+        
+            最近練的曲子 是 A B C D B&rsquo; C&rsquo; D E F G 的結構
+今天練...
+        
+                </div>
+            </div>
+        </li>
+        
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
+                    2026-03-21
+                </span>
+                <a href="http://localhost:1313/blog/posts/8/" class="post-link">
+                    兩首歌
+                </a>
+            </div>
+            
+            <div class="post-summary">
+                <div class="summary-text">
+                    
+        
+            今天不太想練琴欸 但還是有練哈農和曲子
+其他時間，拿來摸索流行歌 選了 戀人未滿 和 說愛你 這兩首...
+        
+                </div>
+            </div>
+        </li>
+        
+        <li class="post-item">
+            <div class="post-header">
+                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
                     2026-03-19
                 </span>
                 <a href="http://localhost:1313/blog/posts/7/" class="post-link">
@@ -410,10 +360,10 @@ article ol li::before {
             
             <div class="post-summary">
                 <div class="summary-text">
-                    Purple Circles 就像是新生兒，每一天都在變化。 //
-沒辦法一次到位，但可以一次又一次靠近理想。
-一、 今天改哪裡 文章加密：還在研究，目前沒成功 (✗) 文章摘要預覽：解決了！首頁現在看起來順眼多了 (✓) 內文列點樣式：改成了我喜歡的紫色圓圈跟方塊 (✓) 二、 文章加密功能進化史 因為有些半成品只想留給自己看，所以本來打算幫文章加個密碼鎖，像懷念的無名小站有的那個功能！詢問了 Gemini ，結果他提供的方法看起來都好難，算了沒關係，這題先跳過，等哪天我又強烈渴望這個功能的時候再說。
-
+                    
+        
+            文章上鎖 ｜ 摘要預覽 ｜ 列點小方塊與紫色圈圈
+        
                 </div>
             </div>
         </li>
@@ -430,12 +380,10 @@ article ol li::before {
             
             <div class="post-summary">
                 <div class="summary-text">
-                    可喜可賀！首頁有內容了！ ▾ 首頁原本長這樣，空空如也。
-一度想拿掉，但不知道怎麼移除；
-留著，又不知道要放什麼內容。
-經過 Gemini 的指導，終於弄成令人滿意的模樣了！
-▾先看看成果。
-
+                    
+        
+            建立首頁 ｜ 字數計算器 ｜ Header美化
+        
                 </div>
             </div>
         </li>
@@ -446,17 +394,16 @@ article ol li::before {
                     2026-03-06
                 </span>
                 <a href="http://localhost:1313/blog/posts/5/" class="post-link">
-                    寫網站大抄
+                    架站大抄
                 </a>
             </div>
             
             <div class="post-summary">
                 <div class="summary-text">
-                    Markdown 非段落換行 文末加 兩個半形空格 文末加 反斜線 \ 文末加 &lt;br&gt; 空格現身小白點 如何清楚知道有沒有成功加空格？
-開啟 Command Palette
-路徑：功能列 View &gt; Command Palette
-快捷鍵： Ctrl + Shift + P (Mac: Cmd + Shift + P)
-
+                    
+        
+            以防未來的我不知道怎麼改
+        
                 </div>
             </div>
         </li>
@@ -473,9 +420,10 @@ article ol li::before {
             
             <div class="post-summary">
                 <div class="summary-text">
-                    今天我花了不少時間調整部落格的細節。
-一、NOW 頁面 首先是處理 Now 頁面的標題。我發現雖然在檔案開頭設定了標題，但網頁上卻沒顯示出來，後來發現是因為 Hugo 的內容頁需要手動在模板或內文裡加入標題。為了解決這個問題，我調整了 baseof.html 和 single.html，讓所有頁面都能自動抓取標題，並確保每個分頁的標題高度都完全一致。
-
+                    
+        
+            換成 Bear 主題 ｜ 建立 Now 頁面 ｜ 視覺美化
+        
                 </div>
             </div>
         </li>
@@ -492,8 +440,10 @@ article ol li::before {
             
             <div class="post-summary">
                 <div class="summary-text">
-                    記給自己看的，這樣之後就能照著做了。
-一、建檔 &amp; 寫文章 開啟 VS code Ctrl + ` 叫出終端機 在終端機輸入 hugo new posts/檔名.md 二、預覽確認畫面 在終端機輸入 hugo server -D 開啟連結 http://localhost:1313 修改 或 按下 Ctrl + S 存檔 三、公開發布到網路 文章標頭 draft: true 改為 draft: false 執行三個指令： git add . git commit -m &ldquo;一段描述，寫更新說明或碎碎念都可以&rdquo; git push origin main 
+                    
+        
+            以防未來的我忘記步驟
+        
                 </div>
             </div>
         </li>
@@ -510,8 +460,10 @@ article ol li::before {
             
             <div class="post-summary">
                 <div class="summary-text">
-                    好累喔要去睡覺了 還沒想到要說啥
-掰掰 晚安 GN zZzZ 
+                    
+        
+            測試ㄉ廢文 不用打開看
+        
                 </div>
             </div>
         </li>
@@ -528,9 +480,10 @@ article ol li::before {
             
             <div class="post-summary">
                 <div class="summary-text">
-                    歡迎來到我的新站點 這是我的第一篇測試文章。
-我成功解決了 Hugo 的報錯，現在網站已經可以正常運作了！
-為什麼選擇 PaperMod？ 簡潔有力 支援深色模式 速度超快 
+                    
+        
+            啊哈! 這裡可以寫小秘密!
+        
                 </div>
             </div>
         </li>

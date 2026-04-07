@@ -26,6 +26,11 @@ body, h1, h2, h3, p, li {
     color: #24222b !important;
 }
 
+p {
+    white-space: pre-line;
+    margin-bottom: 1.4rem;    
+}
+
  
 h2, h3, h4 {
   position: relative;
@@ -304,6 +309,8 @@ article ol li::before {
     justify-content: center;
     border-radius: 50%;
 }
+
+
     </style>
 
     
@@ -387,7 +394,7 @@ article ol li::before {
 
     .summary-text {
         display: -webkit-box;
-        -webkit-line-clamp: 2;     
+        -webkit-line-clamp: 1;     
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
@@ -397,25 +404,6 @@ article ol li::before {
     <h1>生活</h1>
 
     <ul class="post-list">
-        
-        <li class="post-item">
-            <div class="post-header">
-                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
-                    2026-02-24
-                </span>
-                <a href="http://localhost:1313/blog/posts/1/" class="post-link">
-                    我的第一篇文章
-                </a>
-            </div>
-            
-            <div class="post-summary">
-                <div class="summary-text">
-                    歡迎來到我的新站點 這是我的第一篇測試文章。
-我成功解決了 Hugo 的報錯，現在網站已經可以正常運作了！
-為什麼選擇 PaperMod？ 簡潔有力 支援深色模式 速度超快 
-                </div>
-            </div>
-        </li>
         
     </ul>
 </main>

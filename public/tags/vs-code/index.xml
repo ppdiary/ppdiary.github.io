@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>VS Code on 小紫鋼琴日記</title>
+    <title>VS Code on 奏予之境</title>
     <link>http://localhost:1313/blog/tags/vs-code/</link>
-    <description>Recent content in VS Code on 小紫鋼琴日記</description>
+    <description>Recent content in VS Code on 奏予之境</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <lastBuildDate>Fri, 06 Mar 2026 00:19:09 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/tags/vs-code/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>寫網站大抄</title>
+      <title>架站大抄</title>
       <link>http://localhost:1313/blog/posts/5/</link>
       <pubDate>Fri, 06 Mar 2026 00:19:09 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/5/</guid>
-      <description>&lt;h2 id=&#34;markdown-非段落換行&#34;&gt;Markdown 非段落換行&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;文末加 兩個半形空格&lt;/li&gt;&#xA;&lt;li&gt;文末加 反斜線 \&lt;/li&gt;&#xA;&lt;li&gt;文末加 &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;空格現身小白點&#34;&gt;空格現身小白點&lt;/h2&gt;&#xA;&lt;p&gt;如何清楚知道有沒有成功加空格？&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;開啟 Command Palette&lt;/p&gt;&#xA;&lt;p&gt;路徑：功能列 View &amp;gt; Command Palette&lt;br&gt;&#xA;快捷鍵： Ctrl + Shift + P (Mac: Cmd + Shift + P)&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;markdown-非段落換行&#34;&gt;Markdown 非段落換行&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;文末加 兩個半形空格&lt;/li&gt;&#xA;&lt;li&gt;文末加 反斜線 \&lt;/li&gt;&#xA;&lt;li&gt;文末加 &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;空格現身小白點&#34;&gt;空格現身小白點&lt;/h2&gt;&#xA;&lt;p&gt;如何清楚知道有沒有成功加空格？&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;開啟 Command Palette&lt;/strong&gt;&#xA;路徑：功能列 View &amp;gt; Command Palette&#xA;快捷鍵： Ctrl + Shift + P (Mac: Cmd + Shift + P)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>發文 SOP</title>
+      <link>http://localhost:1313/blog/posts/3/</link>
+      <pubDate>Mon, 02 Mar 2026 18:04:03 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/3/</guid>
+      <description>&lt;p&gt;記給自己看的，這樣之後就能照著做了。&lt;/p&gt;&#xA;&lt;h2 id=&#34;一建檔--寫文章&#34;&gt;一、建檔 &amp;amp; 寫文章&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;開啟 VS code&lt;/li&gt;&#xA;&lt;li&gt;Ctrl + ` 叫出終端機&lt;/li&gt;&#xA;&lt;li&gt;在終端機輸入 &lt;code&gt;hugo new posts/檔名.md&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;二預覽確認畫面&#34;&gt;二、預覽確認畫面&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;在終端機輸入 &lt;code&gt;hugo server -D&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;開啟連結 http://localhost:1313&lt;/li&gt;&#xA;&lt;li&gt;修改 或 按下 Ctrl + S 存檔&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;三公開發布到網路&#34;&gt;三、公開發布到網路&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;文章標頭 draft: true 改為 draft: false&lt;/li&gt;&#xA;&lt;li&gt;執行三個指令：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;git add .&lt;/li&gt;&#xA;&lt;li&gt;git commit -m &amp;ldquo;一段描述，寫更新說明或碎碎念都可以&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;git push origin main&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

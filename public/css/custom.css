@@ -19,34 +19,14 @@ header, main, footer {
     padding: 0 20px;
 }
 
-/* 1. 強制關閉所有列表的預設樣式 */
-ul {
-    list-style: none !important;
-    padding-left: 1.5rem !important;
-}
 
-/* 2. 幫每一行 li 建立定位基準點 */
-ul li {
-    position: relative !important;
-    margin-bottom: 0.6rem; /* 稍微增加行距，比較好讀 */
-    line-height: 1.6;
-    list-style: none !important; /* 二重保險 */
-}
-
-/* 3. 重新製作紫色小方塊 */
-ul li::before {
-    content: "" !important;
-    position: absolute;
-    
-    /* 調整位置：這兩行控制方塊在文字左邊的精確位置 */
-    left: -1.2rem;    
-    top: 0.6em;       
-
-    /* 方塊外觀 */
-    width: 6px;
-    height: 6px;
-    background-color: #9B8BB4 !important; /* 你的灰霧薰衣草色 */
-    border-radius: 1.5px;
-    opacity: 0.8;
-    display: inline-block !important;
+/* 這裡的點 (.) 代表我們要點名一個 class 名字叫 test-box 的元素 */
+.test-box {
+    background-color: #9B8BB4; /* 背景變紫色 */
+    color: white;              /* 文字變白色 */
+    padding: 200px;             /* 內距，讓盒子胖一點 */
+    text-align: left;        /* 文字置中 */
+    margin: 10px 0;            /* 外距，跟上下元素保持距離 */
+    font-weight: bold;         /* 字體加粗 */
+    border-radius: 8px;        /* 圓角 */
 }
