@@ -1,111 +1,144 @@
-/* 2. 佈局重整：確保底部推擠與水平置中 */
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            background-color: #f3f2f7 !important;
-            color: #444 !important;           
-            /* 找回 Bear Blog 的預設字體感 */
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "Noto Sans TC", "Noto Sans JP", sans-serif;
-            line-height: 1.6;
-        }
-        
-        /* --- 修正切換分頁位移問題 --- */
 html {
-    scrollbar-gutter: stable; /* 只有在需要時顯示滾動條，但永遠保留那個寬度空間 */}
-
-/* 1. 基礎文字顏色 (不包含連結 a) */
-body, h1, h2, h3, p, li {
-    color: #24222b !important;
+    scrollbar-gutter: stable; /* 只有在需要時顯示滾動條，但永遠保留那個寬度空間 */
+    background-color: #ffffff; 
+    min-height: 100%;
 }
 
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    color: #403742;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "Noto Sans TC", "Noto Sans JP", sans-serif;
+    line-height: 1.6;
+    display: flex; /* Footer往下推固定在底部 */
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px; 
+    margin: 0 auto;
+    padding: 0 25px; /* 為了手機用戶設計的安全距離 */
+    box-sizing: border-box; /* 確保 padding 不會把容器撐破 */
+}
+
+header, footer {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+main {
+    width: 100%;
+    flex: 1 0 auto;
+    padding: 20px 0 20px 0;
+}
+
+
+/* --- 第一層：基礎設定（全站通用） --- */
 p {
     white-space: pre-line;
-    margin-bottom: 1.4rem;   /* 數字越大，段落間空隙越大 */
+    font-weight: 400;
+    font-size: 1.04rem;
+    margin-top: 0;         /* 強制清除上方間距 */
+    letter-spacing: 0.025em;
 }
 
-/* 1. 設定標題本體：h2, h3, h4 共用 */
+/* --- 第二層：文章專屬（書籍感靈魂） --- */
+article p {
+    max-width: 520px;     /* 窄寬度是書籍感的靈魂 */
+    margin: 2.5rem auto;  /* 段落與段落之間留出 80px 以上的空間 */
+    font-family: serif;   /* 襯線體 */
+    line-height: 2.2;     /* 充足的行間距 */
+}
+
+article p:first-child {
+    margin-top: 0;
+}
+
+h2 + p, 
+h3 + p, 
+h4 + p {
+    margin-top: 0;
+}
+
+figure + p {
+    margin-top: 25px;
+}
+
+p + h2 {
+    margin-top: 60px;
+}
+
+
+h1 {
+    font-family: "Noto Serif TC", "Noto Serif JP", serif;
+    font-weight: 400;         /* 關鍵：不要太粗 */
+    font-size: 2rem;
+    letter-spacing: 0.1em;    /* 讓字呼吸 */
+    color: #5d5461;           /* 莫蘭迪深紫灰 */
+    text-align: left;         /* 先嘗試靠左，建立穩定感 */
+    margin-top: 20px;
+    margin-bottom: 80px;      /* 給標題下方充足的空間 */
+    position: relative;
+}
+
+/* 加上之前你覺得不錯的線條，但改為橫向短線 */
+h1::after {
+    content: "";
+    display: block;
+    width: 30px;         /* 极短的线，像个句點 */
+    height: 1px;
+    background-color: #eaddf0; /* 莫蘭迪紫色 */
+    margin: 30px 0 0 0;   /* 放在標題下方 */
+}
+
 h2, h3, h4 {
+  letter-spacing: 0.04em;   /* 增加一點呼吸感 */
   position: relative;
-  display: inline-block; /* 必須是 inline-block 效果才出得來 */
-  z-index: 1;
-  color: #24222b;           /* 文字顏色 */
-  font-weight: 600;
-  margin: 10px 0px 10px 0px;        /* 增加上下間距防止重疊 */
+  font-weight: 550;
   padding: 0 8px;        /* 左右留一點螢光筆的餘裕 */
-  text-align: left;      /* 螢光筆風格通常左對齊較好看 */
-
-/* 1. 這是預留給螢光筆的空間（把文字往右推） */
-  padding-left: 12px; 
-  padding-right: 12px;
-  
-  /* 2. 用負邊距把整個標題往左拉回去，抵銷掉 padding */
-  margin-left: -12px;
-
+  margin-top: 3rem;        /* 跟上方內容保持距離 */
+  margin-bottom: 0.8rem;
 }
 
-/* 2. 製作手繪螢光筆跡：對 h2, h3, h4 都生效 */
-h2::before, h3::before, h4::before {
-  content: "";
-  position: absolute;
-  left: 0.1; /* 這裡設為 0，筆跡就會從負邊距拉回來的最左邊開始畫 */
-  bottom: 3.2px;           /* 底線高度：數字越大越往上畫 */
-  width: 90%;
-  height: 25%;           /* 粗度 */
-  background-color: rgba(230, 225, 240, 0.95); /* 螢光黃 */
-  
-  /* 手繪感核心 */
-  border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
-  transform: rotate(-0.2deg);
-  filter: blur(1px);     /* 只模糊底色，不影響文字 */
-  
-  z-index: -1;           /* 確保在文字後方 */
+h3 {
+    color: #3A3A64;
 }
 
-/* h2 保持黃色，把 h3 改成粉紅色 */
-#h3::before {
-  background-color: rgba(255, 182, 193, 0.7); /* 粉紅色 */
+h4 {
+    color: #524E55;
+    text-align: left;
+    font-style: normal;
+    line-height: 1.8;
 }
 
-/* 把 h4 改成粉藍色 */
-#h4::before {
-  background-color: rgba(173, 216, 230, 0.7); /* 粉藍色 */
-}
-
-/* 2. 一般連結 (例如文章標題、導覽列) */
-/* 我們不對 a 下 !important，讓它保持彈性 */
+/* ===================
+   連結
+====================== */
+/* 一般連結 (例如文章標題、導覽列) */
 a {
-    color: #8b7faf;
+    color: #9b8ba3;
     font-weight: 600;
     text-decoration: none;
     transition: 0.2s;
 }
 
-/* 一般連結的懸停：變黑 + 底線 */
+/* 一般連結的懸停：變色 + 底線 */
 a:hover {
-    color: #8b7faf;
+    color: #8e8491;
     text-decoration: underline;
 }
 
-/* 3. 【關鍵】專屬導覽列的連結 (右上角的首頁、文章、標籤) */
-nav a {
-    color: #444444 !important;
-    font-weight: 500;
-}
-
-nav a:hover {
-    color: #8b7faf !important;
-    text-decoration: none !important; /* 導覽列通常不加底線比較好看 */
-}
-
-/* 4. 【重點】專屬小標籤的按鈕樣式 */
+/* 專屬小標籤的按鈕樣式 */
 /* 這裡我們直接針對「有背景色」的標籤進行獨立設定 */
-/* 假設你的標籤 HTML 裡有 style="background-color:..." */
 [style*="background-color"] {
-    color: white !important; /* 強制文字維持白色 */
+    color: white;
     padding: 2px 8px;
     border-radius: 3px;
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 [style*="background-color"]:hover {
@@ -113,232 +146,163 @@ nav a:hover {
     color: white !important;  /* 確保懸停時文字「絕對」不會變黑 */
 }
 
-        /* 為了讓視覺更統一，可以把底部的線條也稍微改淡一點 */
-        hr {
-        border: 0;
-        border-top: 1px solid #e0ddd5 !important;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* 3. 寬度彈性化：放寬 max-width 到 850px，讓視野更舒服 */
-        .container {
-           width: 100%;             /* 寬度改為 100% */
-           max-width: 800px; 
-           margin: 0 auto;
-           padding: 0 25px;         /* 關鍵：左右各留 25px 的安全距離，為了手機用戶設計 */
-           box-sizing: border-box;  /* 確保 padding 不會把容器撐破 */
-        }
-
-        header, footer {
-            width: 100%;
-            flex-shrink: 0;
-        }
-
-        main {
-            width: 100%;
-            flex: 1 0 auto;
-            padding: 20px 0 60px 0;
-        }
-
-        /* 4. 導覽列優化：字體加粗與間距調整 */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 40px 0 20px 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-        }
-
-        nav .links a {
-            margin-left: 25px;
-        }
-
-        /* 5. 確保 Markdown 內容繼承主題字體與顏色 */
-        .content {
-            color: #111;
-        }
-
-        /* 專門針對發文時間的樣式 */
-        .post-date {
-        /* 1. 字體：這裡推薦用 Georgia (經典優雅) 或 Helvetica (乾淨現代) */
-        font-family: Courier, monospace !important; 
-    
-        /* 2. 顏色：#999 是淺灰色，#777 會深一點點 */
-        color: #777 !important; 
-    
-        /* 3. 大小與間距 */
-        font-size: 0.8rem !important;
-        margin-bottom: 30px !important; /* 讓它跟下面的內文保持一點呼吸空間 */
-        letter-spacing: 0.05em;         /* 讓數字之間稍微拉開，看起來更有質感 */
-        display: block;
-        }
-
-    /* --- 頂部導覽列優化：呼應首頁極簡風格 --- */
-
-/* 1. 左上角標題：增加音符與質感 */
-nav a[href="/blog/"] b {
-    font-weight: 333;   /* 去除厚重感，改為優雅細體 */
-    letter-spacing: 0.27em; /* 增加空氣感 */
-    color: #8B7FAF;
-    font-size: 1.1rem;
-    font-family: "Inter", "Noto Sans TC", sans-serif !important;
+/* 為了讓視覺更統一，可以把底部的線條也稍微改淡一點 */
+hr {
+    border: 0;
+    border-top: 1px solid #e0ddd5 !important;
 }
 
-/* 3. 右上角按鈕：改為小寫、淡灰色與拉開字距 */
-nav .links a {
-    font-size: 0.8rem !important;
-    letter-spacing: 1.5px !important;
-    color: #aaa !important;        /* 改為淡淡的灰色 */
-    text-transform: lowercase;    /* 統一小寫風格 */
-    font-weight: 400 !important;
-    margin-left: 20px !important;
+/* ===================
+   導覽列
+====================== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0 20px 0;
+}
+
+/* 所有 nav 裡的 a 標籤預設樣式 */
+nav a {
+    text-decoration: none;
+    color: #444444;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
-/* 按鈕懸停效果 */
+/* 左上角標題 */
+nav a[href="/blog/"] b {
+    font-weight: 350; /* 去除厚重感，改為優雅細體 */
+    letter-spacing: 0.2em; /* 增加空氣感 */
+    color: #8e8491;
+    font-size: 1rem;
+    font-family: "Inter", "Noto Sans TC", sans-serif;
+    text-transform: uppercase; /* 如果是英文名稱，全大寫會更有「標籤」的專業感 */
+}
+
+/* 右上角按鈕：首頁、文章、標籤 */
+nav .links a {
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    color: #aaaaaa; /* 這裡會蓋掉上面的 #444444 */
+    text-transform: lowercase; /* 統一小寫風格 */
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+/* 右上角懸停效果 */
+nav a:hover,
 nav .links a:hover {
-    color: #8b7faf !important;    /* 懸停時變回你設定的紫色 */
-    text-decoration: none !important;
-}
-        .post-title{
-        margin-bottom: 5px
-        }
-
-        /* 萬能日期對齊法：一次搞定內頁與列表 */
-time, 
-.post-date, 
-.post-list-date,
-li span:first-child { 
-    font-family: Courier, monospace !important; /* 1. 換字體 */
-    color: #777 !important;               /* 2. 換顏色 (淺灰) */
-    font-size: 0.85rem !important;           /* 3. 縮小字體 */
-    letter-spacing: 0.05em !important;      /* 4. 字距拉開更有質感 */
+    color: #8e8491;
+    text-decoration: none;
 }
 
-    /* 全站圖片統一縮小與優化 */
-    img {
-        display: block;
-        margin: 40px 0;      /* 增加上下間距到 40px，讓圖片像是一個獨立的段落 */
-        max-width: 65%;      /* 再稍微縮小一點，增加右側留白 */
-        height: auto;
-        border: 1px solid #eee; /* 加一個極淡的邊框，定義出圖片邊界 */
-        padding: 5px;        /* 邊框與圖片間的小間隙，很有相片感 */
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* 淡淡的陰影增加質感 */
-    }
-
-    
-/* --- 1. 初始化文章總計數器 --- */
-article {
-    counter-reset: piano-counter !important;
+/* ===================
+   序列表
+====================== */
+article li {
+    position: relative;
+    font-size: 1.04rem;
+    letter-spacing: 0.025em;
+    line-height: 1.8;     /* 比內文行間距2.2稍小 */
+    margin: 8px 0;
 }
 
-/* --- 2. 核心修正：將標題設為「計數器邊界」 --- */
-/* 只要出現標題，就強制結束舊的計數器，開啟一個同名的全新計數器 */
-article h1, article h2, article h3, article h4 {
-    counter-reset: piano-counter 0 !important;
-}
-
-/* --- 3. 無序列表 (UL)：紫色小方塊 --- */
+/* --- 無序列表 (UL)：紫色小方塊 --- */
 article ul {
-    list-style: none !important;
-    padding-left: 2rem !important;
-    margin: 1.2em 0 !important;
-}
-
-article ul li {
-    position: relative !important;
-    margin-bottom: 0.2rem !important;
+    list-style: none;      /* 關閉預設點點 */
+    margin: 0 auto 80px;   /* 置中 */
+    padding-left: 2.5rem;  
 }
 
 article ul li::before {
-    content: "" !important;
+    content: "";
     position: absolute;
-    left: -1.5rem;    
+    left: -1.2rem; 
     top: 0.75em;
     width: 6px;
     height: 6px;
-    background-color: #9B8BB4 !important;
+    background-color: #918BAD;
     border-radius: 1.5px;
     opacity: 0.7;
 }
 
 /* --- 4. 有序列表 (OL)：紫色圓圈數字 --- */
 article ol {
-    list-style: none !important;
-    /* 這裡絕對不能寫 counter-reset，否則會變成 1. 1. 1. */
-    padding-left: 2rem !important;
-    margin: 0.2em 0 !important;
+    counter-reset: piano-counter; /* 初始化計數器，每次從 1 開始 */
+    list-style: none;
+    margin: 0 auto 80px;
+    padding-left: 4.2rem;   /* 數字需要更多空間，所以 padding 大一點 */
 }
 
 article ol li {
-    position: relative !important;
-    /* 核心：在 li 層級累加數字 */
-    counter-increment: piano-counter !important; 
-    margin-bottom: 0.2rem !important;
+    counter-increment: piano-counter; 
 }
 
 article ol li::before {
-    content: counter(piano-counter) !important;
+    content: counter(piano-counter);
     position: absolute;
-    left: -1.9rem;    
-    top: 0.4em;
+    left: -1.8rem;    
+    top: 0.5em;
     width: 1.2rem;
     height: 1.2rem;
-    background-color: #9B8BB4 !important;
-    color: #ffffff !important;
+    background-color: #918BAD;
+    color: #ffffff;
     font-size: 0.75rem;
     font-weight: bold;
-    display: flex !important;
+    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
 }
 
+
 /* 全站行內代碼 (Inline Code) 樣式 */
 code {
-    background-color: rgba(76, 106, 141, 0.08) !important;
-    color: #4c6a8d !important;
-    padding: 0.16em 0.45em !important;      /* 增加一點呼吸空間 */
-    font-family: monospace !important;      /* 關鍵：使用等寬字體（Monospace），保留「程式碼」的靈魂 */
-    font-weight: 400 !important;          /* 稍微加粗，讓數據突出 */
-    font-size: 1em !important;
-    border: none !important;
-    border-radius: 4px !important;        /* 圓角化，去掉生硬感 */
+    background-color: rgba(107, 124, 154, 0.08);
+    color: #536d8d;
+    padding: 0.16em 0.45em;
+    font-family: "Cascadia Code", "Source Code Pro", "Noto Sans Mono CJK TC", monospace !important;
+    font-weight: 400;
+    font-size: 0.8em;
+    border: none;
+    border-radius: 4px;
     margin: 0 2px;
  }
 
  /* 全站引用 (Blockquote) 樣式*/
 blockquote {
-    background-color: transparent !important;
-    border: none !important;
-    /*border-left: 3.5px solid #4C6A8D !important;
-    /*padding: 0 0 0 1.2em !important;      /* 呼吸空間：上下左右的間距，讓文字不擁擠 */
-    border-radius: 0 8px 8px 0 !important;
-    letter-spacing: 0.5px !important;      /* 字體微調：字距稍微拉開，更有設計感 */
-    font-style: normal !important;      /* 斜體italic：這是引用的靈魂，若不喜歡可以拿掉 */
-    margin: 2.5em 0 !important;      /* 移除預設的外邊距，讓它在頁面中更整齊 */
-    line-height: 1.6 !important;
-}
-blockquote p {
-    margin: 0 !important;      /* 引用內的段落不需要額外的間距 */
-    color: #4C6A8D !important;
-    text-align: center !important;       /* 文字置中 */
-    font-weight: 700 !important;         /* 粗體 (加重語氣) */
-    font-size: 1.1em !important;         /* 稍微放大一點點 */
-    font-style: normal !important;       /* 移除斜體，讓粗體看起來更乾淨 */
-    line-height: 1.6 !important;
+    display: flow-root;    /* 關鍵：建立獨立排版上下文，防止 Margin 被吃掉 */
+    text-align: center;
+    margin: 5rem auto;     /* 增加上下邊距，確保跟標題有呼吸空間 */
+    padding: 20px;
+    border: none;
+    color: #666;
 }
 
+blockquote p {
+    display: inline;       /* 確保文字跟引號在同一行 */
+    line-height: 1.8;
+    white-space: normal; /* 避免引用文字裡有多餘的換行被渲染 */
+}
+
+blockquote::before {
+    content: "\201C";
+    display: inline-block;
+    font-size: 80px;
+    font-family: serif;
+    color: #918BAD;
+    opacity: 0.3;
+    
+    line-height: 0;        /* 關鍵：不讓大字體撐開行高 */
+    vertical-align: -0.4em; /* 調整這個數值，讓引號上下對齊到你滿意的位置 */
+    margin-right: 8px;
+}
+
+
+/* ===================
+   表格
+====================== */
 /* 1. 表格置中與間距優化 */
 .post-content table {
     margin: 30px auto 50px auto !important; /* 上 30px, 下 50px 留白 */
@@ -381,113 +345,128 @@ blockquote p {
 }
 
 
+/* ===================
+   圖片
+====================== */
+/* 全站圖片統一縮小與優化 */
+img {
+    display: block;
+    max-width: 65%;      /* 再稍微縮小一點，增加右側留白 */
+    height: auto;
+    border: 1px solid #eee; /* 加一個極淡的邊框，定義出圖片邊界 */
+}
+
+/* 圖說文字 */
+figcaption {
+    position: absolute;
+    right: 80px;  /* 距離圖片右邊界 */
+    bottom: -33px; /* 距離圖片底邊界 */
+    z-index: 5;   /* 確保在 L 型裝飾線 (z-index 3) 之上 */
+}
+
+figcaption p {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0.85rem;
+    color: #a8a5b4;
+    letter-spacing: 0.1em;
+    line-height: 1; /* 移除預設行高，方便精確定位 */
+}
+
+figure {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 4rem auto;
+}
+
+figure img {
+    display: block;
+    position: relative;
+    z-index: 2; /* 圖片在中間層 */
+    border-radius: 2px;
+    max-width: 100%;
+}
+
+/* 左側長線：從圖片「下方」穿透 */
+figure::before {
+    content: "";
+    position: absolute;
+    z-index: 1;      /* 在圖片下方 */
+    
+    /* 關鍵：內縮重疊 */
+    top: -25px;
+    left: 20px;       /* 改成正值，讓線條進到圖片裡面 20px */
+    width: 1px;
+    height: calc(100% + 80px); /* 讓線條上下都伸出去 */
+    
+    background-color: #918BAD;
+    opacity: 0.3;     /* 稍微加深一點點，讓它在圖片下隱約可見 */
+}
+
+/* 右下角 L 型 */
+figure::after {
+    content: "";
+    position: absolute;
+    z-index: 3;      /* 關鍵：層級最高，蓋在圖片上面 */
+    
+    /* 關鍵：內縮重疊 */
+    bottom: -28px;     /* 進到圖片裡面 15px */
+    right: 15px;      /* 進到圖片裡面 15px */
+    width: 40px;
+    height: 40px;
+    
+    border-right: 4px solid #918BAD;
+    border-bottom: 4px solid #918BAD;
+    opacity: 0.6;     /* 蓋在上面的東西，顏色要夠實，才不會像透明膠帶 */
+}
+
+/* 當 figure 是文章內容 (.post-content) 中的第一個元素時 */
+.post-content > figure:first-child {
+    margin-top: 0 !important;
+}
+
+/* 同理，如果你的圖片是直接以 <img> 標籤出現在第一行 */
+.post-content > p:first-child > img {
+    margin-top: 0 !important;
+}
 
 
+/* 萬能日期對齊法：一次搞定內頁與列表 */
+time, 
+.post-date, 
+.post-list-date,
+.post-list li span:first-child { 
+    font-family: Courier, monospace !important; /* 1. 換字體 */
+    color: #777777 !important;               /* 2. 換顏色 (淺灰) */
+    font-size: 0.85rem !important;           /* 3. 縮小字體 */
+    letter-spacing: 0.05em !important;      /* 4. 字距拉開更有質感 */
+    display: block;
+}
 
-
-/* --- 文章內頁：白紙容器重整 --- */
+/* --- 文章內頁白紙容器 --- */
 .post-box {
-    background-color: #ffffff !important;
-    max-width: 800px !important;
-    margin: 40px auto !important;
-    padding: 60px 50px !important;
-    border: 1px solid #eeeeee !important;
-    border-radius: 12px !important;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+    background-color: transparent; 
+    margin: 20px auto;
+    padding: 20px 0px;
 }
 
 /* 標題：左側莫蘭迪紫裝飾線 */
 .post-box .post-title {
-    margin: 0 !important;
-    font-size: 2rem !important;
-    color: #333 !important;
-    border-left: 5px solid #9B8BB4 !important; /* 你的專屬紫色 */
-    padding-left: 20px !important;
+    margin: 0;
 }
 
 /* 日期：稍微偏移，與標題內縮對齊 */
 .post-box .post-date {
     font-size: 0.9rem !important;
-    color: #999 !important;
-    margin: 15px 0 40px 25px !important;
+    color: #777777 !important;
+    margin: 3px 0 0 0;
 }
 
-/* 內容區：保持呼吸感 */
+/* 內容區 */
 .post-box .post-content {
-    line-height: 1.8 !important;
-    background: transparent !important;
-    /* 關鍵對齊設定：20px (標題內距) + 5px (標題線寬) = 25px */
-    /* 核心修正：移除 padding-left: 25px，改為對稱的左右內距 */
-    padding: 0 25px !important; 
-    margin-top: 30px !important;
-    box-sizing: border-box; /* 確保 padding 不會撐破寬度 */
-}
-
-/* 底部標籤：莫蘭迪紫文字 */
-.post-box .post-tags {
-    margin-top: 50px !important;
-    padding-top: 20px !important;
-    border-top: 1px dashed #eee !important; /* 增加一條虛線區隔 */
-}
-
-.post-box .post-tags a {
-    color: #9B8BB4 !important;
-    margin-right: 15px !important;
-    text-decoration: none !important;
-    font-size: 0.9rem !important;
-}
-
-/* 鎖定在文章內容範圍內的 hr */
-article hr, 
-.post-content hr, 
-.post-single hr {
-  /* 徹底清除預設樣式 */
-  border: none !important;
-  background: none !important;
-  height: auto !important;
-  
-  /* 設定三個圓點的顯示效果 */
-  text-align: left;
-  margin: 3rem 0;
-  line-height: 1;
-}
-
-/* 只針對上述範圍內的 hr 產生小圓點 */
-article hr::after,
-.post-content hr::after,
-.post-single hr::after {
-  content: "• • •";/* • • • */
-  color: #4c6a8d; /* 莫蘭迪藍 */
-  font-size: 18px;
-  opacity: 0.3;
-  display: block;
-}
-
-/* 調整文章中那個小數字 (上標) 的顏色 */
-.footnote-ref a {
-    color: #4c6a8d; /* 莫蘭迪藍 */
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0 2px;
-}
-
-/* 調整文章最下方註解區塊的字體與間距 */
-.footnotes {
-    font-size: 0.6em;      /* 讓註解字體稍微縮小一點 */
-    color: #666;           /* 稍微淡一點的灰 */
-    border-top: 1px solid #F3F2F7; /* 給註解區一個淡淡的分隔線 */
-    margin-top: 3rem;
-    padding-top: 1rem;
-}
-
-/* 專門隱藏註解區域上方的水平線 */
-.footnotes hr {
-    display: none !important;
-}
-
-/* 調整文章內所有段落之間的距離 */
-.post-content p {
-    margin-bottom: 2rem; /* 數字越大，段落間的空隙就越大 */
+    line-height: 1.75;
+    margin-top: 80px;
 }
 
 /* 針對文章主體內的連結與文字強制斷行 */
@@ -498,8 +477,83 @@ article hr::after,
     overflow-wrap: break-word;  /* 現代標準：只在必要時斷行 */
 }
 
+/* 文章底部標籤 # */
+.post-box .post-tags {
+    margin-top: 4rem;            /* 留出巨大的空白，代替線條 */
+    text-align: right;           /* 靠右對齊，與左側內文形成錯位感 */
+    opacity: 0.6;                /* 讓它半透明，降低視覺重量 */
+}
 
-/* 把斜體改成自言自語樣式 */
+.post-box .post-tags a {
+    color: #8e8491;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* ===================
+   分隔線 hr
+====================== */
+.post-content hr {
+    clear: both; /* 確保不被浮動元素干擾 */
+    margin-top: 100px !important; /* 強制推開上方 */
+    margin-bottom: 100px !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    max-width: 120px;     /* 限制最大寬度防止在電腦版太長 */
+}
+
+
+/* ===================
+   註解
+====================== */
+/* 調整文章最下方註解區塊的字體與間距 */
+.footnotes {
+    margin-top: 4rem;
+    padding-top: 2rem;
+}
+
+.footnotes hr {
+    display: block;    /* 確保它顯示出來 */
+    border: none;      /* 移除預設的醜線 */
+    height: 1px;       /* 設定厚度 */
+    width: 60px;       /* 設定寬度 */
+    background-color: #918BAD; /* 你的莫蘭迪紫 */
+    margin: 4rem 0 2rem 0;   /* 調整與上下內容的距離 */
+    border-radius: 10px;     /* 加上圓角 */
+    opacity: 0.4;
+}
+
+/* 針對註解清單本身 */
+.footnotes ol {
+    list-style: decimal; /* 強制設定為標準數字 */
+}
+
+.footnotes ol, 
+.footnotes li {
+    font-size: 0.9rem; /* 同時縮小數字與內容 */
+    color: #888;
+}
+
+.footnotes p {
+    font-size: inherit; /* 讓 p 直接使用父層 li 的 0.9rem */
+    margin-bottom: 5px; /* 稍微調整一下註解之間的間距 */
+}
+
+/* 針對註解清單的數字符號 */
+.footnotes li::marker {
+    all: revert;            /* 核心：直接撤銷所有自定義樣式，回歸瀏覽器預設 */
+}
+
+/* 確保沒有偽元素干擾 */
+.footnotes li::before {
+    content: none; /* 徹底關閉之前可能寫過的自定義圖標 */
+}
+
+/* ===================
+   把斜體改成自言自語樣式
+====================== */
 /* --- 通用對話基礎 --- */
 del, em {
     display: flex !important;
@@ -507,12 +561,7 @@ del, em {
     text-decoration: none !important;
     font-style: normal !important;
     margin: 8px auto;
-    width: 90% !important; 
-    max-width: 350px !important; /* 限制最大寬度，避免在寬螢幕拉太長 */
     position: relative;
-
-    /* 核心修正 2：重設寬度，防止它往右推擠 */
-    width: auto;
     max-width: calc(100% - 80px); /* 扣掉左右 margin 的總和 */
     
     /* 1. 字體系統：優雅明體 + 適度加粗 */
@@ -592,4 +641,31 @@ em::after {
     max-width: 100%;        /* 限制最大寬度 */
     padding: 0px 20px;          /* 讓程式碼離邊框一點距離，比較美觀 */
     border-radius: 6px;     /* 圓角視覺更現代 */
+}
+
+
+/* 針對全站的文字反白設定:#918BAD */
+::selection {
+    background-color: rgba(145, 139, 173, 0.2);
+}
+
+
+/* 小螢幕標題對齊 */
+@media screen and (max-width: 768px) {
+    h2, h3, h4 {
+        padding-left: 0;  /* 移除左側內縮，讓文字邊緣貼齊容器 */
+        margin-left: 0;   /* 確保沒有外邊距偏移 */
+        text-align: left; /* 強制靠左 */
+    }
+
+    /* 同時確保內文段落不會因為 max-width 導致置中偏移 */
+    article p {
+        max-width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    article ol {
+        padding-left: 1rem; 
+    }
 }

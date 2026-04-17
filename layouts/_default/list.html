@@ -6,8 +6,8 @@
     }
 
     .post-item {
-        margin-bottom: 0;         /* 移除下方外距 */
-        padding: 4px 0;           /* 縮小上下內距，讓未展開時更緊湊 */
+        margin-bottom: 0;
+        padding: 6px 0;
         border-bottom: 1px solid rgba(155, 139, 180, 0.05);
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -18,19 +18,22 @@
     }
 
     .post-link {
+        font-family: "Noto Serif TC", "Noto Serif JP", serif;
         text-decoration: none;
-        color: #555;
+        color: #5d5461;
         font-weight: 500;
         transition: color 0.3s;
     }
 
+
+    
     /* 隱藏的摘要區域 */
     .post-summary {
         max-height: 0;
         overflow: hidden;
         opacity: 0;
         margin-left: 110px;       /* 保持對齊標題 */
-        transition: all 0.3s ease; /* 稍微加快速度，感覺更靈敏 */
+        transition: all 0.3s ease;
         color: #999;
         font-size: 0.85rem;
         line-height: 1.5;
@@ -42,6 +45,8 @@
         padding-bottom: 12px;     /* 展開時才增加底部空間 */
     }
 
+
+    
     .post-item:hover .post-link {
         color: #9B8BB4;
     }
@@ -71,7 +76,7 @@
                     {{ .Date.Format "2006-01-02" }}
                 </span>
                 <a href="{{ .Permalink }}" class="post-link">
-                    {{ .Title }}
+        {{ .Title }}{{ if .Draft }}　(𖡎)</span>{{ end }}
                 </a>
             </div>
             

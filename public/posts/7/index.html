@@ -3,12 +3,12 @@
 <head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>網站更新日誌 #3 - 奏予之境</title>
+    <title>網站更新日誌 #3 - 晝嶼之境</title>
     
     
     
     
-        <link rel="stylesheet" href="http://localhost:1313/blog/style.min.d3fe4423c0cbd9e7ce2b66928259640b6a52746b8671b9e033ad7619627c34d5.css" integrity="sha256-0/5EI8DL2efOK2aSgllkC2pSdGuGcbngM612GWJ8NNU=">
+        <link rel="stylesheet" href="http://localhost:1313/blog/style.min.5237bcf2df23f810a091eb13ddf3367328fdf2873c377c752e854c3e7cec651a.css" integrity="sha256-Uje88t8j&#43;BCgkesT3fM2cyj98oc8N3x1LoVMPnzsZRo=">
     
 </head>
 
@@ -16,7 +16,7 @@
     <header>
         <div class="container">
             <nav>
-                <a href="/blog/" style="font-size: 1.2rem;"><b>奏予之境</b></a>
+                <a href="/blog/" style="font-size: 1.2rem;"><b>晝嶼之境</b></a>
                 <div class="links">
                     
                     <a href="/blog/">首頁</a>
@@ -48,7 +48,7 @@
 
   <div class="post-content">
     <blockquote>
-<p>就像是新生兒，每一天都在變化</p>
+<p>就像是新生兒，每一天都在變化。</p>
 </blockquote>
 <h2 id="今天改哪裡">今天改哪裡</h2>
 <ul>
@@ -57,26 +57,21 @@
 <li>內文列點樣式：改成了我喜歡的紫色圓圈跟方塊 (✓)
 　</li>
 </ul>
-<h2 id="１-文章加密功能">１. 文章加密功能</h2>
+<h2 id="1-文章加密功能">1. 文章加密功能</h2>
 <p>有些半成品只適合留給自己看，所以想幫文章加個密碼鎖，像懷念的無名小站有的那個功能。
 我問了 Gemini ，結果他提供的方法看起來都好難，算了算了，這題先跳過，等哪天我又強烈渴望這功能再說。</p>
-<h2 id="２-摘要預覽功能">２. 摘要預覽功能</h2>
+<h2 id="2-摘要預覽功能">2. 摘要預覽功能</h2>
 <p>我下標題都很隨興，如果要一個一個點開來才知道內容在寫什麼，也蠻困擾的，就想說，那做個簡單的摘要預覽吧！因為想保留列表的簡潔性，修修改改，經歷多個版本：</p>
 <ol>
-<li>
-<p>懸浮對話框：滑鼠移到標題，旁邊跳出一個紫色小框。
-缺點：位置不固定，標題長短會影響框的位置，視覺上有點亂。</p>
-</li>
-<li>
-<p>右側固定預覽區：在畫面最右邊留一個框，內容在那裡切換。
-缺點：眼睛要左右來回掃描，看了很累。</p>
-</li>
-<li>
-<p>原地展開（最終方案）：就像抽屜，滑鼠移上去，標題下方自動長出兩行摘要。
-優點：視線不需移動，版面在平時保持極度整齊。</p>
-</li>
+<li><strong>懸浮對話框</strong>：滑鼠移到標題，旁邊跳出一個紫色小框。<br>
+缺點：位置不固定，標題長短會影響框的位置，視覺上有點亂。</li>
+<li><strong>右側固定預覽區</strong>：在畫面最右邊留一個框，內容在那裡切換。<br>
+缺點：眼睛要左右來回掃描，看了很累。</li>
+<li><strong>原地展開（最終方案）</strong>：就像抽屜，滑鼠移上去，標題下方自動長出兩行摘要。<br>
+優點：視線不需移動，版面在平時保持極度整齊。</li>
 </ol>
-<h2 id="３-個人化列點樣式">３. 個人化列點樣式</h2>
+<p>路徑：\layouts_default\list.html</p>
+<h2 id="3-個人化列點樣式">3. 個人化列點樣式</h2>
 <p>這是今天最崩潰也最有成就感的更新。
 我把預設的黑點點換成「紫色小方塊」，也把數字換成「紫色小圓圈」。</p>
 <p>但圓圈比較胖、方塊比較瘦，兩邊的文字竟然沒對齊！為了讓那幾排字能排成一條直線，我手動調整了好幾次。中間還一度發生數字跳號（1 變成 4）事件，但看到最後文字排得整整齊齊，心情超舒爽。</p>

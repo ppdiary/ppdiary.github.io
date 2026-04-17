@@ -1,47 +1,48 @@
 ---
-title: "Now"
+title: "近況 /now"
 date: 2026-02-24
-lastmod: 2026-04-01
+lastmod: 2026-04-08
 draft: false
 ---
 
-<style>
-/* 讓這一頁的白底方塊消失，回歸極簡透明感 */
-.post-content {
-    background: transparent !important;
-    margin: 40px auto !important;        /* 上下留白，左右置中 */
-    padding: 0px !important; 
-    box-shadow: none !important;
-    border: none !important;
-    max-width: 900px !important; /* 稍微寬一點點，增加呼吸感 */
-}
-</style>
-
-為什麼打造 Now 頁面？
-是受到 [Derek Sivers](https://sive.rs/now) 的啟發，藉此讓好久不見的友人們知道我最近在忙什麼。
+會有這個頁面，是受到 [Derek Sivers](https://sive.rs/now) 的啟發，貼一些最近熱衷的事物、新的興趣、新的發現，讓好久不見的朋友知道我在忙什麼。  
+可能出沒地： Taichung, Taiwan.
 
 
-> What I am focused on now.[^1]  
+## 近期興趣🎶
+- **彈鋼琴**：最近在練 [光るなら](https://youtu.be/igfOIvQHA8g?si=coemHbBLwDSnYg6J)，我要越來越輕鬆彈好八度音。
+- **打造個人網站**：做出自己想要的樣式好快樂！持續學習 Hugo 網站開發、Markdown 語法，目前還很弱，有問題都是請教 Gemini。
+- **看動畫**：《葬送的芙莉蓮》、《名偵探柯南》
+- **看書**：《做自己的生命設計師》、《大人的鋼琴教科書》、《你有多久沒寫字？原來筆跡能反映你的個性！》
 
-{{< energybar g="50" l="30" h="15" w="5" >}}
+## 近期身心靈🏸
+- 心情安穩。
+- 每週運動至少一次，通常打羽球、散步、打掃。
+- 健身房金卡會員體驗中（到期後應該不會繼續了）。
 
-- From Taichung, Taiwan.
+## 近期工作💼
+一言難盡。
+###### （：那你多說幾句啊！）（沒辦法。）
+
+## 近期情感♥️
+- 搬回家裡住之後，受到家人諸多照顧，我也有機會協助家務，還不錯啦。
+- 和好久不見的朋友見面聊天，覺得滿足。
+ 　
+---
+#### HWPL 儀表板 [^1]  
+{{< energybar h="15" w="5" g="50" l="30" >}}
 
 
-## 🎶Play
-* 彈鋼琴：最近在練 [光るなら](https://youtu.be/igfOIvQHA8g?si=coemHbBLwDSnYg6J) ，希望四月可以彈給一些人聽。
-* 架網站：持續學習 Hugo 網站開發、Markdown 語法。
-* 看動畫：吃飯配柯南，目前看到 TV608〈與危險的二人同行〉。
+Hello 你好 こんにちは☺
+我是討厭自我介紹的生物
+<details>
+  <summary> me </summary>
+  
+　歡迎你用 ☐☐ 稱呼我
+　☐☐ 可以是任何你喜歡的、你認為符合我的詞語
+　或者，就直接讀作框框，ㄎㄨㄤ 一聲框
 
-## ♥️Love
-身邊有許多三月的壽星，度過了充實的三月。
-
-## 🏸Health
-心靈平靜舒適。
-每週運動一次，通常打羽球、散步。
-最近健身房金卡體驗會員（到期後應該就不會繼續了）。
-
-## 💼Work
-* 閱讀：《普通人的財富自由之道》
+　直到我找回自己的名字為止。
+</details>
 
 [^1]:我參考了《做自己的生命設計師》這本書，從四大層面檢視生活。

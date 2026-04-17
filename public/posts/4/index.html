@@ -3,12 +3,12 @@
 <head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>網站更新日誌 #1 - 奏予之境</title>
+    <title>網站更新日誌 #1 - 晝嶼之境</title>
     
     
     
     
-        <link rel="stylesheet" href="http://localhost:1313/blog/style.min.d3fe4423c0cbd9e7ce2b66928259640b6a52746b8671b9e033ad7619627c34d5.css" integrity="sha256-0/5EI8DL2efOK2aSgllkC2pSdGuGcbngM612GWJ8NNU=">
+        <link rel="stylesheet" href="http://localhost:1313/blog/style.min.5237bcf2df23f810a091eb13ddf3367328fdf2873c377c752e854c3e7cec651a.css" integrity="sha256-Uje88t8j&#43;BCgkesT3fM2cyj98oc8N3x1LoVMPnzsZRo=">
     
 </head>
 
@@ -16,7 +16,7 @@
     <header>
         <div class="container">
             <nav>
-                <a href="/blog/" style="font-size: 1.2rem;"><b>奏予之境</b></a>
+                <a href="/blog/" style="font-size: 1.2rem;"><b>晝嶼之境</b></a>
                 <div class="links">
                     
                     <a href="/blog/">首頁</a>
@@ -47,7 +47,14 @@
   </header>
 
   <div class="post-content">
-    <p>今天我花了不少時間調整部落格的細節。</p>
+    <blockquote>
+<p>今天花了不少時間調整部落格的細節。</p>
+</blockquote>
+<h3 id="1-now-頁面">1. NOW 頁面</h3>
+<p>首先是處理 Now 頁面的標題。我發現雖然在檔案開頭設定了標題，但網頁上卻沒顯示出來，後來發現是因為 Hugo 的內容頁需要手動在模板或內文裡加入標題。為了解決這個問題，我調整了 baseof.html 和 single.html，讓所有頁面都能自動抓取標題，並確保每個分頁的標題高度都完全一致。</p>
+<h3 id="2-版面固定">2. 版面固定</h3>
+<p>接著，我解決了版面跳動的問題。因為不同頁面的內容長度不同，導致底部的 Footer 會上下亂跑。我透過 CSS 的 Flexbox 設定，讓底部能乖乖黏在螢幕最下方，保持視覺上的穩定。<br>
+在字體美化方面，我覺得原本的標題太粗大，所以把 全站標題縮小 並減輕了字重，讓它看起來比較精緻。我也把原本拿掉的 發文日期 找了回來，但特別調整了它的樣式——將字體換成更有質感的襯線體，並把顏色調成淺灰色，讓它看起來安靜一點，不會搶走內文的焦點。</p>
 <table>
   <thead>
       <tr>
@@ -63,16 +70,10 @@
       </tr>
   </tbody>
 </table>
-<h3 id="一now-頁面">一、NOW 頁面</h3>
-<p>首先是處理 Now 頁面的標題。我發現雖然在檔案開頭設定了標題，但網頁上卻沒顯示出來，後來發現是因為 Hugo 的內容頁需要手動在模板或內文裡加入標題。為了解決這個問題，我調整了 baseof.html 和 single.html，讓所有頁面都能自動抓取標題，並確保每個分頁的標題高度都完全一致。</p>
-<h3 id="二版面固定">二、版面固定</h3>
-<p>接著，我解決了版面跳動的問題。因為不同頁面的內容長度不同，導致底部的 Footer 會上下亂跑。我透過 CSS 的 Flexbox 設定，讓底部能乖乖黏在螢幕最下方，保持視覺上的穩定。</p>
-<p>在字體美化方面，我覺得原本的標題太粗大，所以把 全站標題縮小 並減輕了字重，讓它看起來比較精緻。我也把原本拿掉的 發文日期 找了回來，但特別調整了它的樣式——將字體換成更有質感的襯線體，並把顏色調成淺灰色，讓它看起來安靜一點，不會搶走內文的焦點。</p>
-<h3 id="三統一視覺">三、統一視覺</h3>
-<p>最後，我用一段簡潔的 CSS 統一了文章列表與內頁的日期格式，讓全站的視覺風格達成一致。</p>
-<p>雖然中間一度遇到標題消失的小意外，但現在整個部落格的版面對齊了，字體也調整成我喜歡的樣子，感覺順眼多了。</p>
-<p>/</p>
-<h5 id="以上發言由-gemini-贊助輸出">以上發言由 Gemini 贊助輸出</h5>
+<h3 id="3-統一視覺">3. 統一視覺</h3>
+<p>最後，我用一段簡潔的 CSS 統一了文章列表與內頁的日期格式，讓全站的視覺風格達成一致。<br>
+雖然中間一度遇到標題消失的小意外，但現在整個部落格的版面對齊了，字體也調整成我喜歡的樣子，感覺順眼多了。</p>
+<h5 id="-以上發言由-gemini-贊助輸出-">\ 以上發言由 Gemini 贊助輸出 /</h5>
 
   </div>
 

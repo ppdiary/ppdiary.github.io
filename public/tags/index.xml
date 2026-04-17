@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on 奏予之境</title>
+    <title>Tags on 晝嶼之境</title>
     <link>http://localhost:1313/blog/tags/</link>
-    <description>Recent content in Tags on 奏予之境</description>
+    <description>Recent content in Tags on 晝嶼之境</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 06 Apr 2026 00:21:58 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2026 10:30:58 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>短</title>
+      <link>http://localhost:1313/blog/tags/%E7%9F%AD/</link>
+      <pubDate>Fri, 17 Apr 2026 10:30:58 +0800</pubDate>
+      <guid>http://localhost:1313/blog/tags/%E7%9F%AD/</guid>
+      <description></description>
+    </item>
     <item>
       <title>CSS</title>
       <link>http://localhost:1313/blog/tags/css/</link>
