@@ -128,12 +128,11 @@ a {
 
 /* 一般連結的懸停：變色 + 底線 */
 a:hover {
-    color: #8e8491;
+    color: #9b8ba3;
     text-decoration: underline;
 }
 
-/* 專屬小標籤的按鈕樣式 */
-/* 這裡我們直接針對「有背景色」的標籤進行獨立設定 */
+/* 專屬 #Tags 的按鈕樣式 */
 [style*="background-color"] {
     color: white;
     padding: 2px 8px;
@@ -146,12 +145,6 @@ a:hover {
     color: white !important;  /* 確保懸停時文字「絕對」不會變黑 */
 }
 
-/* 為了讓視覺更統一，可以把底部的線條也稍微改淡一點 */
-hr {
-    border: 0;
-    border-top: 1px solid #e0ddd5 !important;
-}
-
 /* ===================
    導覽列
 ====================== */
@@ -162,7 +155,6 @@ nav {
     padding: 40px 0 20px 0;
 }
 
-/* 所有 nav 裡的 a 標籤預設樣式 */
 nav a {
     text-decoration: none;
     color: #444444;
@@ -172,8 +164,8 @@ nav a {
 
 /* 左上角標題 */
 nav a[href="/blog/"] b {
-    font-weight: 350; /* 去除厚重感，改為優雅細體 */
-    letter-spacing: 0.2em; /* 增加空氣感 */
+    font-weight: 350;
+    letter-spacing: 0.2em;
     color: #8e8491;
     font-size: 1rem;
     font-family: "Inter", "Noto Sans TC", sans-serif;
@@ -431,17 +423,19 @@ figure::after {
     margin-top: 0 !important;
 }
 
-
 /* 萬能日期對齊法：一次搞定內頁與列表 */
 time, 
 .post-date, 
 .post-list-date,
 .post-list li span:first-child { 
-    font-family: Courier, monospace !important; /* 1. 換字體 */
-    color: #777777 !important;               /* 2. 換顏色 (淺灰) */
-    font-size: 0.85rem !important;           /* 3. 縮小字體 */
-    letter-spacing: 0.05em !important;      /* 4. 字距拉開更有質感 */
+    font-family: Courier, monospace !important;
+    color: #777777 !important;
+    font-size: 0.85rem !important;
+    letter-spacing: 0.05em !important;
     display: block;
+    margin-right: -5px;
+    position: relative;
+    top: 0.3ex;
 }
 
 /* --- 文章內頁白紙容器 --- */
@@ -494,6 +488,11 @@ time,
 /* ===================
    分隔線 hr
 ====================== */
+hr {
+    border: 0;
+    border-top: 1px solid #e0ddd5 !important;
+}
+
 .post-content hr {
     clear: both; /* 確保不被浮動元素干擾 */
     margin-top: 100px !important; /* 強制推開上方 */

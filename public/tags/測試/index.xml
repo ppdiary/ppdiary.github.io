@@ -23,13 +23,6 @@
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;今天花了不少時間調整部落格的細節。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;1-now-頁面&#34;&gt;1. NOW 頁面&lt;/h3&gt;&#xA;&lt;p&gt;首先是處理 Now 頁面的標題。我發現雖然在檔案開頭設定了標題，但網頁上卻沒顯示出來，後來發現是因為 Hugo 的內容頁需要手動在模板或內文裡加入標題。為了解決這個問題，我調整了 baseof.html 和 single.html，讓所有頁面都能自動抓取標題，並確保每個分頁的標題高度都完全一致。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>My Second Post</title>
-      <link>http://localhost:1313/blog/posts/2/</link>
-      <pubDate>Wed, 25 Feb 2026 00:29:40 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/2/</guid>
-      <description>&lt;h2 id=&#34;好累喔要去睡覺了&#34;&gt;好累喔要去睡覺了&lt;/h2&gt;&#xA;&lt;p&gt;還沒想到要說啥&lt;/p&gt;&#xA;&lt;h2 id=&#34;掰掰&#34;&gt;掰掰&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;晚安&lt;/li&gt;&#xA;&lt;li&gt;GN&lt;/li&gt;&#xA;&lt;li&gt;zZzZ&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
       <title>我的第一篇文章</title>
       <link>http://localhost:1313/blog/posts/1/</link>
       <pubDate>Tue, 24 Feb 2026 23:30:00 +0800</pubDate>

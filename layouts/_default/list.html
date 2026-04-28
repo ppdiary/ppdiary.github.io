@@ -3,65 +3,59 @@
     .post-list {
         list-style: none;
         padding: 0;
+        padding-top: 0px; 
+        margin: 0;
     }
 
     .post-item {
-        margin-bottom: 0;
-        padding: 6px 0;
-        border-bottom: 1px solid rgba(155, 139, 180, 0.05);
+        margin: 0;
+        padding: 8px 0; /* 這裡決定每一行的間距 */
+        border-bottom: 0px solid rgba(155, 139, 180, 0.05);
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        white-space: nowrap;
+        display: flex;
+        align-items: center; /* 讓內容在每一行內垂直居中 */
+        overflow: hidden;
     }
-
+    
     .post-header {
         display: flex;
-        align-items: baseline;
+        align-items: center; /* 這裡改為 center 避免 baseline 造成的視覺不一 */
     }
 
     .post-link {
         font-family: "Noto Serif TC", "Noto Serif JP", serif;
-        text-decoration: none;
-        color: #5d5461;
+        text-decoration: none !important;
+        color: #333;
         font-weight: 500;
+        font-size: 1.04rem;
+        letter-spacing: 0.05em;
         transition: color 0.3s;
-    }
-
-
-    
-    /* 隱藏的摘要區域 */
-    .post-summary {
-        max-height: 0;
+        
+        /* 防止標題太長換行 */
         overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .post-summary {
+        display: block; 
         opacity: 0;
-        margin-left: 110px;       /* 保持對齊標題 */
-        transition: all 0.3s ease;
-        color: #999;
+        visibility: hidden; /* 防止滑鼠點到隱藏的摘要 */
+        margin-left: 14px;
+        
+        transition: opacity 0.4s ease, visibility 0.4s ease; 
+        
+        color: #aaa;
         font-size: 0.85rem;
-        line-height: 1.5;
     }
 
-    /* 當滑鼠移入時的「彩蛋」狀態 */
-    .post-item:hover {
-        background-color: rgba(155, 139, 180, 0.03);
-        padding-bottom: 12px;     /* 展開時才增加底部空間 */
-    }
-
-
-    
     .post-item:hover .post-link {
-        color: #9B8BB4;
+        color: #5d5461 !important; /* 稍微變色代表 hover */
     }
 
     .post-item:hover .post-summary {
-        max-height: 60px;         /* 限制展開高度，避免推得太遠 */
         opacity: 1;
-        margin-top: 4px;          /* 摘要與標題的緊湊間距 */
-    }
-
-    .summary-text {
-        display: -webkit-box;
-        -webkit-line-clamp: 1;    /* 依然維持兩行 */
-        -webkit-box-orient: vertical;
-        overflow: hidden;
+        visibility: visible;
     }
 </style>
 
@@ -73,23 +67,21 @@
         <li class="post-item">
             <div class="post-header">
                 <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
-                    {{ .Date.Format "2006-01-02" }}
+                    {{ .Date.Format "2006.01.02" }}
                 </span>
                 <a href="{{ .Permalink }}" class="post-link">
-        {{ .Title }}{{ if .Draft }}　(𖡎)</span>{{ end }}
+        {{ .Title }}{{ if .Draft }} (𖡎){{ end }}
                 </a>
             </div>
             
+{{/* 只有當手動寫了 description 時，才顯示整個 summary 區塊 */}}
+            {{ if .Description }}
             <div class="post-summary">
                 <div class="summary-text">
-                    {{/* 優先抓手動寫的 description，沒有的話才抓 Summary，並統一限制在 60 個字 */}}
-        {{ with .Description }}
-            {{ . | plainify | truncate 50 "..." }}
-        {{ else }}
-            {{ .Summary | plainify | truncate 50 "..." }}
-        {{ end }}
+                    {{ .Description | plainify | truncate 50 "..." }}
                 </div>
             </div>
+            {{ end }}
         </li>
         {{ end }}
     </ul>
