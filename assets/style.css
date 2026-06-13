@@ -17,10 +17,6 @@ body {
     align-items: center;
 }
 
-
-
-
-
 /* 
    =========================================
    RWD 手機版優化
@@ -188,12 +184,11 @@ nav a {
 }
 
 /* 左上角標題 */
-nav a[href="/blog/"] b {
+nav a[href="/"] b {
     font-weight: 550;
     letter-spacing: 0.2em;
     color: #866aa1;
-    font-size: 1.5
-    rem;
+    font-size: 1.5;
     font-family: "Inter", "Noto Serif TC", sans-serif;
     text-transform: uppercase; /* 如果是英文名稱，全大寫會更有「標籤」的專業感 */
 }

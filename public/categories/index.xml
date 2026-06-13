@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 鳴子閣樓</title>
-    <link>http://localhost:1313/blog/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on 鳴子閣樓</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <lastBuildDate>Fri, 17 Apr 2026 10:30:58 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pieces</title>
-      <link>http://localhost:1313/blog/categories/pieces/</link>
+      <link>http://localhost:1313/categories/pieces/</link>
       <pubDate>Fri, 17 Apr 2026 10:30:58 +0800</pubDate>
-      <guid>http://localhost:1313/blog/categories/pieces/</guid>
+      <guid>http://localhost:1313/categories/pieces/</guid>
       <description></description>
     </item>
     <item>
       <title>SOP</title>
-      <link>http://localhost:1313/blog/categories/sop/</link>
+      <link>http://localhost:1313/categories/sop/</link>
       <pubDate>Tue, 07 Apr 2026 13:47:14 +0800</pubDate>
-      <guid>http://localhost:1313/blog/categories/sop/</guid>
+      <guid>http://localhost:1313/categories/sop/</guid>
       <description></description>
     </item>
   </channel>

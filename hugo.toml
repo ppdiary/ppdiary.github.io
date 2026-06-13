@@ -1,4 +1,4 @@
-baseURL = 'https://ppdiary.github.io/blog/'
+baseURL = 'https://ppdiary.github.io/'
 #canonifyURLs = true
 #relativeURLs = true
 languageCode = 'zh-tw'

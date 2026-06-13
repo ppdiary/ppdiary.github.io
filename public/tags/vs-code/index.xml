@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VS Code on 鳴子閣樓</title>
-    <link>http://localhost:1313/blog/tags/vs-code/</link>
+    <link>http://localhost:1313/tags/vs-code/</link>
     <description>Recent content in VS Code on 鳴子閣樓</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <lastBuildDate>Fri, 06 Mar 2026 00:19:09 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/vs-code/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/vs-code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>架站大抄</title>
-      <link>http://localhost:1313/blog/posts/5/</link>
+      <link>http://localhost:1313/posts/5/</link>
       <pubDate>Fri, 06 Mar 2026 00:19:09 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/5/</guid>
+      <guid>http://localhost:1313/posts/5/</guid>
       <description>&lt;h2 id=&#34;1-markdown-非段落換行&#34;&gt;1. Markdown 非段落換行&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;文末加 兩個半形空格&lt;/li&gt;&#xA;&lt;li&gt;文末加 反斜線 \&lt;/li&gt;&#xA;&lt;li&gt;文末加 &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2-空格現身小白點&#34;&gt;2. 空格現身小白點&lt;/h2&gt;&#xA;&lt;p&gt;如何清楚知道有沒有成功加空格？&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;開啟 Command Palette&lt;/strong&gt;&#xA;路徑：功能列 View &amp;gt; Command Palette&#xA;快捷鍵： Ctrl + Shift + P (Mac: Cmd + Shift + P)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;搜尋輸入： Toggle Render Whitespace&lt;/strong&gt;&#xA;效果：你會看到文字後面出現了兩個微小的 . .。&#xA;如果沒有看到兩個點，代表空白沒按對。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;3-改文章標題下的日期格式&#34;&gt;3. 改文章標題下的日期格式&lt;/h2&gt;&#xA;&lt;p&gt;路徑：layouts/_default/single.html&#xA;位置：&lt;code&gt;{{ .Date.Format &amp;quot;2006-01-02&amp;quot; }}&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>發文 SOP</title>
-      <link>http://localhost:1313/blog/posts/3/</link>
+      <link>http://localhost:1313/posts/3/</link>
       <pubDate>Mon, 02 Mar 2026 18:04:03 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/3/</guid>
+      <guid>http://localhost:1313/posts/3/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;以防未來的我忘記步驟。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;第一步建檔--寫文章&#34;&gt;第一步：建檔 &amp;amp; 寫文章&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;開啟 VS code&lt;/li&gt;&#xA;&lt;li&gt;Ctrl + ` 叫出終端機&lt;/li&gt;&#xA;&lt;li&gt;在終端機輸入 &lt;code&gt;hugo new posts/檔名.md&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;第二步預覽確認畫面&#34;&gt;第二步：預覽確認畫面&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;在終端機輸入 &lt;code&gt;hugo server -D&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;開啟連結 http://localhost:1313&lt;/li&gt;&#xA;&lt;li&gt;修改 或 按下 Ctrl + S 存檔&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;第三步公開發布到網路&#34;&gt;第三步：公開發布到網路&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;文章標頭 &lt;code&gt;draft: true&lt;/code&gt; 改為 &lt;code&gt;draft: false&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;執行三個指令：&lt;br&gt;&#xA;&lt;code&gt; git add .&lt;/code&gt;&lt;br&gt;&#xA;&lt;code&gt;git commit -m &amp;quot;一段描述，寫更新說明或碎碎念都可以&amp;quot;&lt;/code&gt;&lt;br&gt;&#xA;&lt;code&gt;git push origin main&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
   </channel>
