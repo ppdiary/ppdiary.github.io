@@ -17,9 +17,31 @@ body {
     align-items: center;
 }
 
+
+
+
+
+/* 
+   =========================================
+   RWD 手機版優化
+   =========================================
+*/
+@media (max-width: 768px) {
+  body::before,
+  body::after {
+    font-size: 20px;          /* 手機版適度縮小，避免在窄螢幕上顯得突兀 */
+    opacity: 0.3;             /* 手機版降低透明度，不干擾閱讀 */
+    top: 24px;
+    left: 24px;
+    bottom: 24px;
+    right: 24px;
+  }
+}
+
+
 .container {
     width: 100%;
-    max-width: 650px; 
+    max-width: 666px; 
     margin: 0 auto;
     padding: 0 25px; /* 為了手機用戶設計的安全距離 */
     box-sizing: border-box; /* 確保 padding 不會把容器撐破 */
@@ -38,20 +60,23 @@ main {
 
 
 /* --- 第一層：基礎設定（全站通用） --- */
+p, article li {
+    font-weight: 330;
+    letter-spacing: 0.025em;
+    font-size: 1.01rem;
+}
+
 p {
     white-space: pre-line;
-    font-weight: 400;
-    font-size: 1.04rem;
     margin-top: 0;         /* 強制清除上方間距 */
-    letter-spacing: 0.025em;
+    line-height: 1.8;     /* 充足的行間距 */
+    text-align: justify; /* 讓文字左右兩端都對齊拉平，消除右側參差不齊的生硬感 */
 }
 
 /* --- 第二層：文章專屬（書籍感靈魂） --- */
 article p {
-    max-width: 520px;     /* 窄寬度是書籍感的靈魂 */
+    max-width: 650px;     /* 窄寬度是書籍感的靈魂 */
     margin: 2.5rem auto;  /* 段落與段落之間留出 80px 以上的空間 */
-    font-family: serif;   /* 襯線體 */
-    line-height: 2.2;     /* 充足的行間距 */
 }
 
 article p:first-child {
@@ -85,21 +110,21 @@ h1 {
     position: relative;
 }
 
-/* 加上之前你覺得不錯的線條，但改為橫向短線 */
+
 h1::after {
     content: "";
     display: block;
-    width: 30px;         /* 极短的线，像个句點 */
+    width: 30px;         /* 橫向短線 */
     height: 1px;
     background-color: #eaddf0; /* 莫蘭迪紫色 */
     margin: 30px 0 0 0;   /* 放在標題下方 */
 }
 
+
 h2, h3, h4 {
   letter-spacing: 0.04em;   /* 增加一點呼吸感 */
   position: relative;
   font-weight: 550;
-  padding: 0 8px;        /* 左右留一點螢光筆的餘裕 */
   margin-top: 3rem;        /* 跟上方內容保持距離 */
   margin-bottom: 0.8rem;
 }
@@ -120,7 +145,7 @@ h4 {
 ====================== */
 /* 一般連結 (例如文章標題、導覽列) */
 a {
-    color: #9b8ba3;
+    color: #866aa1;
     font-weight: 600;
     text-decoration: none;
     transition: 0.2s;
@@ -128,7 +153,7 @@ a {
 
 /* 一般連結的懸停：變色 + 底線 */
 a:hover {
-    color: #9b8ba3;
+    color: #866aa1;
     text-decoration: underline;
 }
 
@@ -164,11 +189,12 @@ nav a {
 
 /* 左上角標題 */
 nav a[href="/blog/"] b {
-    font-weight: 350;
+    font-weight: 550;
     letter-spacing: 0.2em;
-    color: #8e8491;
-    font-size: 1rem;
-    font-family: "Inter", "Noto Sans TC", sans-serif;
+    color: #866aa1;
+    font-size: 1.5
+    rem;
+    font-family: "Inter", "Noto Serif TC", sans-serif;
     text-transform: uppercase; /* 如果是英文名稱，全大寫會更有「標籤」的專業感 */
 }
 
@@ -185,7 +211,7 @@ nav .links a {
 /* 右上角懸停效果 */
 nav a:hover,
 nav .links a:hover {
-    color: #8e8491;
+    color: #866aa1;
     text-decoration: none;
 }
 
@@ -194,8 +220,6 @@ nav .links a:hover {
 ====================== */
 article li {
     position: relative;
-    font-size: 1.04rem;
-    letter-spacing: 0.025em;
     line-height: 1.8;     /* 比內文行間距2.2稍小 */
     margin: 8px 0;
 }
@@ -214,7 +238,7 @@ article ul li::before {
     top: 0.75em;
     width: 6px;
     height: 6px;
-    background-color: #918BAD;
+    background-color: #866aa1;
     border-radius: 1.5px;
     opacity: 0.7;
 }
@@ -224,7 +248,7 @@ article ol {
     counter-reset: piano-counter; /* 初始化計數器，每次從 1 開始 */
     list-style: none;
     margin: 0 auto 80px;
-    padding-left: 4.2rem;   /* 數字需要更多空間，所以 padding 大一點 */
+    padding-left: 3rem;   /* 數字需要更多空間，所以 padding 大一點 */
 }
 
 article ol li {
@@ -238,7 +262,7 @@ article ol li::before {
     top: 0.5em;
     width: 1.2rem;
     height: 1.2rem;
-    background-color: #918BAD;
+    background-color: #866aa1;
     color: #ffffff;
     font-size: 0.75rem;
     font-weight: bold;
@@ -269,12 +293,11 @@ blockquote {
     margin: 5rem auto;     /* 增加上下邊距，確保跟標題有呼吸空間 */
     padding: 20px;
     border: none;
-    color: #666;
+    color: #666666;
 }
 
 blockquote p {
     display: inline;       /* 確保文字跟引號在同一行 */
-    line-height: 1.8;
     white-space: normal; /* 避免引用文字裡有多餘的換行被渲染 */
 }
 
@@ -283,7 +306,7 @@ blockquote::before {
     display: inline-block;
     font-size: 80px;
     font-family: serif;
-    color: #918BAD;
+    color: #866aa1;
     opacity: 0.3;
     
     line-height: 0;        /* 關鍵：不讓大字體撐開行高 */
@@ -668,3 +691,23 @@ em::after {
         padding-left: 1rem; 
     }
 }
+
+details {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: background 0.3s;
+}
+
+details[open] {
+  background: #f9f9f9;
+}
+
+summary {
+  outline: none;
+  padding: 5px;
+}
+
+
+

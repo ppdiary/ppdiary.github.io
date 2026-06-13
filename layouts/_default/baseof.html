@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
     
+<link rel="icon" href="{{ "favicon.png" | absURL }}">
+    
     {{ $style := resources.Get "style.css" | minify | fingerprint }}
     
     {{ if $style }}
@@ -13,6 +15,7 @@
 </head>
 
 <body>
+    <div class="fixed-piano-container"></div>
     <header>
         <div class="container">
             <nav>

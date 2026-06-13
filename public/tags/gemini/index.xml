@@ -1,40 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gemini on 晝嶼之境</title>
+    <title>Gemini on 鳴子閣樓</title>
     <link>http://localhost:1313/blog/tags/gemini/</link>
-    <description>Recent content in Gemini on 晝嶼之境</description>
+    <description>Recent content in Gemini on 鳴子閣樓</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 19 Mar 2026 14:08:30 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2026 00:19:09 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/tags/gemini/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>網站更新日誌 #3</title>
-      <link>http://localhost:1313/blog/posts/7/</link>
-      <pubDate>Thu, 19 Mar 2026 14:08:30 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/7/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;就像是新生兒，每一天都在變化。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;今天改哪裡&#34;&gt;今天改哪裡&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;文章加密：還在研究，目前沒成功 (✗)&lt;/li&gt;&#xA;&lt;li&gt;文章摘要預覽：解決了！現在看起來順眼多了 (✓)&lt;/li&gt;&#xA;&lt;li&gt;內文列點樣式：改成了我喜歡的紫色圓圈跟方塊 (✓)&#xA;　&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;1-文章加密功能&#34;&gt;1. 文章加密功能&lt;/h2&gt;&#xA;&lt;p&gt;有些半成品只適合留給自己看，所以想幫文章加個密碼鎖，像懷念的無名小站有的那個功能。&#xA;我問了 Gemini ，結果他提供的方法看起來都好難，算了算了，這題先跳過，等哪天我又強烈渴望這功能再說。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>網站更新日誌 #2</title>
-      <link>http://localhost:1313/blog/posts/6/</link>
-      <pubDate>Wed, 11 Mar 2026 01:20:14 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/6/</guid>
-      <description>&lt;h2 style=&#34;text-align: center; color: #B95756;&#34;&gt;&#xA;🎉🎉🎉 可喜可賀！首頁有內容了 🎉🎉🎉&#xA;&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;http://localhost:1313/blog/images/test.png&#34; alt=&#34;首頁第一版&#34;&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;上面是現在的首頁，&#xA;下面是原本的，空空如也。&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;http://localhost:1313/blog/images/index_v1.png&#34; alt=&#34;首頁第零版&#34;&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;一度想拿掉首頁，但不知道怎麼移除，&#xA;留著，又不知道要放什麼內容。&#xA;經過 Gemini 指導，終於弄成令人滿意的模樣了！&lt;/p&gt;</description>
-    </item>
     <item>
       <title>架站大抄</title>
       <link>http://localhost:1313/blog/posts/5/</link>
       <pubDate>Fri, 06 Mar 2026 00:19:09 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/5/</guid>
       <description>&lt;h2 id=&#34;1-markdown-非段落換行&#34;&gt;1. Markdown 非段落換行&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;文末加 兩個半形空格&lt;/li&gt;&#xA;&lt;li&gt;文末加 反斜線 \&lt;/li&gt;&#xA;&lt;li&gt;文末加 &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2-空格現身小白點&#34;&gt;2. 空格現身小白點&lt;/h2&gt;&#xA;&lt;p&gt;如何清楚知道有沒有成功加空格？&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;開啟 Command Palette&lt;/strong&gt;&#xA;路徑：功能列 View &amp;gt; Command Palette&#xA;快捷鍵： Ctrl + Shift + P (Mac: Cmd + Shift + P)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;搜尋輸入： Toggle Render Whitespace&lt;/strong&gt;&#xA;效果：你會看到文字後面出現了兩個微小的 . .。&#xA;如果沒有看到兩個點，代表空白沒按對。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;3-改文章標題下的日期格式&#34;&gt;3. 改文章標題下的日期格式&lt;/h2&gt;&#xA;&lt;p&gt;路徑：layouts/_default/single.html&#xA;位置：&lt;code&gt;{{ .Date.Format &amp;quot;2006-01-02&amp;quot; }}&lt;/code&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>網站更新日誌 #1</title>
-      <link>http://localhost:1313/blog/posts/4/</link>
-      <pubDate>Thu, 05 Mar 2026 01:46:10 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/4/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;今天花了不少時間調整部落格的細節。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;1-now-頁面&#34;&gt;1. NOW 頁面&lt;/h3&gt;&#xA;&lt;p&gt;首先是處理 Now 頁面的標題。我發現雖然在檔案開頭設定了標題，但網頁上卻沒顯示出來，後來發現是因為 Hugo 的內容頁需要手動在模板或內文裡加入標題。為了解決這個問題，我調整了 baseof.html 和 single.html，讓所有頁面都能自動抓取標題，並確保每個分頁的標題高度都完全一致。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

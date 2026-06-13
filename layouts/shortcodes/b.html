@@ -1,0 +1,11 @@
+<div class="bubble-row {{ if eq (.Get 0) "me" }}right{{ end }}">
+  <div class="avatar-wrap">
+    <div class="avatar">
+      <img src="{{ if eq (.Get 0) "me" }}https://api.dicebear.com/9.x/notionists-neutral/svg?seed=Milo&backgroundColor=f2eff7&flip=true&translateX=11{{ else }}https://api.dicebear.com/9.x/notionists-neutral/svg?seed=Valentinahttps://api.dicebear.com/9.x/notionists-neutral/svg?seed=Mackenziehttps://api.dicebear.com/9.x/notionists-neutral/svg?seed=Leahhttps://api.dicebear.com/9.x/notionists-neutral/svg?seed=Wyatthttps://api.dicebear.com/9.x/notionists-neutral/svg?seed=Liamhttps://api.dicebear.com/9.x/notionists-neutral/svg?seed=Liamhttps://api.dicebear.com/9.x/notionists-neutral/svg?seed=Ryker&backgroundColor=f1f5f3&translateX=10&translateY=3{{ end }}" alt="avatar" />
+    </div>
+    <span class="avatar-name">{{ if eq (.Get 0) "me" }}我{{ else }}滋滋{{ end }}</span>
+  </div>
+  <div class="bubble-wrap">
+    <div class="bubble {{ if eq (.Get 0) "me" }}me{{ else }}other{{ end }}">{{ .Inner }}</div>
+  </div>
+</div>

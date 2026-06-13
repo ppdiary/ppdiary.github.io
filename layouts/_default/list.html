@@ -49,6 +49,15 @@
         font-size: 0.85rem;
     }
 
+    .summary-text {
+    font-size: 0.85rem;       /* 字體小一點 */
+    color: #888;              /* 使用中性的灰色 */
+    line-height: 1.6;
+    font-weight: 300;         /* 細體字，看起來比較優雅 */
+    opacity: 0.8;             /* 稍微透明，增加層次感 */
+    letter-spacing: 0.01em;
+}
+
     .post-item:hover .post-link {
         color: #5d5461 !important; /* 稍微變色代表 hover */
     }
@@ -57,32 +66,119 @@
         opacity: 1;
         visibility: visible;
     }
+
+    
+
+    /* 大數字月份樣式 */
+.month-big-number {
+    list-style: none;
+    font-family: "Georgia", serif; /* 使用有襯線體會更有質感 */
+    font-size: 5rem;               /* 數字要夠大才有張力 */
+    line-height: 1;
+    color: #9B8BB4;                /* 你的莫蘭迪紫 */
+    opacity: 0.12;                 /* 非常淡，像浮水印一樣 */
+    margin-top: 60px;
+    margin-bottom: -25px;          /* 負邊距讓數字與下方的列表產生重疊感 */
+    margin-left: -5px;             /* 稍微往左突出一點，打破死板的對齊 */
+    font-style: italic;            /* 斜體會更優雅一點 */
+    user-select: none;
+    pointer-events: none;          /* 確保滑鼠點擊可以穿透它 */
+}
+
+/* 讓第一個月份數字不要離標題太遠 */
+.post-list > .month-big-number:first-child {
+    margin-top: 10px;
+}
+
+.post-day-number {
+    flex: 0 0 38px;            /* 固定寬度確保標題對齊 */
+    font-family: "Georgia", serif; 
+    font-size: 1.3rem;         /* 稍微放大，讓單個數字更有存在感 */
+    font-weight: 300;          /* 改用細體，增加空靈感 */
+    color: #9B8BB4; 
+    opacity: 0.5;              /* 顏色調深一點點，彌補細體的視覺重量 */
+    font-style: italic;        /* 斜體可以增加數字的流動感 */
+    line-height: 1;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* 滑鼠滑過時，日期數字可以稍微亮一點點 */
+.post-item:hover .post-day-number {
+    opacity: 1;
+    transform: translateX(2px); /* 輕微的移動感 */
+}
 </style>
 
 <main>
-    <h1>{{ .Title }}</h1>
+{{ $isPiecesPage := eq (.Title | lower) "pieces" }}
+
+<h1 style="cursor: pointer; user-select: none;" 
+    {{ if $isPiecesPage }}
+        onclick="window.location.href='{{ "posts/" | relURL }}'"
+    {{ else }}
+        ondblclick="window.location.href='{{ "categories/pieces/" | relURL }}'"
+    {{ end }}>
+    
+    <span style="{{ if $isPiecesPage }}opacity: 0.6;{{ end }}">
+        {{ .Title }}
+    </span>
+</h1>
 
     <ul class="post-list">
-        {{ range .Pages }}
-        <li class="post-item">
-            <div class="post-header">
-                <span style="flex: 0 0 110px; color: #bbb; font-family: monospace; font-size: 0.9rem;">
-                    {{ .Date.Format "2006.01.02" }}
-                </span>
-                <a href="{{ .Permalink }}" class="post-link">
-        {{ .Title }}{{ if .Draft }} (𖡎){{ end }}
-                </a>
-            </div>
+        {{/* 1. 將文章按年月分組 */}}
+        {{ range (.Pages.GroupByDate "2006.01") }}
             
-{{/* 只有當手動寫了 description 時，才顯示整個 summary 區塊 */}}
-            {{ if .Description }}
-            <div class="post-summary">
-                <div class="summary-text">
-                    {{ .Description | plainify | truncate 50 "..." }}
-                </div>
-            </div>
+            {{/* 2. 檢查該月份是否有要顯示的文章 */}}
+            {{ $hasVisiblePages := false }}
+            {{ range .Pages }}
+                {{ $isPiece := in .Params.categories "pieces" }}
+                {{ $isTagPage := eq $.Data.Singular "tag" }}
+                {{ if or $isTagPage (and (eq ($.Title | lower) "pieces") $isPiece) (and (ne ($.Title | lower) "pieces") (not $isPiece)) }}
+                    {{ $hasVisiblePages = true }}
+                {{ end }}
             {{ end }}
-        </li>
+
+            {{/* 3. 如果有文章，就顯示月份浮水印 */}}
+            {{ if $hasVisiblePages }}
+            {{/* 取得月份數字，例如 "05" */}}
+    {{ $month := index (split .Key ".") 1 }}
+    
+    <li class="month-big-number">
+        {{ $month }}
+                </li>
+
+                {{ range .Pages }}
+                    {{ $isPiece := in .Params.categories "pieces" }}
+                    {{ $isTagPage := eq $.Data.Singular "tag" }}
+
+                    {{ if $isTagPage }}
+                    {{ else if eq ($.Title | lower) "pieces" }}
+                        {{ if not $isPiece }}{{ continue }}{{ end }}
+                    {{ else }}
+                        {{ if $isPiece }}{{ continue }}{{ end }}
+                    {{ end }}
+
+                    <li class="post-item">
+                        <div class="post-header">
+                            <span class="post-day-number">
+            {{ .Date.Day }} <!-- 只顯示日子，例如：15 -->
+        </span>
+                            <a href="{{ .Permalink }}" class="post-link">
+                                {{ .Title }}{{ if .Draft }} (𖡎){{ end }}
+                            </a>
+                        </div>
+                        
+                        {{ if .Description }}
+                        <div class="post-summary">
+                            <div class="summary-text">
+                                {{ .Description | plainify | truncate 50 "..." }}
+                            </div>
+                        </div>
+                        {{ end }}
+                    </li>
+                {{ end }}
+            {{ end }}
         {{ end }}
     </ul>
 </main>

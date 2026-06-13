@@ -2,7 +2,7 @@ baseURL = 'https://ppdiary.github.io/blog/'
 #canonifyURLs = true
 #relativeURLs = true
 languageCode = 'zh-tw'
-title = '晝嶼之境'
+title = '鳴子閣樓'
 theme = "hugo-bearblog"
 
 # 加入這行來精確計算中文字數
@@ -13,7 +13,7 @@ staticDir = ['static']
 [params]
     description = "わかる人には、わかる場所"
     dateFormat = "2006.01.02" 
-    # Bear Blog 很簡單，通常不太需要複雜的 params
+    favicon = "/favicon.ico"
 
 [[menu.main]]
     name = "首頁"
