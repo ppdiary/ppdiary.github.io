@@ -12,8 +12,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
+          submodules: false # 徹底忽略 PaperMod
           fetch-depth: 0
+
+      # 確保 Bear 主題有被正確抓到
+      - name: Force fetch Bear theme only
+        run: |
+          if [ -d "themes/bear" ]; then
+            echo "Bear theme folder exists."
+          elif [ -d "themes/Bear" ]; then
+            echo "Bear theme folder (Uppercase) exists."
+          else
+            git submodule update --init --recursive || true
+          fi
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -24,10 +35,11 @@ jobs:
       - name: Build
         run: hugo --gc --minify # 這裡預設「絕對不會」把草稿打包進去
 
+      # 💡 核心改動：改用 peaceiris/actions-gh-pages，將編譯好的網頁隔空外送到你的公開庫
       - name: Deploy to Public Repo
         uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.GH_PAT }}
-          external_repository: ppdiary/ppdiary.github.io
-          publish_dir: ./public
-          publish_branch: main
+          external_repository: ppdiary/ppdiary.github.io  # 你的公開庫
+          publish_dir: ./public                          # Hugo 生成的網頁資料夾
+          publish_branch: main                           # 目的地儲存庫的分支
