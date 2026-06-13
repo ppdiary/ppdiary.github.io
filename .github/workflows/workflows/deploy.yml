@@ -5,17 +5,8 @@ on:
     branches:
       - main # 當你推送到 main 分支時觸發自動部署
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -30,21 +21,13 @@ jobs:
           hugo-version: 'latest'
           extended: true # 支援 Sass/SCSS 編譯，確保樣式不漏勾
 
-      - name: Build with Hugo
+      - name: Build
         run: hugo --gc --minify # 這裡預設「絕對不會」把草稿打包進去
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to Public Repo
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: ./public
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps: deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          personal_token: ${{ secrets.GH_PAT }}
+          external_repository: ppdiary/ppdiary.github.io
+          publish_dir: ./public
+          publish_branch: main
