@@ -116,9 +116,10 @@
         /* 提升權重：用 ul.post-list 裡面的 .post-item */
         ul.post-list .post-item {
             white-space: normal;
-            display: block;        /* 拔掉 flex，改成區塊，防止寬度被擠壓 */
-            overflow: visible;
-            padding: 12px 0;       /* 手機上稍微拉開一點行距 */
+            display: flex;         
+            align-items: flex-start; /* 讓日期與多行標題的第一行對齊 */
+            padding: 10px 0;
+            width: 100%;
         }
         
         /* 提升權重：明確寫出層級 */
@@ -130,7 +131,8 @@
 
         .post-header .post-day-number {
             flex: 0 0 32px;        /* 固定日期寬度，不讓它變形 */
-            margin-right: 8px;
+            margin-right: 8px;    /* 日期和標題之間的間距 */
+            display: inline-block;
         }
         
         .post-header .post-link {
@@ -139,11 +141,10 @@
             text-overflow: clip;
             white-space: normal;   /* 准許換行 */
             line-height: 1.5;
-            display: inline-block;
         }
 
         .post-item .post-summary {
-            display: none;         /* 手機版維持隱藏摘要 */
+            display: none;         /* 手機版隱藏摘要 */
         }
     }
 </style>

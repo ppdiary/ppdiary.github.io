@@ -441,22 +441,24 @@ figure::after {
     margin-top: 0 !important;
 }
 
-/* 萬能日期對齊法：一次搞定內頁與列表 */
+/* 文章列表日期格式 */
 time, 
 .post-date, 
 .post-list-date,
 .post-list li span:first-child { 
-    font-family: Courier, monospace !important;
-    color: #777777 !important;
-    font-size: 0.85rem !important;
-    letter-spacing: 0.05em !important;
+    font-family: Courier, monospace;
+    color: #777777;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
     display: block;
     margin-right: -5px;
     position: relative;
     top: 0.3ex;
 }
 
-/* --- 文章內頁白紙容器 --- */
+/* ===================
+   文章內頁
+====================== */
 .post-box {
     background-color: transparent; 
     margin: 20px auto;
@@ -468,10 +470,10 @@ time,
     margin: 0;
 }
 
-/* 日期：稍微偏移，與標題內縮對齊 */
+/* 日期 */
 .post-box .post-date {
-    font-size: 0.9rem !important;
-    color: #777777 !important;
+    font-size: 0.9rem;
+    color: #777777;
     margin: 3px 0 0 0;
 }
 
