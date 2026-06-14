@@ -62,7 +62,7 @@ description: ""
 　
 |  |
 | :---: |
-| ![說明](/blog/images/test.png) |
-| 圖說文字 |
+| ![圖片說明](/images/test.png) |
+| 下方的圖說文字 |
 
-{{< figure src="/blog/images/test.png" caption="圖說文字" >}}
+{{< figure src="/images/test.png" caption="下方的圖說文字" >}}
