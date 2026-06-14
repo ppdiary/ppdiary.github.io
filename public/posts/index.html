@@ -147,6 +147,42 @@
     opacity: 1;
     transform: translateX(2px);  
 }
+
+ 
+    @media (max-width: 768px) {
+         
+        ul.post-list .post-item {
+            white-space: normal;
+            display: block;         
+            overflow: visible;
+            padding: 12px 0;        
+        }
+        
+         
+        .post-item .post-header {
+            display: flex;
+            align-items: flex-start;  
+            width: 100%;
+        }
+
+        .post-header .post-day-number {
+            flex: 0 0 32px;         
+            margin-right: 8px;
+        }
+        
+        .post-header .post-link {
+            flex: 1;                
+            overflow: visible;
+            text-overflow: clip;
+            white-space: normal;    
+            line-height: 1.5;
+            display: inline-block;
+        }
+
+        .post-item .post-summary {
+            display: none;          
+        }
+    }
 </style>
 
 <main>
