@@ -7,14 +7,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>VS Code - 鳴子閣樓</title>
+    <title>VS Code - 鳴子のブログ</title>
     
 <link rel="icon" href="http://localhost:1313/favicon.png">
     
     
     
     
-        <link rel="stylesheet" href="http://localhost:1313/style.min.5b226e6af7a57acb6ab8439fa97ffa60bb32aa6114a0c7273843ca2caedd55ca.css" integrity="sha256-WyJuavelestquEOfqX/6YLsyqmEUoMcnOEPKLK7dVco=">
+        <link rel="stylesheet" href="http://localhost:1313/style.min.6221e75cace1d1c4e5dd7787418c83312145648e8d0e93f135259a794529774e.css" integrity="sha256-YiHnXKzh0cTl3XeHQYyDMSFFZI6NDpPxNSWaeUUpd04=">
     
 </head>
 
@@ -23,7 +23,7 @@
     <header>
         <div class="container">
             <nav>
-                <a href="/" style="font-size: 1.2rem;"><b>鳴子閣樓</b></a>
+                <a href="/" style="font-size: 1.2rem;"><b>鳴子のブログ</b></a>
                 <div class="links">
                     
                     <a href="/">首頁</a>
@@ -46,24 +46,27 @@
     .post-list {
         list-style: none;
         padding: 0;
-        padding-top: 0px; 
         margin: 0;
     }
 
     .post-item {
         margin: 0;
         padding: 8px 0;  
-        border-bottom: 0px solid rgba(155, 139, 180, 0.05);
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        white-space: nowrap;
         display: flex;
-        align-items: center;  
+        align-items: flex-start;
+        width: 100%;
         overflow: hidden;
     }
     
     .post-header {
         display: flex;
-        align-items: center;  
+        align-items: flex-start;
+    }
+
+    .post-day-number {
+         
+        margin-top: 6px; 
     }
 
     .post-link {
@@ -74,10 +77,6 @@
         font-size: 1.04rem;
         letter-spacing: 0.05em;
         transition: color 0.3s;
-        
-         
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 
     .post-summary {
@@ -89,20 +88,19 @@
         transition: opacity 0.4s ease, visibility 0.4s ease; 
         
         color: #aaa;
-        font-size: 0.85rem;
+        margin-top: 3px;
     }
 
     .summary-text {
-    font-size: 0.85rem;        
-    color: #888;               
-    line-height: 1.6;
-    font-weight: 300;          
-    opacity: 0.8;              
-    letter-spacing: 0.01em;
+        font-size: 0.85rem;
+        color: #888;
+        font-weight: 300;
+        opacity: 0.8;
+        letter-spacing: 0.01em;
 }
 
     .post-item:hover .post-link {
-        color: #5d5461 !important;  
+        color: #5d5461 !important;
     }
 
     .post-item:hover .post-summary {
@@ -146,6 +144,7 @@
     transition: all 0.3s ease;
 }
 
+
  
 .post-item:hover .post-day-number {
     opacity: 1;
@@ -157,31 +156,28 @@
          
         ul.post-list .post-item {
             white-space: normal;
-            display: flex;         
-            align-items: center;
+            display: flex;
             width: 100%;
         }
         
          
         .post-item .post-header {
             display: flex;
-            align-items: center; 
             width: 100%;
         }
 
         .post-header .post-day-number {
             display: inline-block;
+            
+            margin-top: 6px;
+        }
 
-            line-height: 1;      
-            margin-top: 0;         
-            padding-top: 0;        
+        .post-header .post-link {
+            flex: 1;                
             overflow: visible;
             text-overflow: clip;
             white-space: normal;    
             
-            line-height: 1;      
-            margin-top: 0;         
-            padding-top: 0;        
             display: inline-block; 
         }
 

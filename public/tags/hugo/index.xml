@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on 鳴子閣樓</title>
+    <title>Hugo on 鳴子のブログ</title>
     <link>http://localhost:1313/tags/hugo/</link>
-    <description>Recent content in Hugo on 鳴子閣樓</description>
+    <description>Recent content in Hugo on 鳴子のブログ</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 06 Mar 2026 00:19:09 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 01:20:14 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>網站更新日誌 #2</title>
+      <link>http://localhost:1313/posts/6/</link>
+      <pubDate>Wed, 11 Mar 2026 01:20:14 +0800</pubDate>
+      <guid>http://localhost:1313/posts/6/</guid>
+      <description>&lt;h2 style=&#34;text-align: center; color: #B95756;&#34;&gt;&#xA;🎉🎉🎉 可喜可賀！首頁有內容了 🎉🎉🎉&#xA;&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;http://localhost:1313/blog/images/test.png&#34; alt=&#34;首頁第一版&#34;&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;上面是現在的首頁，&#xA;下面是原本的，空空如也。&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;http://localhost:1313/blog/images/index_v1.png&#34; alt=&#34;首頁第零版&#34;&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;一度想拿掉首頁，但不知道怎麼移除，&#xA;留著，又不知道要放什麼內容。&#xA;經過 Gemini 指導，終於弄成令人滿意的模樣了！&lt;/p&gt;</description>
+    </item>
     <item>
       <title>架站大抄</title>
       <link>http://localhost:1313/posts/5/</link>

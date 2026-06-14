@@ -17,6 +17,11 @@ body {
     align-items: center;
 }
 
+/* 全站文字反白設定:#918BAD */
+::selection {
+    background-color: rgba(145, 139, 173, 0.2);
+}
+
 /* 
    =========================================
    RWD 手機版優化
@@ -186,9 +191,9 @@ nav a {
 /* 左上角標題 */
 nav a[href="/"] b {
     font-weight: 700;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.2rem;
     color: #866aa1;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: "Inter", "Noto Serif TC", sans-serif;
     text-transform: uppercase; /* 如果是英文名稱，全大寫會更有「標籤」的專業感 */
 }
@@ -253,7 +258,7 @@ article ol li {
 article ol li::before {
     content: counter(piano-counter);
     position: absolute;
-    left: -1.8rem;    
+    left: -1.8rem;
     top: 0.5em;
     width: 1.2rem;
     height: 1.2rem;
@@ -662,33 +667,9 @@ em::after {
     border-radius: 6px;     /* 圓角視覺更現代 */
 }
 
-
-/* 針對全站的文字反白設定:#918BAD */
-::selection {
-    background-color: rgba(145, 139, 173, 0.2);
-}
-
-
-/* 小螢幕標題對齊 */
-@media screen and (max-width: 768px) {
-    h2, h3, h4 {
-        padding-left: 0;  /* 移除左側內縮，讓文字邊緣貼齊容器 */
-        margin-left: 0;   /* 確保沒有外邊距偏移 */
-        text-align: left; /* 強制靠左 */
-    }
-
-    /* 同時確保內文段落不會因為 max-width 導致置中偏移 */
-    article p {
-        max-width: 100%;
-        margin-left: 0;
-        padding-left: 0;
-    }
-
-    article ol {
-        padding-left: 1rem; 
-    }
-}
-
+/* ===================
+   向下展開
+====================== */
 details {
   border: 1px solid #ddd;
   border-radius: 8px;

@@ -2,7 +2,7 @@ baseURL = 'https://ppdiary.github.io/'
 #canonifyURLs = true
 #relativeURLs = true
 languageCode = 'zh-tw'
-title = '鳴子閣樓'
+title = '鳴子のブログ'
 theme = "hugo-bearblog"
 
 # 加入這行來精確計算中文字數
