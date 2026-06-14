@@ -57,7 +57,7 @@ main {
 
 /* --- 第一層：基礎設定（全站通用） --- */
 p, article li {
-    font-weight: 330;
+    font-weight: 350;
     letter-spacing: 0.025em;
     font-size: 1.01rem;
 }
@@ -96,11 +96,11 @@ p + h2 {
 
 h1 {
     font-family: "Noto Serif TC", "Noto Serif JP", serif;
-    font-weight: 400;         /* 關鍵：不要太粗 */
+    font-weight: 400;
     font-size: 2rem;
     letter-spacing: 0.1em;    /* 讓字呼吸 */
     color: #5d5461;           /* 莫蘭迪深紫灰 */
-    text-align: left;         /* 先嘗試靠左，建立穩定感 */
+    text-align: left;
     margin-top: 20px;
     margin-bottom: 80px;      /* 給標題下方充足的空間 */
     position: relative;

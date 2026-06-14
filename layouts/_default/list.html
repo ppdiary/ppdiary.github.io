@@ -3,24 +3,27 @@
     .post-list {
         list-style: none;
         padding: 0;
-        padding-top: 0px; 
         margin: 0;
     }
 
     .post-item {
         margin: 0;
         padding: 8px 0; /* 這裡決定每一行的間距 */
-        border-bottom: 0px solid rgba(155, 139, 180, 0.05);
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        white-space: nowrap;
         display: flex;
-        align-items: center; /* 讓內容在每一行內垂直居中 */
+        align-items: flex-start;
+        width: 100%;
         overflow: hidden;
     }
     
     .post-header {
         display: flex;
-        align-items: center; /* 這裡改為 center 避免 baseline 造成的視覺不一 */
+        align-items: flex-start;
+    }
+
+    .post-day-number {
+        /* 如果發現日期跟第一行字沒有對齊，可以用這行微調 1px ~ 3px */
+        margin-top: 6px; 
     }
 
     .post-link {
@@ -31,10 +34,6 @@
         font-size: 1.04rem;
         letter-spacing: 0.05em;
         transition: color 0.3s;
-        
-        /* 防止標題太長換行 */
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 
     .post-summary {
@@ -46,20 +45,19 @@
         transition: opacity 0.4s ease, visibility 0.4s ease; 
         
         color: #aaa;
-        font-size: 0.85rem;
+        margin-top: 3px;
     }
 
     .summary-text {
-    font-size: 0.85rem;       /* 字體小一點 */
-    color: #888;              /* 使用中性的灰色 */
-    line-height: 1.6;
-    font-weight: 300;         /* 細體字，看起來比較優雅 */
-    opacity: 0.8;             /* 稍微透明，增加層次感 */
-    letter-spacing: 0.01em;
+        font-size: 0.85rem;
+        color: #888;
+        font-weight: 300;
+        opacity: 0.8;
+        letter-spacing: 0.01em;
 }
 
     .post-item:hover .post-link {
-        color: #5d5461 !important; /* 稍微變色代表 hover */
+        color: #5d5461 !important;
     }
 
     .post-item:hover .post-summary {
@@ -103,6 +101,7 @@
     transition: all 0.3s ease;
 }
 
+
 /* 滑鼠滑過時，日期數字可以稍微亮一點點 */
 .post-item:hover .post-day-number {
     opacity: 1;
@@ -116,36 +115,29 @@
         /* 提升權重：用 ul.post-list 裡面的 .post-item */
         ul.post-list .post-item {
             white-space: normal;
-            display: flex;         
-            align-items: center;
+            display: flex;
             width: 100%;
         }
         
         /* 提升權重：明確寫出層級 */
         .post-item .post-header {
             display: flex;
-            align-items: center; 
             width: 100%;
         }
 
         .post-header .post-day-number {
             display: inline-block;
-
-            line-height: 1;     /* 1. 必須與標題的 line-height 完全相同 */
-            margin-top: 0;        /* 2. 清除可能存在的上邊距 */
-            padding-top: 0;       /* 3. 清除可能存在的內邊距 *
+            
+            margin-top: 6px;
         }
-        
+
         .post-header .post-link {
             flex: 1;               /* 讓標題吃掉剩下的所有寬度 */
             overflow: visible;
             text-overflow: clip;
             white-space: normal;   /* 准許換行 */
             
-            line-height: 1;     /* 1. 與日期保持一致的行高 */
-            margin-top: 0;        /* 2. 徹底拔除標題元件可能自帶的 margin-top */
-            padding-top: 0;       /* 3. 徹底拔除可能自帶的 padding-top */
-            display: inline-block;/* 4. 確保它在 flex 容器中表現穩定 */
+            display: inline-block;/* 確保它在 flex 容器中表現穩定 */
         }
 
         .post-item .post-summary {
