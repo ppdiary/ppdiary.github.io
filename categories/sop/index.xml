@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SOP on 鳴子のブログ</title><link>https://ppdiary.github.io/categories/sop/</link><description>Recent content in SOP on 鳴子のブログ</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Tue, 07 Apr 2026 13:47:14 +0800</lastBuildDate><atom:link href="https://ppdiary.github.io/categories/sop/index.xml" rel="self" type="application/rss+xml"/><item><title>備份 SOP</title><link>https://ppdiary.github.io/posts/20/</link><pubDate>Tue, 07 Apr 2026 13:47:14 +0800</pubDate><guid>https://ppdiary.github.io/posts/20/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;記給自己看的，這樣之後就能照著做了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="方式一vs-code-點選介面備份"&gt;方式一：VS Code 點選介面備份&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;點擊左側工具列由上往下數第三個圖示（有三顆空心圓那個），或按快捷鍵 &lt;code&gt;Ctrl + Shift + G&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;輸入這次備份的備註，再點 &lt;code&gt;藍色的 Commit 按鈕&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;點擊底部工具列的迴圈圖示 &lt;code&gt;0 ↓ 1 ↑&lt;/code&gt;，讓資料同步到 GitHub
+　&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="方式二vs-code-輸入指令快速備份"&gt;方式二：VS Code 輸入指令快速備份&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;git add .&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git commit -m &amp;quot;Backup_YYYYMMDD&amp;quot;&lt;/code&gt;（引號內改成備註說明）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git push origin main&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="方式三複製資料夾備份"&gt;方式三：複製資料夾備份&lt;/h2&gt;
+&lt;p&gt;（有空再寫）&lt;/p&gt;</description></item></channel></rss>
