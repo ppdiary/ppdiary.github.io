@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>鳴子のブログ</title><link>https://ppdiary.github.io/</link><description>Recent content on 鳴子のブログ</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Thu, 04 Jun 2026 13:26:07 +0800</lastBuildDate><atom:link href="https://ppdiary.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>倉頡</title><link>https://ppdiary.github.io/posts/43/</link><pubDate>Thu, 04 Jun 2026 13:26:07 +0800</pubDate><guid>https://ppdiary.github.io/posts/43/</guid><description>&lt;p&gt;想學習倉頡輸入法，
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>鳴子のブログ</title><link>https://ppdiary.github.io/</link><description>Recent content on 鳴子のブログ</description><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Mon, 15 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://ppdiary.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>倉頡</title><link>https://ppdiary.github.io/posts/43/</link><pubDate>Thu, 04 Jun 2026 13:26:07 +0800</pubDate><guid>https://ppdiary.github.io/posts/43/</guid><description>&lt;p&gt;想學習倉頡輸入法，
 於是，
 自己做了一個 &lt;a href="https://hilarious-monstera-ec809d.netlify.app/"&gt;倉頡輸入法練習器&lt;/a&gt;，&lt;/p&gt;
 &lt;p&gt;可以自訂題目喔！&lt;/p&gt;
@@ -34,6 +34,7 @@
 &lt;h6 id="h6-標題"&gt;H6 標題&lt;/h6&gt;
 &lt;p&gt;內文
 &lt;strong&gt;粗體&lt;/strong&gt;
+&lt;mark&gt;螢光筆&lt;/mark&gt;
 &lt;code&gt;程式碼&lt;/code&gt;
 &lt;a href="www"&gt;超連結&lt;/a&gt;
 註解 &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
@@ -257,13 +258,13 @@
 &lt;li&gt;簡潔有力&lt;/li&gt;
 &lt;li&gt;支援深色模式&lt;/li&gt;
 &lt;li&gt;速度超快&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>近況 /now</title><link>https://ppdiary.github.io/now/</link><pubDate>Tue, 24 Feb 2026 00:00:00 +0000</pubDate><guid>https://ppdiary.github.io/now/</guid><description>&lt;blockquote&gt;
+&lt;/ul&gt;</description></item><item><title>Now</title><link>https://ppdiary.github.io/now/</link><pubDate>Tue, 24 Feb 2026 00:00:00 +0000</pubDate><guid>https://ppdiary.github.io/now/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;If you have your own site, you should make a now page. &lt;br&gt;
 感謝 &lt;a href="https://sive.rs/now"&gt;Derek Sivers&lt;/a&gt; 的啟發&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id="我最近在"&gt;我最近在&amp;hellip;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;彈鋼琴&lt;/strong&gt;：練 &lt;a href="https://youtu.be/igfOIvQHA8g"&gt;這首快的&lt;/a&gt;，還有 &lt;a href="https://youtu.be/2CN6cmOlm80"&gt;這首慢的&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;彈鋼琴&lt;/strong&gt;：練&lt;a href="https://youtu.be/igfOIvQHA8g"&gt;這首快的&lt;/a&gt;，還有&lt;a href="https://youtu.be/2CN6cmOlm80"&gt;這首慢的&lt;/a&gt;。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;打造個人網站&lt;/strong&gt;：做出自己想要的樣式好快樂！&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;看動畫&lt;/strong&gt;：&lt;a href="https://www.ptsplus.tv/zh/programs/8cda3019-c9c3-4ba0-a019-bfcb49c3c8bf"&gt;《葬送的芙莉蓮》台語版&lt;/a&gt;、《名偵探柯南》&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;看書&lt;/strong&gt;：《做自己的生命設計師》、《鋼琴彈奏法》、《成為企劃人》&lt;/li&gt;
